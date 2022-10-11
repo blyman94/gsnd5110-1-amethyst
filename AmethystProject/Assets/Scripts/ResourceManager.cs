@@ -10,6 +10,7 @@ public class ResourceManager : MonoBehaviour
     private void Start()
     {
         resources.HomeActive = false;
+        resources.WorkActive = false;
     }
     private void Update()
     {

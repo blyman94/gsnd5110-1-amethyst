@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 16247434}
   - component: {fileID: 16247437}
+  - component: {fileID: 16247438}
   - component: {fileID: 16247436}
   - component: {fileID: 16247435}
   m_Layer: 5
@@ -228,6 +229,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 16247433}
   m_CullTransparentMesh: 1
+--- !u!225 &16247438
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16247433}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &19817219
 GameObject:
   m_ObjectHideFlags: 0
@@ -2343,6 +2356,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: bb769c7c-8459-4509-993d-02fb2fbcb14c
     m_ActionName: General/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1195294636}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnToggleUIInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 255046d4-1ae0-4bdf-8f2e-cc7e8e98f5d3
+    m_ActionName: General/ToggleUI[/Keyboard/tab]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: General
@@ -2361,6 +2390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMover: {fileID: 2077005828}
+  resourceGroup: {fileID: 16247438}
 --- !u!4 &1195294637
 Transform:
   m_ObjectHideFlags: 0
