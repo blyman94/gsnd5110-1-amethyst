@@ -20,6 +20,24 @@ public class ResourceBinding : MonoBehaviour
             case BuildingType.Work:
                 resourceSlider.value = playerResources.WorkResource;
                 break;
+            case BuildingType.Diner:
+                resourceSlider.value = playerResources.DinerResource;
+                break;
+            case BuildingType.Court:
+                resourceSlider.value = playerResources.CourtResource;
+                break;
+            case BuildingType.Forest:
+                resourceSlider.value = playerResources.ForestResource;
+                break;
+            case BuildingType.Pond:
+                resourceSlider.value = playerResources.PondResource;
+                break;
+            case BuildingType.Clerk:
+                resourceSlider.value = playerResources.ClerkResource;
+                break;
+            case BuildingType.Mill:
+                resourceSlider.value = playerResources.MillResource;
+                break;
             default:
                 break;
         }

@@ -12,11 +12,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0eb422ea736f96c49961e24af62d418e, type: 3}
   m_Name: PlayerResources
   m_EditorClassIdentifier: 
-  HomeActive: 0
-  HomeResource: 0.314555
-  HomeFillRate: 0.1
+  PlayerInHome: 0
+  HomeActive: 1
+  HomeResource: 0.8221787
+  HomeFillRate: 0.01
   HomeDrainRate: 0.1
+  PlayerInWork: 0
   WorkActive: 0
-  WorkResource: 0
-  WorkFillRate: 0.1
-  WorkDrainRate: 0.1
+  WorkResource: 1
+  WorkFillRate: 0.01
+  WorkDrainRate: 0.01
+  PlayerInDiner: 0
+  DinerActive: 0
+  DinerResource: 1
+  DinerFillRate: 0.01
+  DinerDrainRate: 0.01
+  PlayerInCourt: 0
+  CourtActive: 0
+  CourtResource: 1
+  CourtFillRate: 0.01
+  CourtDrainRate: 0.01
+  PlayerInForest: 0
+  ForestActive: 0
+  ForestResource: 1
+  ForestFillRate: 0.01
+  ForestDrainRate: 0.01
+  PlayerInPond: 0
+  PondActive: 0
+  PondResource: 1
+  PondFillRate: 0.01
+  PondDrainRate: 0.01
+  PlayerInClerk: 0
+  ClerkActive: 0
+  ClerkResource: 1
+  ClerkFillRate: 0.01
+  ClerkDrainRate: 0.01
+  PlayerInMill: 0
+  MillActive: 0
+  MillResource: 1
+  MillFillRate: 0.01
+  MillDrainRate: 0.01
