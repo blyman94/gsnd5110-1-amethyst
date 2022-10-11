@@ -63,7 +63,14 @@ public class ResourceManager : MonoBehaviour
         UpdateMillResource();
 
         // Check if game ends
-        if (resources.HomeResource <= 0 || resources.WorkResource <= 0)
+        if (resources.HomeResource <= 0 ||
+            resources.WorkResource <= 0 ||
+            resources.DinerResource <= 0 ||
+            resources.CourtResource <= 0 ||
+            resources.ForestResource <= 0 ||
+            resources.PondResource <= 0 ||
+            resources.ClerkResource <= 0 ||
+            resources.MillResource <= 0)
         {
             gameOverGroup.alpha = 1;
             gameOverGroup.blocksRaycasts = true;

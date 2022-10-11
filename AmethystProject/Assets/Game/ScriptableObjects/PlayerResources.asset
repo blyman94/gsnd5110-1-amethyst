@@ -14,41 +14,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerInHome: 0
   HomeActive: 1
-  HomeResource: 0.8221787
-  HomeFillRate: 0.01
-  HomeDrainRate: 0.1
+  HomeResource: 0.17471407
+  HomeFillRate: 0.5
+  HomeDrainRate: 0.05
   PlayerInWork: 0
-  WorkActive: 0
-  WorkResource: 1
-  WorkFillRate: 0.01
-  WorkDrainRate: 0.01
+  WorkActive: 1
+  WorkResource: 0.30374566
+  WorkFillRate: 0.5
+  WorkDrainRate: 0.05
   PlayerInDiner: 0
-  DinerActive: 0
-  DinerResource: 1
-  DinerFillRate: 0.01
-  DinerDrainRate: 0.01
+  DinerActive: 1
+  DinerResource: 0.5639778
+  DinerFillRate: 0.5
+  DinerDrainRate: 0.05
   PlayerInCourt: 0
-  CourtActive: 0
-  CourtResource: 1
-  CourtFillRate: 0.01
-  CourtDrainRate: 0.01
+  CourtActive: 1
+  CourtResource: 0.3587103
+  CourtFillRate: 0.5
+  CourtDrainRate: 0.05
   PlayerInForest: 0
-  ForestActive: 0
-  ForestResource: 1
-  ForestFillRate: 0.01
-  ForestDrainRate: 0.01
+  ForestActive: 1
+  ForestResource: 0
+  ForestFillRate: 0.5
+  ForestDrainRate: 0.05
   PlayerInPond: 0
-  PondActive: 0
-  PondResource: 1
-  PondFillRate: 0.01
-  PondDrainRate: 0.01
+  PondActive: 1
+  PondResource: 0.15500182
+  PondFillRate: 0.5
+  PondDrainRate: 0.05
   PlayerInClerk: 0
-  ClerkActive: 0
-  ClerkResource: 1
-  ClerkFillRate: 0.01
-  ClerkDrainRate: 0.01
+  ClerkActive: 1
+  ClerkResource: 0.4051955
+  ClerkFillRate: 0.5
+  ClerkDrainRate: 0.05
   PlayerInMill: 0
-  MillActive: 0
-  MillResource: 1
-  MillFillRate: 0.01
-  MillDrainRate: 0.01
+  MillActive: 1
+  MillResource: 0
+  MillFillRate: 0.5
+  MillDrainRate: 0.05

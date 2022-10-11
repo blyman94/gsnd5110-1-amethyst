@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
             playerMover.Move(Vector2.zero);
         }
     }
-
+    /* This is the ToggleUI for hold
     public void OnToggleUIInput(InputAction.CallbackContext context)
     {
         if (context.started) // Input.GetKeyDown from old input system
@@ -31,4 +31,21 @@ public class PlayerController : MonoBehaviour
             resourceGroup.alpha = 0;
         }
     }
+    */
+
+    // This is the ToggleUI for Switch
+    public void OnToggleUIInput(InputAction.CallbackContext context)
+    {
+        if (context.performed) // Input.GetKey from old input system
+        {
+            if (resourceGroup.alpha == 1)
+            {
+                resourceGroup.alpha = 0;
+            }
+
+            else { resourceGroup.alpha = 1; }
+
+        }
+    }
+
 }
