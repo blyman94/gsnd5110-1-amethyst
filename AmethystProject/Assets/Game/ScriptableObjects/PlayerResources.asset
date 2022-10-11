@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0eb422ea736f96c49961e24af62d418e, type: 3}
   m_Name: PlayerResources
   m_EditorClassIdentifier: 
-  HomeActive: 1
-  HomeResource: 0.6568435
+  HomeActive: 0
+  HomeResource: 0.314555
   HomeFillRate: 0.1
   HomeDrainRate: 0.1
+  WorkActive: 0
+  WorkResource: 0
+  WorkFillRate: 0.1
+  WorkDrainRate: 0.1

@@ -5,13 +5,13 @@ using UnityEngine;
 [CreateAssetMenu]
 public class PlayerResources : ScriptableObject
 {
-    // Home
+    [Header("Home")]
     public bool HomeActive = false;
     public float HomeResource = 1.0f;
     public float HomeFillRate = 0.1f;
     public float HomeDrainRate = 0.1f;
 
-    // Work
+    [Header("Work")]
     public bool WorkActive = false;
     public float WorkResource = 1.0f;
     public float WorkFillRate = 0.1f;
