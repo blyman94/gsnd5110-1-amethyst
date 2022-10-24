@@ -16,5 +16,5 @@ MonoBehaviour:
   EnergyChangePerSecond: 1
   ProductivityChangePerSecond: 1
   EvidenceChangePerSecond: 1
-  MoodChangePerSecond: 0.1
+  MoodChangePerSecond: 0.25
   MoodColor: {r: 1, g: 0, b: 0.5686275, a: 1}

@@ -22,12 +22,13 @@ public class Location : MonoBehaviour
     /// </summary>
     private Color _currentMoodColor;
 
-    #region MonoBehaviourMethods
-    private void Start()
+    /// <summary>
+    /// Sets the current mood color to the current mood color of the player.
+    /// </summary>
+    public void InitializeCurrentMoodColor()
     {
         _currentMoodColor = _playerStateData.MoodColor;
     }
-    #endregion
 
     /// <summary>
     /// Update's the player state based on location data, should be called in a
@@ -35,11 +36,14 @@ public class Location : MonoBehaviour
     /// </summary>
     public void UpdatePlayerState()
     {
+
         _playerStateData.Energy += _locationData.EnergyChangePerSecond * Time.deltaTime;
         _playerStateData.Productivity += _locationData.ProductivityChangePerSecond * Time.deltaTime;
-        _playerStateData.Evidence += _locationData.ProductivityChangePerSecond * Time.deltaTime;
+        _playerStateData.Evidence += _locationData.EvidenceChangePerSecond * Time.deltaTime;
 
-        _currentMoodColor = Color.Lerp(_currentMoodColor, _locationData.MoodColor, _locationData.MoodChangePerSecond * Time.deltaTime);
+        _currentMoodColor = Color.Lerp(_currentMoodColor,
+            _locationData.MoodColor,
+            _locationData.MoodChangePerSecond * Time.deltaTime);
         _playerStateData.MoodColor = _currentMoodColor;
     }
 }

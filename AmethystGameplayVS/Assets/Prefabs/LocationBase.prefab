@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4350340970335248912}
   - component: {fileID: 2637049316318558862}
   - component: {fileID: 3579017309224732519}
+  - component: {fileID: 1797562068}
   m_Layer: 0
   m_Name: LocationBase
   m_TagString: Location
@@ -63,10 +64,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _triggerResponses:
-  - Tag: Location
+  - Tag: Player
     OnTriggerEnterResponse:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 2637049316318558863}
+          m_TargetAssemblyTypeName: Location, Assembly-CSharp
+          m_MethodName: InitializeCurrentMoodColor
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     OnTriggerStayResponse:
       m_PersistentCalls:
         m_Calls:
@@ -132,6 +145,41 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &1797562068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2637049316318558865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ed3cacaf62d596408e919a4b179e4c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _triggerResponses:
+  - Tag: Location
+    OnTriggerEnterResponse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnTriggerStayResponse:
+      m_PersistentCalls:
+        m_Calls: []
+    OnTriggerExitResponse:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &2637049317030105982
 GameObject:
   m_ObjectHideFlags: 0
