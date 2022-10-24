@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47a4c2a2bd71a874bbc124dabe5c7df5, type: 3}
   m_Name: PlayerProductivity
   m_EditorClassIdentifier: 
-  _value: 0
+  _value: 1

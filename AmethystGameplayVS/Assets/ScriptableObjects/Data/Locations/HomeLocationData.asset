@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: HomeLocationData
   m_EditorClassIdentifier: 
   Name: Home
-  EnergyChangePerSecond: 0.05
-  ProductivityChangePerSecond: -0.05
+  EnergyChangePerSecond: 0.1
+  ProductivityChangePerSecond: -0.025
   EvidenceChangePerSecond: 0
   MoodChangePerSecond: 0.25
   MoodColor: {r: 1, g: 1, b: 0, a: 1}

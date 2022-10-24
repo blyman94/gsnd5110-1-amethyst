@@ -394,9 +394,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1744276395}
   - {fileID: 845811684}
   - {fileID: 1981938562}
+  - {fileID: 1744276395}
+  - {fileID: 300744404}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -780,8 +781,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 486479451
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}
@@ -860,6 +861,54 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &300744403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 300744404}
+  - component: {fileID: 300744405}
+  m_Layer: 3
+  m_Name: PlayerStateAdjuster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &300744404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300744403}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 77787218}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &300744405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300744403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b3a8235e30d6934290252a0f14351cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameplaySettings: {fileID: 11400000, guid: b29708933a5e17a4eab0ad9065580394, type: 2}
+  _playerEnergy: {fileID: 11400000, guid: ae2fcf5336eaa24438396b8b8512db27, type: 2}
+  _playerProductivity: {fileID: 11400000, guid: 6ed938d83495d724c9dc635c9dd77086, type: 2}
+  _playerEvidence: {fileID: 11400000, guid: 3792ac4a177ddee4d92e35bf106b6f74, type: 2}
 --- !u!1 &448909404
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,8 +979,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 486479451
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1726,7 +1775,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 77787218}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &854984587
 GameObject:
@@ -1815,6 +1864,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 867133705}
+  - component: {fileID: 867133706}
   m_Layer: 5
   m_Name: EnergyMeterDisplay
   m_TagString: Untagged
@@ -1844,6 +1894,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 273.1279, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &867133706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867133704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873c2dddf6996a64aa8a1d54b9e1cade, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _slider: {fileID: 602266824}
+  _boundFloatVariable: {fileID: 11400000, guid: ae2fcf5336eaa24438396b8b8512db27, type: 2}
 --- !u!1 &885462543
 GameObject:
   m_ObjectHideFlags: 0
@@ -2308,6 +2372,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1655676538}
+  - component: {fileID: 1655676539}
   m_Layer: 5
   m_Name: EvidenceMeterDisplay
   m_TagString: Untagged
@@ -2337,6 +2402,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 273.1279, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1655676539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655676537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873c2dddf6996a64aa8a1d54b9e1cade, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _slider: {fileID: 674785254}
+  _boundFloatVariable: {fileID: 11400000, guid: 3792ac4a177ddee4d92e35bf106b6f74, type: 2}
 --- !u!1 &1689783346
 GameObject:
   m_ObjectHideFlags: 0
@@ -2536,7 +2615,7 @@ Transform:
   - {fileID: 253505916}
   - {fileID: 448909405}
   m_Father: {fileID: 77787218}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1744276396
 MonoBehaviour:
@@ -2575,6 +2654,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1846080410}
+  - component: {fileID: 1846080411}
   m_Layer: 5
   m_Name: ProductivityMeterDisplay
   m_TagString: Untagged
@@ -2604,6 +2684,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 273.1279, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1846080411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846080409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873c2dddf6996a64aa8a1d54b9e1cade, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _slider: {fileID: 974002130}
+  _boundFloatVariable: {fileID: 11400000, guid: 6ed938d83495d724c9dc635c9dd77086, type: 2}
 --- !u!1 &1851034445
 GameObject:
   m_ObjectHideFlags: 0
@@ -2830,7 +2924,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 77787218}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1981938563
 CircleCollider2D:

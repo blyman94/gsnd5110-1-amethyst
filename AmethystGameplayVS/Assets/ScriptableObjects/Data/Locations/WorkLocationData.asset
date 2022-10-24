@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: WorkLocationData
   m_EditorClassIdentifier: 
   Name: Work
-  EnergyChangePerSecond: -0.05
-  ProductivityChangePerSecond: 0.05
+  EnergyChangePerSecond: -0.025
+  ProductivityChangePerSecond: 0.1
   EvidenceChangePerSecond: 0
   MoodChangePerSecond: 0.25
   MoodColor: {r: 0, g: 1, b: 1, a: 1}

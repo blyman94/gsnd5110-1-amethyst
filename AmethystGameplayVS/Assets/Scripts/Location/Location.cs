@@ -6,6 +6,11 @@ using UnityEngine;
 public class Location : MonoBehaviour
 {
     /// <summary>
+    /// Gameplay settings.
+    /// </summary>
+    [SerializeField] private GameplaySettings _gameplaySettings;
+
+    /// <summary>
     /// Data to identify the location's effect on the player state.
     /// </summary>
     [Tooltip("Data to identify the location's effect on the player state.")]
@@ -55,12 +60,18 @@ public class Location : MonoBehaviour
     /// </summary>
     public void UpdatePlayerState()
     {
+        float energyDelta = (_gameplaySettings.NaturalEnergyLoss + 
+            _locationData.EnergyChangePerSecond) * Time.deltaTime;
+        _playerEnergy.Value += energyDelta;
 
-        _playerEnergy.Value += _locationData.EnergyChangePerSecond * Time.deltaTime;
-        _playerProductivity.Value += _locationData.ProductivityChangePerSecond * Time.deltaTime;
-        _playerEvidence.Value += _locationData.EvidenceChangePerSecond * Time.deltaTime;
+        float productivityDelta = (_gameplaySettings.NaturalProductivityLoss + 
+            _locationData.ProductivityChangePerSecond) * Time.deltaTime;
+        _playerProductivity.Value += productivityDelta;
 
-        _currentMoodColor = Color.Lerp(_currentMoodColor,
+        _playerEvidence.Value += 
+            _locationData.EvidenceChangePerSecond * Time.deltaTime;
+
+        _currentMoodColor = Color.Lerp(_currentMoodColor, 
             _locationData.MoodColor,
             _locationData.MoodChangePerSecond * Time.deltaTime);
         _playerMoodColor.Value = _currentMoodColor;
