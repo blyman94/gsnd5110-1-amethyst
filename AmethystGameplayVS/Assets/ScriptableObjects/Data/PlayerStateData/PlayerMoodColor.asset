@@ -9,12 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e84bd24b7a8eee046a120de7ca1a51ec, type: 3}
-  m_Name: HomeLocationData
+  m_Script: {fileID: 11500000, guid: e9a42d14a045fcb4897a0ceb3c39fde1, type: 3}
+  m_Name: PlayerMoodColor
   m_EditorClassIdentifier: 
-  Name: Home
-  EnergyChangePerSecond: 0.05
-  ProductivityChangePerSecond: -0.05
-  EvidenceChangePerSecond: 0
-  MoodChangePerSecond: 0.25
-  MoodColor: {r: 1, g: 1, b: 0, a: 1}
+  _value: {r: 0.5647059, g: 0.5647059, b: 0.5647059, a: 1}

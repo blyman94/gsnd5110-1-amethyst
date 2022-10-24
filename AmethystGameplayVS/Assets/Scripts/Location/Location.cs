@@ -12,11 +12,30 @@ public class Location : MonoBehaviour
     [SerializeField] private LocationData _locationData;
 
     /// <summary>
-    /// Player State Data to update.
+    /// Color representing the player's current mood.
     /// </summary>
-    [Tooltip("Player State Data to update.")]
-    [SerializeField] private PlayerStateData _playerStateData;
+    [Header("Player State")]
+    [Tooltip("Color representing the player's current mood.")]
+    [SerializeField] private ColorVariable _playerMoodColor;
 
+    /// <summary>
+    /// Float representing the player's current energy level.
+    /// </summary>
+    [Tooltip("Float representing the player's current energy level.")]
+    [SerializeField] private FloatVariable _playerEnergy;
+
+    /// <summary>
+    /// Float representing the player's current evidence level.
+    /// </summary>
+    [Tooltip("Float representing the player's current evidence level.")]
+    [SerializeField] private FloatVariable _playerEvidence;
+
+    /// <summary>
+    /// Float representing the player's current productivity level.
+    /// </summary>
+    [Tooltip("Float representing the player's current productivity level.")]
+    [SerializeField] private FloatVariable _playerProductivity;
+    
     /// <summary>
     /// Current mood color storage.
     /// </summary>
@@ -27,7 +46,7 @@ public class Location : MonoBehaviour
     /// </summary>
     public void InitializeCurrentMoodColor()
     {
-        _currentMoodColor = _playerStateData.MoodColor;
+        _currentMoodColor = _playerMoodColor.Value;
     }
 
     /// <summary>
@@ -37,13 +56,13 @@ public class Location : MonoBehaviour
     public void UpdatePlayerState()
     {
 
-        _playerStateData.Energy += _locationData.EnergyChangePerSecond * Time.deltaTime;
-        _playerStateData.Productivity += _locationData.ProductivityChangePerSecond * Time.deltaTime;
-        _playerStateData.Evidence += _locationData.EvidenceChangePerSecond * Time.deltaTime;
+        _playerEnergy.Value += _locationData.EnergyChangePerSecond * Time.deltaTime;
+        _playerProductivity.Value += _locationData.ProductivityChangePerSecond * Time.deltaTime;
+        _playerEvidence.Value += _locationData.EvidenceChangePerSecond * Time.deltaTime;
 
         _currentMoodColor = Color.Lerp(_currentMoodColor,
             _locationData.MoodColor,
             _locationData.MoodChangePerSecond * Time.deltaTime);
-        _playerStateData.MoodColor = _currentMoodColor;
+        _playerMoodColor.Value = _currentMoodColor;
     }
 }

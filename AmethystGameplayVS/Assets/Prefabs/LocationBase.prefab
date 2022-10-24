@@ -50,7 +50,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _locationData: {fileID: 11400000, guid: 290d996deef951240973c756702045d0, type: 2}
-  _playerStateData: {fileID: 11400000, guid: 28f07a82f7204cf4cb97c2c26fba1edf, type: 2}
+  _playerMoodColor: {fileID: 11400000, guid: 0a19ac59b781c174a8a9143c37a4a0b1, type: 2}
+  _playerEnergy: {fileID: 11400000, guid: ae2fcf5336eaa24438396b8b8512db27, type: 2}
+  _playerEvidence: {fileID: 11400000, guid: 3792ac4a177ddee4d92e35bf106b6f74, type: 2}
+  _playerProductivity: {fileID: 11400000, guid: 6ed938d83495d724c9dc635c9dd77086, type: 2}
 --- !u!114 &4350340970335248912
 MonoBehaviour:
   m_ObjectHideFlags: 0
