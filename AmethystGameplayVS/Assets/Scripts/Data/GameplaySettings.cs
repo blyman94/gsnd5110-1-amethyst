@@ -29,4 +29,33 @@ public class GameplaySettings : ScriptableObject
         "lighter and more responsive.")]
     [Range(0.01f,1.0f)]
     public float RotationFactor = 0.05f;
+
+    [Header("Meter Parameters")]
+    /// <summary>
+    /// How much energy does the player start off with?
+    /// </summary>
+    [Tooltip("How much energy does the player start off with?")]
+    public float StartingEnergy = 1.0f;
+    
+    /// <summary>
+    /// How much productivity does the player start off with?
+    /// </summary>
+    [Tooltip("How much productivity does the player start off with?")]
+    public float StartingProductivity = 0.75f;
+
+    /// <summary>
+    /// How much energy does the player lose per second when not in any 
+    /// location?
+    /// </summary>
+    [Tooltip("How much energy does the player lose per second when not in any" + 
+        "location?")]
+    public float NaturalEnergyLoss = 0.01f;
+
+    /// <summary>
+    /// How much productivity does the player lose per second when not in any 
+    /// location?
+    /// </summary>
+    [Tooltip("How much productivity does the player lose per second when " + 
+        "not in any location?")]
+    public float NaturalProductivityLoss = 0.01f;
 }
