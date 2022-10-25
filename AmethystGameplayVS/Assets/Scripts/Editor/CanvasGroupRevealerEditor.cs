@@ -43,7 +43,8 @@ public class CanvasGroupRevealerEditor : Editor
 
         EditorGUILayout.Space();
 
-        EditorGUILayout.LabelField("Fade Behaviour", EditorStyles.boldLabel);
+        EditorGUILayout.LabelField("Fade Behaviour [DO NOT USE]", 
+            EditorStyles.boldLabel);
         EditorGUILayout.PropertyField(_canvasFadeInProperty);
         EditorGUILayout.PropertyField(_canvasFadeOutProperty);
 
