@@ -17,7 +17,24 @@ public class NPCDialogueDriver : MonoBehaviour
 
     public void StartDialogue()
     {
-        _npcDialogueText.text = 
+        _npcDialogueText.text =
             _currentActiveNPCDataVariable.Value.DialogueSequence.StartDialogueString.Value;
+    }
+
+    public void EvalutateDialogueCondition()
+    {
+        DialogueCondition dialogueCondition =
+            _currentActiveNPCDataVariable.Value.DialogueSequence.DialogueCondition;
+
+        bool conditionMet = dialogueCondition.EvaluateCondition();
+
+        if (conditionMet)
+        {
+            _npcDialogueText.text = dialogueCondition.TrueString.Value;
+        }
+        else
+        {
+            _npcDialogueText.text = dialogueCondition.FalseString.Value;
+        }
     }
 }

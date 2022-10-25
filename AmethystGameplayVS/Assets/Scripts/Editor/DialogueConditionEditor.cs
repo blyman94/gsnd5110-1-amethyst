@@ -11,6 +11,7 @@ using UnityEditor;
 public class DialogueConditionEditor : Editor
 {
     private SerializedProperty _typeProperty;
+    private SerializedProperty _evidenceRewardProperty;
 
     // Energy
     private SerializedProperty _playerEnergyProperty;
@@ -40,6 +41,7 @@ public class DialogueConditionEditor : Editor
     void OnEnable()
     {
         _typeProperty = serializedObject.FindProperty("Type");
+        _evidenceRewardProperty = serializedObject.FindProperty("EvidenceReward");
 
         // Energy
         _playerEnergyProperty = serializedObject.FindProperty("PlayerEnergy");
@@ -111,6 +113,10 @@ public class DialogueConditionEditor : Editor
             EditorStyles.boldLabel);
         EditorGUILayout.PropertyField(_trueStringProperty);
         EditorGUILayout.PropertyField(_falseStringProperty);
+
+        EditorGUILayout.Space();
+        EditorGUILayout.LabelField("Reward", EditorStyles.boldLabel);
+        EditorGUILayout.PropertyField(_evidenceRewardProperty);
         
         serializedObject.ApplyModifiedProperties();
     }

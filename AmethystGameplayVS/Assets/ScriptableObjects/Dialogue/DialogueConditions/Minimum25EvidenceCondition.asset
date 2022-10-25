@@ -21,9 +21,10 @@ MonoBehaviour:
   TargetProductivityTolerance: 0
   PlayerEvidence: {fileID: 11400000, guid: 3792ac4a177ddee4d92e35bf106b6f74, type: 2}
   TargetEvidenceLevel: 1
-  TargetEvidenceTolerance: 0.75
+  TargetEvidenceTolerance: 0.95
   PlayerMoodColor: {fileID: 11400000, guid: 0a19ac59b781c174a8a9143c37a4a0b1, type: 2}
   TargetMoodColor: {r: 1, g: 1, b: 1, a: 1}
   TargetMoodColorHueTolerance: 0
   TrueString: {fileID: 11400000, guid: 2e3332bd716a61749a7623736550551b, type: 2}
   FalseString: {fileID: 11400000, guid: ea29f6ce0439af84684773e17a11ba82, type: 2}
+  EvidenceReward: 0.25

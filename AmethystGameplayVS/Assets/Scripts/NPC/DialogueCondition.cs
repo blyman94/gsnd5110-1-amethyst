@@ -105,6 +105,18 @@ public class DialogueCondition : ScriptableObject
     public DialogueString FalseString;
 
     /// <summary>
+    /// How much of a reward does the player get for meeting this condition?
+    /// </summary>
+    [Tooltip("How much of a reward does the player get for meeting " +
+        "this condition?")]
+    public float EvidenceReward;
+
+    /// <summary>
+    /// Hase the player already received this reward?
+    /// </summary>
+    public bool RewardGiven { get; set; } = false;
+
+    /// <summary>
     /// Does the player meet this condition?
     /// </summary>
     /// <returns>Bool representing whether the player meets the 
@@ -141,8 +153,10 @@ public class DialogueCondition : ScriptableObject
         float hueMin = targetH - TargetMoodColorHueTolerance;
         float hueMax = targetH + TargetMoodColorHueTolerance;
 
-        if (currentH >= hueMin && currentH <= hueMax)
+        if (currentH >= hueMin && currentH <= hueMax && !RewardGiven)
         {
+            RewardGiven = true;
+            PlayerEvidence.Value += EvidenceReward;
             return true;
         }
         else
@@ -158,8 +172,11 @@ public class DialogueCondition : ScriptableObject
         float evidenceMax = TargetEvidenceLevel +
             TargetEvidenceTolerance;
         if (PlayerEvidence.Value >= evidenceMin &&
-            PlayerEvidence.Value <= evidenceMax)
+            PlayerEvidence.Value <= evidenceMax && 
+            !RewardGiven)
         {
+            RewardGiven = true;
+            PlayerEvidence.Value += EvidenceReward;
             return true;
         }
         else
@@ -175,8 +192,11 @@ public class DialogueCondition : ScriptableObject
         float productivityMax = TargetProductivityLevel +
             TargetProductivityTolerance;
         if (PlayerProductivity.Value >= productivityMin &&
-            PlayerProductivity.Value <= productivityMax)
+            PlayerProductivity.Value <= productivityMax && 
+            !RewardGiven)
         {
+            RewardGiven = true;
+            PlayerEvidence.Value += EvidenceReward;
             return true;
         }
         else
@@ -190,8 +210,11 @@ public class DialogueCondition : ScriptableObject
         float energyMin = TargetEnergyLevel - TargetEnergyTolerance;
         float energyMax = TargetEnergyLevel + TargetEnergyTolerance;
         if (PlayerEnergy.Value >= energyMin &&
-            PlayerEnergy.Value <= energyMax)
+            PlayerEnergy.Value <= energyMax && 
+            !RewardGiven)
         {
+            RewardGiven = true;
+            PlayerEvidence.Value += EvidenceReward;
             return true;
         }
         else
