@@ -809,7 +809,7 @@ GameObject:
   - component: {fileID: 279918844}
   - component: {fileID: 279918843}
   m_Layer: 5
-  m_Name: DialogueText
+  m_Name: NPCDialogueText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2310,10 +2310,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 841038041}
+  - component: {fileID: 841038045}
+  - component: {fileID: 841038044}
   - component: {fileID: 841038043}
   - component: {fileID: 841038042}
   m_Layer: 5
-  m_Name: DialoguePanel
+  m_Name: NPCDialogueDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2379,6 +2381,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841038040}
   m_CullTransparentMesh: 1
+--- !u!114 &841038044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841038040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7234793e41165e4aac8c5b2f27e209b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 7fdcec86320d36b44aa212a81bd01da7, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 841038045}
+        m_TargetAssemblyTypeName: NPCDialogueDriver, Assembly-CSharp
+        m_MethodName: StartDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &841038045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841038040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b782b8264020f9e4197da59774337437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentActiveNPCDataVariable: {fileID: 11400000, guid: 661715f94eafb5b4281a776ff3379ad2, type: 2}
+  _npcDialogueText: {fileID: 279918843}
 --- !u!1001 &841343759
 PrefabInstance:
   m_ObjectHideFlags: 0

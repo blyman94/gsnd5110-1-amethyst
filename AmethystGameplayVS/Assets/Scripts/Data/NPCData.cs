@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
@@ -19,4 +17,10 @@ public class NPCData : ScriptableObject
     /// </summary>
     [Tooltip("Portrait of the NPC.")]
     public Sprite PortraitSprite;
+
+    /// <summary>
+    /// The NPC's dialogue sequence.
+    /// </summary>
+    [Tooltip("The NPC's dialogue sequence.")]
+    public DialogueSequence DialogueSequence;
 }

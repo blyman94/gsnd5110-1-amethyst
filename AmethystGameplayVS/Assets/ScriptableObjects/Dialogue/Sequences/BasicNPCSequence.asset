@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a8e55e5e3a6faa46ac23accd6fe4dd6, type: 3}
-  m_Name: DefaultNPCData
+  m_Script: {fileID: 11500000, guid: 1332945bedc09b346925a966084c5132, type: 3}
+  m_Name: BasicNPCSequence
   m_EditorClassIdentifier: 
-  Name: Azzan
-  PortraitSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  DialogueSequence: {fileID: 11400000, guid: 0679e0e4a0f06d840816362f810587d4, type: 2}
+  StartDialogueString: {fileID: 11400000, guid: 2f6b8412dffe9bb41901da509dfed8fb, type: 2}
+  DialogueCondition: {fileID: 11400000, guid: 90dc39e98a5820d41ba85149833b6fd5, type: 2}
