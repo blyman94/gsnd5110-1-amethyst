@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1332945bedc09b346925a966084c5132, type: 3}
+  m_Name: BasicNPCSequence
+  m_EditorClassIdentifier: 
+  StartDialogueString: {fileID: 11400000, guid: 2f6b8412dffe9bb41901da509dfed8fb, type: 2}
+  DialogueCondition: {fileID: 11400000, guid: 90dc39e98a5820d41ba85149833b6fd5, type: 2}
