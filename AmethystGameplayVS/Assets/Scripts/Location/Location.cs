@@ -40,7 +40,7 @@ public class Location : MonoBehaviour
     /// </summary>
     [Tooltip("Float representing the player's current productivity level.")]
     [SerializeField] private FloatVariable _playerProductivity;
-    
+
     /// <summary>
     /// Current mood color storage.
     /// </summary>
@@ -60,18 +60,28 @@ public class Location : MonoBehaviour
     /// </summary>
     public void UpdatePlayerState()
     {
-        float energyDelta = (_gameplaySettings.NaturalEnergyLoss + 
+        float energyDelta = (_gameplaySettings.NaturalEnergyLoss +
             _locationData.EnergyChangePerSecond) * Time.deltaTime;
-        _playerEnergy.Value += energyDelta;
+        if (_playerEnergy.Value < 1)
+        {
+            _playerEnergy.Value += energyDelta;
+        }
+        
 
-        float productivityDelta = (_gameplaySettings.NaturalProductivityLoss + 
+        float productivityDelta = (_gameplaySettings.NaturalProductivityLoss +
             _locationData.ProductivityChangePerSecond) * Time.deltaTime;
-        _playerProductivity.Value += productivityDelta;
+        if (_playerEnergy.Value < 1)
+        {
+            _playerProductivity.Value += productivityDelta;
+        }
 
-        _playerEvidence.Value += 
-            _locationData.EvidenceChangePerSecond * Time.deltaTime;
-
-        _currentMoodColor = Color.Lerp(_currentMoodColor, 
+        if (_playerEnergy.Value < 1)
+        {
+            _playerEvidence.Value +=
+                _locationData.EvidenceChangePerSecond * Time.deltaTime;
+        }
+        
+        _currentMoodColor = Color.Lerp(_currentMoodColor,
             _locationData.MoodColor,
             _locationData.MoodChangePerSecond * Time.deltaTime);
         _playerMoodColor.Value = _currentMoodColor;
