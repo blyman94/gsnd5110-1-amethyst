@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 732c599526c6bb94e95d0cc151ec9d10, type: 3}
-  m_Name: Minimum25EvidenceCondition
+  m_Name: Minimum75EnergyCondition
   m_EditorClassIdentifier: 
-  Type: 2
+  Type: 0
   PlayerEnergy: {fileID: 11400000, guid: ae2fcf5336eaa24438396b8b8512db27, type: 2}
-  TargetEnergyLevel: 0
-  TargetEnergyTolerance: 0
-  PlayerProductivity: {fileID: 11400000, guid: 6ed938d83495d724c9dc635c9dd77086, type: 2}
+  TargetEnergyLevel: 1
+  TargetEnergyTolerance: 0.25
+  PlayerProductivity: {fileID: 0}
   TargetProductivityLevel: 0
   TargetProductivityTolerance: 0
   PlayerEvidence: {fileID: 11400000, guid: 3792ac4a177ddee4d92e35bf106b6f74, type: 2}
-  TargetEvidenceLevel: 1
-  TargetEvidenceTolerance: 0.75
-  PlayerMoodColor: {fileID: 11400000, guid: 0a19ac59b781c174a8a9143c37a4a0b1, type: 2}
+  TargetEvidenceLevel: 0
+  TargetEvidenceTolerance: 0
+  PlayerMoodColor: {fileID: 0}
   TargetMoodColor: {r: 1, g: 1, b: 1, a: 1}
   TargetMoodColorHueTolerance: 0
-  TrueString: {fileID: 11400000, guid: 2e3332bd716a61749a7623736550551b, type: 2}
-  FalseString: {fileID: 11400000, guid: ea29f6ce0439af84684773e17a11ba82, type: 2}
+  TrueString: {fileID: 11400000, guid: c525d3117046af94db086710f8abb424, type: 2}
+  FalseString: {fileID: 11400000, guid: 60d44b0c7280901469a3ce1338230e24, type: 2}
   EvidenceReward: 0.25
