@@ -70,12 +70,12 @@ public class Location : MonoBehaviour
 
         float productivityDelta = (_gameplaySettings.NaturalProductivityLoss +
             _locationData.ProductivityChangePerSecond) * Time.deltaTime;
-        if (_playerEnergy.Value < 1)
+        if (_playerProductivity.Value < 1)
         {
             _playerProductivity.Value += productivityDelta;
         }
 
-        if (_playerEnergy.Value < 1)
+        if (_playerEvidence.Value < 1)
         {
             _playerEvidence.Value +=
                 _locationData.EvidenceChangePerSecond * Time.deltaTime;
