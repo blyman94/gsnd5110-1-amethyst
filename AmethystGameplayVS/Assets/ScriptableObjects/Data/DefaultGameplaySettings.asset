@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00e056bcf24870349a6fe1e30434dd4a, type: 3}
   m_Name: DefaultGameplaySettings
   m_EditorClassIdentifier: 
-  MoveSpeed: 5
+  MoveSpeed: 10
   AccelerationFactor: 0.05
   DecelerationFactor: 0.1
   RotationFactor: 0.05
+  StartingEnergy: 1
+  StartingProductivity: 0.75
+  NaturalEnergyLoss: 0.01
+  NaturalProductivityLoss: 0.01
