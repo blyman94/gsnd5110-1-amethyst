@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732c599526c6bb94e95d0cc151ec9d10, type: 3}
+  m_Name: MideaCenterNPCCondition
+  m_EditorClassIdentifier: 
+  Type: 1
+  PlayerEnergy: {fileID: 0}
+  TargetEnergyLevel: 1
+  TargetEnergyTolerance: 0.1
+  PlayerProductivity: {fileID: 11400000, guid: 6ed938d83495d724c9dc635c9dd77086, type: 2}
+  TargetProductivityLevel: 1
+  TargetProductivityTolerance: 0.1
+  PlayerEvidence: {fileID: 11400000, guid: 3792ac4a177ddee4d92e35bf106b6f74, type: 2}
+  TargetEvidenceLevel: 0
+  TargetEvidenceTolerance: 0
+  PlayerMoodColor: {fileID: 0}
+  TargetMoodColor: {r: 1, g: 1, b: 1, a: 1}
+  TargetMoodColorHueTolerance: 0
+  TrueString: {fileID: 11400000, guid: d306f5a99f452db4bb50c21b6a587f50, type: 2}
+  FalseString: {fileID: 11400000, guid: 5480127f98a051d4398f4e793a3e3e3b, type: 2}
+  EvidenceReward: 0.1
