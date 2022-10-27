@@ -19,6 +19,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1954511024680861897, guid: 1abdcb63fd659654698b5ba126f5dea5, type: 3}
+      propertyPath: NPCData
+      value: 
+      objectReference: {fileID: 11400000, guid: c2a16276a43d65d45b0bc5428775da0c, type: 2}
     - target: {fileID: 1954511024680861901, guid: 1abdcb63fd659654698b5ba126f5dea5, type: 3}
       propertyPath: m_Name
       value: JailNPC
