@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: JailLocation Data
   m_EditorClassIdentifier: 
   Name: Jail
-  EnergyChangePerSecond: 0.04
-  ProductivityChangePerSecond: 0.04
-  EvidenceChangePerSecond: 0.3
+  EnergyChangePerSecond: -0.005
+  ProductivityChangePerSecond: -0.005
+  EvidenceChangePerSecond: 0
   MoodChangePerSecond: 0.3
   MoodColor: {r: 0, g: 0, b: 0, a: 1}

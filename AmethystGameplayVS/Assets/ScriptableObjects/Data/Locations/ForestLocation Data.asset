@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ForestLocation Data
   m_EditorClassIdentifier: 
   Name: Forest
-  EnergyChangePerSecond: -0.02
-  ProductivityChangePerSecond: -0.01
-  EvidenceChangePerSecond: 0.001
+  EnergyChangePerSecond: -0.005
+  ProductivityChangePerSecond: -0.005
+  EvidenceChangePerSecond: 0
   MoodChangePerSecond: 0.2
   MoodColor: {r: 0, g: 1, b: 0.007030964, a: 1}

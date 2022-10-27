@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9a42d14a045fcb4897a0ceb3c39fde1, type: 3}
   m_Name: PlayerMoodColor
   m_EditorClassIdentifier: 
-  _value: {r: 0.5647059, g: 0.5647059, b: 0.5647059, a: 1}
+  _value: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}

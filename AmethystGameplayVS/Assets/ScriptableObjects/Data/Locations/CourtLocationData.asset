@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: CourtLocationData
   m_EditorClassIdentifier: 
   Name: Court
-  EnergyChangePerSecond: -0.05
-  ProductivityChangePerSecond: -0.05
-  EvidenceChangePerSecond: 0.01
+  EnergyChangePerSecond: -0.01
+  ProductivityChangePerSecond: -0.01
+  EvidenceChangePerSecond: 0
   MoodChangePerSecond: 0.25
   MoodColor: {r: 1, g: 0, b: 1, a: 1}
