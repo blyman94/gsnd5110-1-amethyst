@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732c599526c6bb94e95d0cc151ec9d10, type: 3}
+  m_Name: JailNPCConditions
+  m_EditorClassIdentifier: 
+  Type: 3
+  PlayerEnergy: {fileID: 0}
+  TargetEnergyLevel: 0
+  TargetEnergyTolerance: 0
+  PlayerProductivity: {fileID: 0}
+  TargetProductivityLevel: 0
+  TargetProductivityTolerance: 0
+  PlayerEvidence: {fileID: 11400000, guid: 3792ac4a177ddee4d92e35bf106b6f74, type: 2}
+  TargetEvidenceLevel: 0
+  TargetEvidenceTolerance: 0
+  PlayerMoodColor: {fileID: 0}
+  TargetMoodColor: {r: 0, g: 0, b: 0, a: 1}
+  TargetMoodColorHueTolerance: 0.1
+  TrueString: {fileID: 11400000, guid: df48eece8548f1a44bcf8cbf6a748af2, type: 2}
+  FalseString: {fileID: 11400000, guid: 03fad303c4b1fa946ad74f409aa8041c, type: 2}
+  EvidenceReward: 0.15

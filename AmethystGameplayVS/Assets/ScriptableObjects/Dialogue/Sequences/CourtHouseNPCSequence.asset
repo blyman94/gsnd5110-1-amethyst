@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a8e55e5e3a6faa46ac23accd6fe4dd6, type: 3}
-  m_Name: DefaultNPCData
+  m_Script: {fileID: 11500000, guid: 1332945bedc09b346925a966084c5132, type: 3}
+  m_Name: CourtHouseNPCSequence
   m_EditorClassIdentifier: 
-  Name: Azzan
-  PortraitSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  DialogueSequence: {fileID: 11400000, guid: e3ce8900a229f0a45b79e8e64df1f810, type: 2}
+  StartDialogueString: {fileID: 11400000, guid: 341de17a7dcfb084290a90ab692a6aca, type: 2}
+  DialogueCondition: {fileID: 11400000, guid: 7dc96f548c9d1834ca4587ca9692bb0f, type: 2}
