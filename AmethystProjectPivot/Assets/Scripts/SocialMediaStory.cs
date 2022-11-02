@@ -5,14 +5,14 @@ using UnityEngine;
 /// internally, externally, or withold.
 /// </summary>
 [CreateAssetMenu]
-public class SocialMediaPost : ScriptableObject
+public class SocialMediaStory : ScriptableObject
 {
     /// <summary>
     /// What will the header of this post be?
     /// </summary>
     [TextArea(1,1)]
     [Tooltip("What will the header of this post be?")]
-    public string Header;
+    public string Title;
 
     /// <summary>
     /// What will the body of this post be?
