@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// UI Component that displays breif information about a story in the story 
@@ -22,6 +23,12 @@ public class StoryDisplay : MonoBehaviour
     /// </summary>
     [SerializeField] private SocialMediaStoryVariable _activeStory;
 
+    [SerializeField] private Image _backgroundImage;
+
+    [SerializeField] private Color _postInternalColor;
+    [SerializeField] private Color _postExternalColor;
+    [SerializeField] private Color _doNotPostColor;
+
     /// <summary>
     /// The story to be displayed in this UI object.
     /// </summary>
@@ -41,7 +48,12 @@ public class StoryDisplay : MonoBehaviour
     #region MonoBehaviour Methods
     private void Start()
     {
+        _storyToDisplay.StateUpdated += UpdateDisplay;
         UpdateDisplay();
+    }
+    private void OnDisable()
+    {
+        _storyToDisplay.StateUpdated -= UpdateDisplay;
     }
     #endregion
 
@@ -58,9 +70,23 @@ public class StoryDisplay : MonoBehaviour
     /// </summary>
     private void UpdateDisplay()
     {
+        Debug.Log("UpdateDisplay Called");
         if (_storyToDisplay != null)
         {
             _storyTitleText.text = _storyToDisplay.Title;
+
+            if (_storyToDisplay.PostExternal)
+            {
+                _backgroundImage.color = _postExternalColor;
+            }
+            else if (_storyToDisplay.PostInternal)
+            {
+                _backgroundImage.color = _postInternalColor;
+            }
+            else
+            {
+                _backgroundImage.color = _doNotPostColor;
+            }
         }
     }
 }

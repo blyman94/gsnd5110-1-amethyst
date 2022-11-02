@@ -20,7 +20,7 @@ public class StoryLoader : MonoBehaviour
     [SerializeField] private Transform _storyParentTransform;
 
     #region MonoBehaviour Methods
-    private void Start()
+    private void Awake()
     {
         foreach (SocialMediaStory story in _storiesToLoad)
         {

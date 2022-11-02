@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: Baby Penguins Born at Local Zoo
   Body: They are irresistably adorable and I really want to go and pet one.
+  PostExternal: 0
+  PostInternal: 0

@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StoryDetailsDisplay : MonoBehaviour
 {
@@ -42,5 +43,27 @@ public class StoryDetailsDisplay : MonoBehaviour
         _storyTitleText.text = _activeStory.Value.Title;
         _storyBodyText.text = _activeStory.Value.Body;
         _relatedStoryTitleText.text = "Related Story: " + "None";
+    }
+
+    public void PostStoryExternal()
+    {
+        _activeStory.Value.PostExternal = true;
+        _activeStory.Value.PostInternal = false;
+        Debug.Log("Called");
+        _activeStory.Value.SignalStateUpdate();
+    }
+
+    public void PostStoryInternal()
+    {
+        _activeStory.Value.PostExternal = false;
+        _activeStory.Value.PostInternal = true;
+        _activeStory.Value.SignalStateUpdate();
+    }
+
+    public void DoNotPostStory()
+    {
+        _activeStory.Value.PostExternal = false;
+        _activeStory.Value.PostInternal = false;
+        _activeStory.Value.SignalStateUpdate();
     }
 }

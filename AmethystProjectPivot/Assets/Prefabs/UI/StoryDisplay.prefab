@@ -53,6 +53,10 @@ MonoBehaviour:
   _storyToDisplay: {fileID: 11400000, guid: 44dab06c9132abb40b49ad4b264fe2a9, type: 2}
   _storyTitleText: {fileID: 7134683662319334603}
   _activeStory: {fileID: 11400000, guid: baff57d84aae2554a9b7384b2b7bbce6, type: 2}
+  _backgroundImage: {fileID: 7134683661383393683}
+  _postInternalColor: {r: 0.33333334, g: 0.34901962, b: 0.64705884, a: 1}
+  _postExternalColor: {r: 0.80784315, g: 0.6666667, b: 0.38431373, a: 1}
+  _doNotPostColor: {r: 0.8901961, g: 0.8784314, b: 0.9019608, a: 1}
 --- !u!1 &7134683661383393681
 GameObject:
   m_ObjectHideFlags: 0

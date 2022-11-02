@@ -464,6 +464,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 106115568}
+        m_TargetAssemblyTypeName: StoryDetailsDisplay, Assembly-CSharp
+        m_MethodName: DoNotPostStory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 106115565}
         m_TargetAssemblyTypeName: CanvasGroupRevealer, Assembly-CSharp
         m_MethodName: HideGroup
@@ -1482,8 +1494,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Residents of Benaxia will be sad to hear their trash will not be taken
-    away for a week. Reduce, reuse, recycle!
+  m_text: '[Story Detail Text Here]'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bdbe4487c40367f4691a3fbee9dcb42a, type: 2}
   m_sharedMaterial: {fileID: 5944676924347984037, guid: bdbe4487c40367f4691a3fbee9dcb42a, type: 2}
@@ -2020,6 +2031,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 106115568}
+        m_TargetAssemblyTypeName: StoryDetailsDisplay, Assembly-CSharp
+        m_MethodName: PostStoryExternal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 106115565}
         m_TargetAssemblyTypeName: CanvasGroupRevealer, Assembly-CSharp
         m_MethodName: HideGroup
@@ -2437,7 +2460,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Garbage Collection Delayed One Week
+  m_text: '[Story Title Text Here]'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bdbe4487c40367f4691a3fbee9dcb42a, type: 2}
   m_sharedMaterial: {fileID: 5944676924347984037, guid: bdbe4487c40367f4691a3fbee9dcb42a, type: 2}
@@ -2968,6 +2991,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 106115568}
+        m_TargetAssemblyTypeName: StoryDetailsDisplay, Assembly-CSharp
+        m_MethodName: PostStoryInternal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 106115565}
         m_TargetAssemblyTypeName: CanvasGroupRevealer, Assembly-CSharp
         m_MethodName: HideGroup
@@ -3076,7 +3111,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Related Story:'
+  m_text: 'Related Story: [ Related Story Title Here'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bdbe4487c40367f4691a3fbee9dcb42a, type: 2}
   m_sharedMaterial: {fileID: 5944676924347984037, guid: bdbe4487c40367f4691a3fbee9dcb42a, type: 2}
@@ -3110,7 +3145,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
