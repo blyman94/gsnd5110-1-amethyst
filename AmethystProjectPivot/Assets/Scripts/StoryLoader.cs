@@ -95,7 +95,6 @@ public class StoryLoader : MonoBehaviour
         _currentStories.Clear();
         foreach (Story story in _futureStories)
         {
-            Debug.Log(story.WhenToPost);
             if (story.WhenToPost == _iterationCount.Value)
             {
                 _currentStories.Add(story);
