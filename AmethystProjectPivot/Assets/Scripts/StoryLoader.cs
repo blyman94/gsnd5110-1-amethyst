@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 /// <summary>
 /// Responsible for loading stories into the UI.
@@ -27,6 +28,10 @@ public class StoryLoader : MonoBehaviour
     /// </summary>
     [SerializeField] private IntVariable _iterationCount;
 
+    [Header("Story Count Events")]
+    [SerializeField] private UnityEvent _tooManyStoriesEvent;
+    [SerializeField] private UnityEvent _notTooManyStoriesEvent;
+
     /// <summary>
     /// All future stories.
     /// </summary>
@@ -36,6 +41,8 @@ public class StoryLoader : MonoBehaviour
     /// All past stories.
     /// </summary>
     private List<Story> _pastStories;
+
+    private int _postCount = 0;
 
     #region MonoBehaviour Methods
     private void Awake()
@@ -53,6 +60,27 @@ public class StoryLoader : MonoBehaviour
         }
     }
     #endregion
+
+    public void CountPostedStories()
+    {
+        _postCount = 0;
+        foreach (Story story in _currentStories)
+        {
+            if (story.PostDecision == PostDecision.External ||
+                story.PostDecision == PostDecision.Internal)
+            {
+                _postCount++;
+            }
+        }
+        if (_postCount > 1)
+        {
+            _tooManyStoriesEvent?.Invoke();
+        }
+        else
+        {
+            _notTooManyStoriesEvent?.Invoke();
+        }
+    }
 
     /// <summary>
     /// Progresses the storylines.
@@ -133,5 +161,6 @@ public class StoryLoader : MonoBehaviour
                 storyDisplayObject.GetComponent<StoryDisplay>();
             storyDisplay.StoryToDisplay = story;
         }
+        CountPostedStories();
     }
 }
