@@ -16,5 +16,9 @@ MonoBehaviour:
   Body: RAC-22 has caught the world's attention, and the tourism numbers are plummeting.
     Thanks to awareness, the disease has been contained, but global opinion could
     be the end of Benaxia's tourist industry for a few years.
-  PostExternal: 0
-  PostInternal: 0
+  WhenToPost: 3
+  PreviousStory: {fileID: 11400000, guid: 5114483769e3de74dae1e069619a76a3, type: 2}
+  PostedExternallyResult: {fileID: 0}
+  PostedInternallyResult: {fileID: 0}
+  NotPostedResult: {fileID: 0}
+  _postDecision: 2

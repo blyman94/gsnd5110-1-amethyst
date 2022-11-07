@@ -42,6 +42,15 @@ public class StoryDetailsDisplay : MonoBehaviour
     {
         _storyTitleText.text = _activeStory.Value.Title;
         _storyBodyText.text = _activeStory.Value.Body;
-        _relatedStoryTitleText.text = "Related Story: " + "None";
+        if (_activeStory.Value.PreviousStory != null)
+        {
+            _relatedStoryTitleText.text = "Previous Story: " +
+                _activeStory.Value.PreviousStory.Title;
+        }
+        else
+        {   
+            _relatedStoryTitleText.text = "Previous Story: None";
+        }
+
     }
 }

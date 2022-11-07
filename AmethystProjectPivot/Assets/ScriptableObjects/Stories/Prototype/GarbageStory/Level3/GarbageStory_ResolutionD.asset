@@ -15,5 +15,9 @@ MonoBehaviour:
   Title: Novel Disease Contained
   Body: RAC-22 disease has been identified and contained. The people of Benaxia can
     return to their daily lives without fear of contracting this terrible disease!
-  PostExternal: 0
-  PostInternal: 0
+  WhenToPost: 3
+  PreviousStory: {fileID: 11400000, guid: 5114483769e3de74dae1e069619a76a3, type: 2}
+  PostedExternallyResult: {fileID: 0}
+  PostedInternallyResult: {fileID: 0}
+  NotPostedResult: {fileID: 0}
+  _postDecision: 2

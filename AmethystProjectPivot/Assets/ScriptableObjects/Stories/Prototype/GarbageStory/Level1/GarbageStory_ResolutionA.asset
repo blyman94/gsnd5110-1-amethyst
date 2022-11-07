@@ -15,5 +15,9 @@ MonoBehaviour:
   Title: Garbage Collection Restored
   Body: Residents of Benaxia will be happy to know their trash will be collected
     on schedule. Thanks for scaling back your waste this week!
-  PostExternal: 0
-  PostInternal: 0
+  WhenToPost: 1
+  PreviousStory: {fileID: 11400000, guid: 44dab06c9132abb40b49ad4b264fe2a9, type: 2}
+  PostedExternallyResult: {fileID: 0}
+  PostedInternallyResult: {fileID: 0}
+  NotPostedResult: {fileID: 0}
+  _postDecision: 2

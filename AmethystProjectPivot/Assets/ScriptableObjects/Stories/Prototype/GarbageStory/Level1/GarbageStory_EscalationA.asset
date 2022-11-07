@@ -15,6 +15,9 @@ MonoBehaviour:
   Title: Raccoons Infest Rural Neighborhoods
   Body: A family of raccoons have taken up residents on the outskirts of Benaxia.
     Take caution, as these critters typically carry deadly diseases.
+  WhenToPost: 1
+  PreviousStory: {fileID: 11400000, guid: 44dab06c9132abb40b49ad4b264fe2a9, type: 2}
   PostedExternallyResult: {fileID: 11400000, guid: de90bc1d3362d814ba6daa95bd8b7f86, type: 2}
   PostedInternallyResult: {fileID: 11400000, guid: de90bc1d3362d814ba6daa95bd8b7f86, type: 2}
   NotPostedResult: {fileID: 11400000, guid: 5114483769e3de74dae1e069619a76a3, type: 2}
+  _postDecision: 2

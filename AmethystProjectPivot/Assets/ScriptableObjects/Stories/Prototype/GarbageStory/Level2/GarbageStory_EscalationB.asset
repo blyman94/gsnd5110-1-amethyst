@@ -16,6 +16,9 @@ MonoBehaviour:
   Body: A brand new disease that causes hallucinations and vomiting has been found
     in the outskirts of Benaxia. Experts believe this new disease came from raccoons...
     Take extreme health precautions!
+  WhenToPost: 2
+  PreviousStory: {fileID: 11400000, guid: 85cdf172da26f1d419b59f5a92235a97, type: 2}
   PostedExternallyResult: {fileID: 11400000, guid: 1a290074fa040c447ac697cb35b0070d, type: 2}
   PostedInternallyResult: {fileID: 11400000, guid: 660b140585249f84691595db701f0e07, type: 2}
   NotPostedResult: {fileID: 11400000, guid: 606b9e5c3817f6c4d9670b61d241cd09, type: 2}
+  _postDecision: 2

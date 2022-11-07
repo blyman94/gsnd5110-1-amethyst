@@ -41,6 +41,18 @@ public class Story : ScriptableObject
     }
 
     /// <summary>
+    /// Iteration this story should be posted on.
+    /// </summary>
+    [Tooltip("Iteration this story should be posted on.")]
+    public int WhenToPost = 0;
+
+    /// <summary>
+    /// Which story is this story a result of?
+    /// </summary>
+    [Tooltip("Which story is this story a result of?")]
+    public Story PreviousStory;
+
+    /// <summary>
     /// What story results from this one being posted externally?
     /// </summary>
     [Tooltip("What story results from this one being posted externally?")]
