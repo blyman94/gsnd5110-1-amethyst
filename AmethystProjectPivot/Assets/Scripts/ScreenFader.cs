@@ -14,6 +14,7 @@ public class ScreenFader : MonoBehaviour
     [SerializeField] private GameEvent _rasiedMidFade;
 
     private bool initialFade = true;
+    private IEnumerator _activeCoroutine;
 
     #region MonoBehaviour Methods
     private void Start()
@@ -27,7 +28,13 @@ public class ScreenFader : MonoBehaviour
     /// </summary>
     public void StartFade()
     {
-        StartCoroutine(FadeRoutine());
+        _activeCoroutine = FadeRoutine();
+        StartCoroutine(_activeCoroutine);
+    }
+
+    public void StopFade()
+    {
+        StopCoroutine(_activeCoroutine);
     }
 
     /// <summary>
@@ -55,9 +62,9 @@ public class ScreenFader : MonoBehaviour
 
             // Raise midway event
             _rasiedMidFade.Raise();
-            
+
         }
-        
+
         initialFade = false;
 
         // Hold

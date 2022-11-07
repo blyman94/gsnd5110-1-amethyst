@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PowerOutageStory_ResolutionB
   m_EditorClassIdentifier: 
   Title: Power Restored Ahead of Schedule
-  Body: The power is back on quicker than originally estimated!
+  Body: The power is back on much quicker than originally estimated!
   WhenToPost: 2
   PreviousStory: {fileID: 0}
   PostedExternallyResult: {fileID: 0}

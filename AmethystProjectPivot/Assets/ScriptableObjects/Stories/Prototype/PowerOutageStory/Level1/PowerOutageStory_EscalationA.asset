@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32886cb93a870b9429a6698718ed0fd1, type: 3}
   m_Name: PowerOutageStory_EscalationA
   m_EditorClassIdentifier: 
-  Title: 
-  Body: 
-  WhenToPost: 0
-  PreviousStory: {fileID: 0}
-  PostedExternallyResult: {fileID: 0}
-  PostedInternallyResult: {fileID: 0}
-  NotPostedResult: {fileID: 0}
+  Title: Foreign Officials Unsettled by Power Outage
+  Body: The world outside of Benaxia believes its government is using this power
+    outage to cover up something sinister.
+  WhenToPost: 1
+  PreviousStory: {fileID: 11400000, guid: 8baeb23e0e7d3a945b733523b04fa047, type: 2}
+  PostedExternallyResult: {fileID: 11400000, guid: dc74bc6e99d5b5449b39080f1e42b22c, type: 2}
+  PostedInternallyResult: {fileID: 11400000, guid: dc74bc6e99d5b5449b39080f1e42b22c, type: 2}
+  NotPostedResult: {fileID: 11400000, guid: 052430adfcca1e648a11aa9350981acb, type: 2}
   _postDecision: 2

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Events;
 
 /// <summary>
@@ -22,6 +24,10 @@ public class StoryLoader : MonoBehaviour
     /// Transform who will act as the parent to each StoryDisplay created.
     /// </summary>
     [SerializeField] private Transform _storyParentTransform;
+
+    [SerializeField] private TextMeshProUGUI _faderText;
+    [SerializeField] private Button _restartButton;
+    [SerializeField] private ScreenFader _screenFader;
 
     /// <summary>
     /// IntVariable representing how many iterations have passed.
@@ -87,8 +93,7 @@ public class StoryLoader : MonoBehaviour
     /// </summary>
     public void MoveToNextIteration()
     {
-        _iterationCount.Value++;
-
+        _futureStories.Clear();
         // Store future stories
         foreach (Story story in _currentStories)
         {
@@ -118,6 +123,16 @@ public class StoryLoader : MonoBehaviour
 
             _pastStories.Add(story);
         }
+
+        if (_futureStories.Count <= 0)
+        {
+            _faderText.text = "Game Over! \n All storylines have resolved.";
+            _restartButton.gameObject.SetActive(true);
+            _screenFader.StopFade();
+            return;
+        }
+
+        _iterationCount.Value++;
 
         // Update current stories list
         _currentStories.Clear();
