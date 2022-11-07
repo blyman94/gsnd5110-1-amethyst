@@ -11,7 +11,7 @@ public class StoryDisplay : MonoBehaviour
     /// <summary>
     /// The story to be displayed in this UI object.
     /// </summary>
-    [SerializeField] private SocialMediaStory _storyToDisplay;
+    [SerializeField] private Story _storyToDisplay;
 
     /// <summary>
     /// Text object to display the story's title.
@@ -21,18 +21,22 @@ public class StoryDisplay : MonoBehaviour
     /// <summary>
     /// The global active story.
     /// </summary>
-    [SerializeField] private SocialMediaStoryVariable _activeStory;
+    [SerializeField] private StoryVariable _activeStory;
 
+    /// <summary>
+    /// Background image of the story display that will change color based on
+    /// the player's posting decision.
+    /// </summary>
     [SerializeField] private Image _backgroundImage;
 
-    [SerializeField] private Color _postInternalColor;
-    [SerializeField] private Color _postExternalColor;
-    [SerializeField] private Color _doNotPostColor;
+    [SerializeField] private Color _postExternalColor = Color.magenta;
+    [SerializeField] private Color _postInternalColor = Color.cyan;
+    [SerializeField] private Color _doNotPostColor = Color.white;
 
     /// <summary>
     /// The story to be displayed in this UI object.
     /// </summary>
-    public SocialMediaStory StoryToDisplay
+    public Story StoryToDisplay
     {
         get
         {
@@ -41,6 +45,12 @@ public class StoryDisplay : MonoBehaviour
         set
         {
             _storyToDisplay = value;
+
+            if (_storyToDisplay != null)
+            {
+                _storyToDisplay.PostDecisionUpdated += UpdateDisplay;
+            }
+
             UpdateDisplay();
         }
     }
@@ -48,12 +58,14 @@ public class StoryDisplay : MonoBehaviour
     #region MonoBehaviour Methods
     private void Start()
     {
-        _storyToDisplay.StateUpdated += UpdateDisplay;
         UpdateDisplay();
     }
     private void OnDisable()
     {
-        _storyToDisplay.StateUpdated -= UpdateDisplay;
+        if (_storyToDisplay != null)
+        {
+            _storyToDisplay.PostDecisionUpdated -= UpdateDisplay;
+        }
     }
     #endregion
 
@@ -70,22 +82,24 @@ public class StoryDisplay : MonoBehaviour
     /// </summary>
     private void UpdateDisplay()
     {
-        Debug.Log("UpdateDisplay Called");
         if (_storyToDisplay != null)
         {
             _storyTitleText.text = _storyToDisplay.Title;
 
-            if (_storyToDisplay.PostExternal)
+            switch (_storyToDisplay.PostDecision)
             {
-                _backgroundImage.color = _postExternalColor;
-            }
-            else if (_storyToDisplay.PostInternal)
-            {
-                _backgroundImage.color = _postInternalColor;
-            }
-            else
-            {
-                _backgroundImage.color = _doNotPostColor;
+                case (PostDecision.External):
+                    _backgroundImage.color = _postExternalColor;
+                    break;
+                case (PostDecision.Internal):
+                    _backgroundImage.color = _postInternalColor;
+                    break;
+                case (PostDecision.DoNot):
+                    _backgroundImage.color = _doNotPostColor;
+                    break;
+                default:
+                    _backgroundImage.color = _doNotPostColor;
+                    break;
             }
         }
     }

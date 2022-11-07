@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32886cb93a870b9429a6698718ed0fd1, type: 3}
+  m_Name: GarbageStory_EscalationB
+  m_EditorClassIdentifier: 
+  Title: Novel Disease Detected in Benaxia
+  Body: A brand new disease that causes hallucinations and vomiting has been found
+    in the outskirts of Benaxia. Experts believe this new disease came from raccoons...
+    Take extreme health precautions!
+  PostedExternallyResult: {fileID: 11400000, guid: 1a290074fa040c447ac697cb35b0070d, type: 2}
+  PostedInternallyResult: {fileID: 11400000, guid: 660b140585249f84691595db701f0e07, type: 2}
+  NotPostedResult: {fileID: 11400000, guid: 606b9e5c3817f6c4d9670b61d241cd09, type: 2}

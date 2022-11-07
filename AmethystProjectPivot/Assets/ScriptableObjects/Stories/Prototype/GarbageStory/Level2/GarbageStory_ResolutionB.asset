@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32886cb93a870b9429a6698718ed0fd1, type: 3}
-  m_Name: GarbageStory_PostedInternally
+  m_Name: GarbageStory_ResolutionB
   m_EditorClassIdentifier: 
-  Title: Garbage Collection Restored
-  Body: Residents of Benaxia will be happy to know their trash will be collected
-    on schedule. Thanks for scaling back your waste this week!
+  Title: Raccoon Infestation Handled
+  Body: The nefarious raccoons have been rounded up, relocated, and treated for disease.
+    No reports of disease from these critters!
   PostExternal: 0
   PostInternal: 0

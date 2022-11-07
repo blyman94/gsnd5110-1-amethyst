@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Responsible for loading stories into the UI.
+/// </summary>
 public class StoryLoader : MonoBehaviour
 {
     /// <summary>
     /// List of stories to be displayed on the feed.
     /// </summary>
-    [SerializeField] private List<SocialMediaStory> _storiesToLoad;
+    [SerializeField] private List<Story> _storiesToLoad;
 
     /// <summary>
     /// Prefab of the StoryDisplay object.
@@ -22,7 +25,7 @@ public class StoryLoader : MonoBehaviour
     #region MonoBehaviour Methods
     private void Awake()
     {
-        foreach (SocialMediaStory story in _storiesToLoad)
+        foreach (Story story in _storiesToLoad)
         {
             GameObject storyDisplayObject = 
                 Instantiate(_storyDisplayPrefab, _storyParentTransform);

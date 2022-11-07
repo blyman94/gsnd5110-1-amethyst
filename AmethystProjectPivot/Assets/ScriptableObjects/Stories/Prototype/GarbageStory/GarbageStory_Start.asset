@@ -15,5 +15,6 @@ MonoBehaviour:
   Title: Garbage Collection Delayed One Week
   Body: Residents of Benaxia will be sad to hear their trash will not be taken away
     for a week. Reduce, reuse, recycle!
-  PostExternal: 0
-  PostInternal: 0
+  PostedExternallyResult: {fileID: 11400000, guid: 48e7c64a90517924c83370303f440e96, type: 2}
+  PostedInternallyResult: {fileID: 11400000, guid: 48e7c64a90517924c83370303f440e96, type: 2}
+  NotPostedResult: {fileID: 11400000, guid: 85cdf172da26f1d419b59f5a92235a97, type: 2}

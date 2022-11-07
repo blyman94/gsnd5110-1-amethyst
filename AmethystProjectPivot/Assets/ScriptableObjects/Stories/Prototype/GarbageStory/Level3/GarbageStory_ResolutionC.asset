@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32886cb93a870b9429a6698718ed0fd1, type: 3}
-  m_Name: GarbageStory_EscalationC
+  m_Name: GarbageStory_ResolutionC
   m_EditorClassIdentifier: 
-  Title: Deadly Disease Ravages Benaxia
-  Body: Due to lack of public precaution, RAC-22 has infected most of Benaxia. With
-    hospital beds filling quickly, it is uncertain whether Benaxia will survive this
-    pandemic.
+  Title: Benaxia Labeled "Global Health Risk"
+  Body: RAC-22 has caught the world's attention, and the tourism numbers are plummeting.
+    Thanks to awareness, the disease has been contained, but global opinion could
+    be the end of Benaxia's tourist industry for a few years.
   PostExternal: 0
   PostInternal: 0

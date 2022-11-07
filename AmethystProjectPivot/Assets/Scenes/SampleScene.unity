@@ -464,18 +464,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 106115568}
-        m_TargetAssemblyTypeName: StoryDetailsDisplay, Assembly-CSharp
-        m_MethodName: DoNotPostStory
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 106115565}
         m_TargetAssemblyTypeName: CanvasGroupRevealer, Assembly-CSharp
         m_MethodName: HideGroup
@@ -2031,18 +2019,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 106115568}
-        m_TargetAssemblyTypeName: StoryDetailsDisplay, Assembly-CSharp
-        m_MethodName: PostStoryExternal
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 106115565}
         m_TargetAssemblyTypeName: CanvasGroupRevealer, Assembly-CSharp
         m_MethodName: HideGroup
@@ -2245,9 +2221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _storiesToLoad:
-  - {fileID: 11400000, guid: d9345c8515e8d5d41b12ce87b02dc3e8, type: 2}
   - {fileID: 11400000, guid: 44dab06c9132abb40b49ad4b264fe2a9, type: 2}
-  - {fileID: 11400000, guid: 8c3ae07cdb9b467499b3e7e915bdcf62, type: 2}
   _storyDisplayPrefab: {fileID: 3739350687787657705, guid: 42a83fb3da5cb6a4a85ada566c7b765c, type: 3}
   _storyParentTransform: {fileID: 1378364617}
 --- !u!1 &1630770229
@@ -2991,18 +2965,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 106115568}
-        m_TargetAssemblyTypeName: StoryDetailsDisplay, Assembly-CSharp
-        m_MethodName: PostStoryInternal
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 106115565}
         m_TargetAssemblyTypeName: CanvasGroupRevealer, Assembly-CSharp
         m_MethodName: HideGroup
