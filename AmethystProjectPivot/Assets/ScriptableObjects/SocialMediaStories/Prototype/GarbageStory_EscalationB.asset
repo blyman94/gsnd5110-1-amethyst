@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32886cb93a870b9429a6698718ed0fd1, type: 3}
-  m_Name: TrashDelayPost
+  m_Name: GarbageStory_EscalationB
   m_EditorClassIdentifier: 
-  Title: Garbage Collection Delayed One Week
-  Body: Residents of Benaxia will be sad to hear their trash will not be taken away
-    for a week. Reduce, reuse, recycle!
+  Title: Novel Disease Detected in Benaxia
+  Body: A brand new disease that causes hallucinations and vomiting has been found
+    in the outskirts of Benaxia. Experts believe this new disease came from raccoons...
+    Take extreme health precautions!
   PostExternal: 0
   PostInternal: 0
