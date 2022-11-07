@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32886cb93a870b9429a6698718ed0fd1, type: 3}
+  m_Name: PenguinStory_EscalationC
+  m_EditorClassIdentifier: 
+  Title: Local Zoo Profits Plummet
+  Body: Unfortunately, the cost of keeping baby penguins was not offset by an increase
+    in zoo guests.
+  WhenToPost: 1
+  PreviousStory: {fileID: 11400000, guid: d9345c8515e8d5d41b12ce87b02dc3e8, type: 2}
+  PostedExternallyResult: {fileID: 11400000, guid: e8b0591deddfede4182e668c4329cd19, type: 2}
+  PostedInternallyResult: {fileID: 11400000, guid: e8b0591deddfede4182e668c4329cd19, type: 2}
+  NotPostedResult: {fileID: 11400000, guid: 1b4598a870f1f8a4496f9ff358233a4c, type: 2}
+  _postDecision: 2

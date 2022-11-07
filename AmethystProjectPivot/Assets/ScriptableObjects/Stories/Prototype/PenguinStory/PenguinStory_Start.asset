@@ -10,9 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32886cb93a870b9429a6698718ed0fd1, type: 3}
-  m_Name: BabyPenguinsPost
+  m_Name: PenguinStory_Start
   m_EditorClassIdentifier: 
   Title: Baby Penguins Born at Local Zoo
   Body: They are irresistably adorable and I really want to go and pet one.
-  PostExternal: 0
-  PostInternal: 0
+  WhenToPost: 0
+  PreviousStory: {fileID: 0}
+  PostedExternallyResult: {fileID: 11400000, guid: 16274ab3f590ea74da457f1afe490139, type: 2}
+  PostedInternallyResult: {fileID: 11400000, guid: c506cbc604f34cd4481917fbd0c9bba1, type: 2}
+  NotPostedResult: {fileID: 11400000, guid: ee3d43ce85b7d9f4397b879ed8fcb3cf, type: 2}
+  _postDecision: 2

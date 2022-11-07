@@ -2409,9 +2409,9 @@ MonoBehaviour:
   m_fontSize: 42
   m_fontSizeBase: 42
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 24
+  m_fontSizeMax: 42
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -3159,7 +3159,6 @@ MonoBehaviour:
   _currentStories:
   - {fileID: 11400000, guid: 44dab06c9132abb40b49ad4b264fe2a9, type: 2}
   - {fileID: 11400000, guid: d9345c8515e8d5d41b12ce87b02dc3e8, type: 2}
-  - {fileID: 11400000, guid: 8c3ae07cdb9b467499b3e7e915bdcf62, type: 2}
   _storyDisplayPrefab: {fileID: 3739350687787657705, guid: 42a83fb3da5cb6a4a85ada566c7b765c, type: 3}
   _storyParentTransform: {fileID: 1378364617}
   _iterationCount: {fileID: 11400000, guid: e211b411100c7974581c779ea5b22289, type: 2}
@@ -4208,9 +4207,9 @@ MonoBehaviour:
   m_fontSize: 42
   m_fontSizeBase: 42
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 24
+  m_fontSizeMax: 42
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
