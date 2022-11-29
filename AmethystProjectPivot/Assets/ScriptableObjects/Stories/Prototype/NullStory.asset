@@ -10,22 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32886cb93a870b9429a6698718ed0fd1, type: 3}
-  m_Name: PowerOutageStory_ResolutionB
+  m_Name: NullStory
   m_EditorClassIdentifier: 
-  Title: Power Restored Ahead of Schedule
-  Body: The power is back on much quicker than originally estimated!
-  _postDecision: 2
-  WhenToPost: 2
+  Title: No Stories Posted Today!
+  Body: 
+  _postDecision: 3
+  WhenToPost: 0
   PreviousStory: {fileID: 0}
   PostedExternallyResult: {fileID: 0}
-  PostedExternallyComments:
-  - Sus
-  - Sus
-  - Sus
-  PostedExternallyFollowerDelta: 5
+  PostedExternallyComments: []
+  PostedExternallyFollowerDelta: 0
   PostedInternallyResult: {fileID: 0}
-  PostedInternallyComments:
-  - Way to go, Benaxia!
-  - Quick and efficient!
-  PostedInternallyFollowerDelta: 2
+  PostedInternallyComments: []
+  PostedInternallyFollowerDelta: 0
   NotPostedResult: {fileID: 0}

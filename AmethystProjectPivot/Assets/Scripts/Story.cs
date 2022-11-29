@@ -12,6 +12,7 @@ public class Story : ScriptableObject
     /// <summary>
     /// What will the header of this post be?
     /// </summary>
+    [Header("Story Data")]
     [TextArea(1, 1)]
     [Tooltip("What will the header of this post be?")]
     public string Title;
@@ -22,6 +23,12 @@ public class Story : ScriptableObject
     [TextArea(5, 5)]
     [Tooltip("What will the body of this post be?")]
     public string Body;
+    
+    /// <summary>
+    /// What is the post decision of this story?
+    /// </summary>
+    [Tooltip("What is the post decision of this story?")]
+    [SerializeField] private PostDecision _postDecision = PostDecision.DoNot;
 
     /// <summary>
     /// What is the post decision of this story?
@@ -55,24 +62,49 @@ public class Story : ScriptableObject
     /// <summary>
     /// What story results from this one being posted externally?
     /// </summary>
+    [Header("Post Anonymous Decision")]
     [Tooltip("What story results from this one being posted externally?")]
     public Story PostedExternallyResult;
-
+    
+    /// <summary>
+    /// Which comments will appear if this story is posted externally?
+    /// </summary>
+    [Tooltip("Which comments will appear if this story is posted externally?")]
+    public string[] PostedExternallyComments;
+    
+    /// <summary>
+    /// How many followers will the player gain/lose if this story is posted
+    /// externally?
+    /// </summary>
+    [Tooltip("How many followers will the player gain/lose if this story is " +
+             "posted externally?")]
+    public int PostedExternallyFollowerDelta = 0;
+    
     /// <summary>
     /// What story results from this one being posted internally?
     /// </summary>
+    [Header("Post As Official Decision")]
     [Tooltip("What story results from this one being posted internally?")]
     public Story PostedInternallyResult;
+    
+    /// <summary>
+    /// Which comments will appear if this story is posted internally?
+    /// </summary>
+    [Tooltip("Which comments will appear if this story is posted internally?")]
+    public string[] PostedInternallyComments;
+    
+    /// <summary>
+    /// How many followers will the player gain/lose if this story is posted
+    /// internally?
+    /// </summary>
+    [Tooltip("How many followers will the player gain/lose if this story is " +
+             "posted internally?")]
+    public int PostedInternallyFollowerDelta = 0;
 
     /// <summary>
     /// What story results from this one not being posted?
     /// </summary>
+    [Header("Do Not Post Decision")]
     [Tooltip("What story results from this one not being posted?")]
     public Story NotPostedResult;
-
-    /// <summary>
-    /// What is the post decision of this story?
-    /// </summary>
-    [Tooltip("What is the post decision of this story?")]
-    [SerializeField] private PostDecision _postDecision = PostDecision.DoNot;
 }

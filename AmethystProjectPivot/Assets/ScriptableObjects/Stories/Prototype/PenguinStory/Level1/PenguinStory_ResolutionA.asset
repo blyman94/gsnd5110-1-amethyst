@@ -15,9 +15,18 @@ MonoBehaviour:
   Title: 'Local Zoo: Major Renovations'
   Body: The profits brought in by baby penguin-crazed visitors drove a local Benaxian
     zoo to double in size!
+  _postDecision: 2
   WhenToPost: 1
   PreviousStory: {fileID: 11400000, guid: d9345c8515e8d5d41b12ce87b02dc3e8, type: 2}
   PostedExternallyResult: {fileID: 0}
+  PostedExternallyComments:
+  - MAGICAL WATER BIRBS
+  - ^^^
+  - Penguins being that profitable seems fishy to me.
+  PostedExternallyFollowerDelta: 2
   PostedInternallyResult: {fileID: 0}
+  PostedInternallyComments:
+  - Did Benaxia have something to do with this?
+  - That's impossible... Penguins can't generate that much profit.
+  PostedInternallyFollowerDelta: -3
   NotPostedResult: {fileID: 0}
-  _postDecision: 2

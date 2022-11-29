@@ -15,9 +15,19 @@ MonoBehaviour:
   Title: Raccoons Infest Rural Neighborhoods
   Body: A family of raccoons have taken up residents on the outskirts of Benaxia.
     Take caution, as these critters typically carry deadly diseases.
+  _postDecision: 2
   WhenToPost: 1
   PreviousStory: {fileID: 11400000, guid: 44dab06c9132abb40b49ad4b264fe2a9, type: 2}
   PostedExternallyResult: {fileID: 11400000, guid: de90bc1d3362d814ba6daa95bd8b7f86, type: 2}
+  PostedExternallyComments:
+  - Thank goodness you are around to alert people, the govt sure isn't :(
+  - Raccoons are SO cute! But I will be careful...
+  - Such a helpful account to follow!
+  PostedExternallyFollowerDelta: 5
   PostedInternallyResult: {fileID: 11400000, guid: de90bc1d3362d814ba6daa95bd8b7f86, type: 2}
+  PostedInternallyComments:
+  - Why didn't you tell us about the garbage collection issues???
+  - 'Useless. We should''ve known about the GC issue earlier than this. '
+  - '@#($#)%!'
+  PostedInternallyFollowerDelta: -5
   NotPostedResult: {fileID: 11400000, guid: 5114483769e3de74dae1e069619a76a3, type: 2}
-  _postDecision: 2

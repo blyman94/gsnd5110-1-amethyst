@@ -10,6 +10,8 @@ using UnityEngine.Events;
 /// </summary>
 public class StoryLoader : MonoBehaviour
 {
+    public CommentSequence CommentSequence;
+    
     /// <summary>
     /// List of stories to be displayed on the feed.
     /// </summary>
@@ -124,15 +126,9 @@ public class StoryLoader : MonoBehaviour
             _pastStories.Add(story);
         }
 
-        if (_futureStories.Count <= 0)
-        {
-            _faderText.text = "Game Over! \n All storylines have resolved.";
-            _restartButton.gameObject.SetActive(true);
-            _screenFader.StopFade();
-            return;
-        }
-
         _iterationCount.Value++;
+
+        CommentSequence.StartCommentSequence(_currentStories);
 
         // Update current stories list
         _currentStories.Clear();
@@ -146,6 +142,20 @@ public class StoryLoader : MonoBehaviour
 
         // Load new stories
         LoadCurrentStories();
+    }
+
+    public void CheckFutureStories()
+    {
+        if (_futureStories.Count <= 0)
+        {
+            _faderText.text = "Game Over! \n All storylines have resolved.";
+            _restartButton.gameObject.SetActive(true);
+            _screenFader.GetComponent<CanvasGroup>().alpha = 1;
+            _screenFader.GetComponent<CanvasGroup>().blocksRaycasts = true;
+            _screenFader.GetComponent<CanvasGroup>().interactable = true;
+            _screenFader.StopFade();
+            return;
+        }
     }
 
     /// <summary>

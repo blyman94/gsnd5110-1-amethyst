@@ -14,9 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: Baby Penguins Born at Local Zoo
   Body: They are irresistably adorable and I really want to go and pet one.
+  _postDecision: 2
   WhenToPost: 0
   PreviousStory: {fileID: 0}
   PostedExternallyResult: {fileID: 11400000, guid: 16274ab3f590ea74da457f1afe490139, type: 2}
+  PostedExternallyComments:
+  - OH EM GEE MEE TOO!
+  - Tell me more about the penguinos!
+  - Maybe I will hit the zoo...
+  PostedExternallyFollowerDelta: 4
   PostedInternallyResult: {fileID: 11400000, guid: c506cbc604f34cd4481917fbd0c9bba1, type: 2}
+  PostedInternallyComments:
+  - Government favoritism of random small business...?
+  - OH EM GEE MEE TOO!
+  - Doesn't seem very formal...
+  PostedInternallyFollowerDelta: -3
   NotPostedResult: {fileID: 11400000, guid: ee3d43ce85b7d9f4397b879ed8fcb3cf, type: 2}
-  _postDecision: 2

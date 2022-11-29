@@ -15,9 +15,19 @@ MonoBehaviour:
   Title: Local Zoo Profits Plummet
   Body: Unfortunately, the cost of keeping baby penguins was not offset by an increase
     in zoo guests.
+  _postDecision: 2
   WhenToPost: 1
   PreviousStory: {fileID: 11400000, guid: d9345c8515e8d5d41b12ce87b02dc3e8, type: 2}
   PostedExternallyResult: {fileID: 11400000, guid: e8b0591deddfede4182e668c4329cd19, type: 2}
+  PostedExternallyComments:
+  - Press X to pay respects...
+  - Damn, I wish I had gone to the zoo...
+  - Woof. Didn't realize penguinos were so expensivo
+  PostedExternallyFollowerDelta: 6
   PostedInternallyResult: {fileID: 11400000, guid: e8b0591deddfede4182e668c4329cd19, type: 2}
+  PostedInternallyComments:
+  - Sad. Too bad the govt didn't want to help out
+  - It's good the govt didn't interfere with private business
+  - Aw man, I didn't get a chance to see them :(
+  PostedInternallyFollowerDelta: 0
   NotPostedResult: {fileID: 11400000, guid: 1b4598a870f1f8a4496f9ff358233a4c, type: 2}
-  _postDecision: 2

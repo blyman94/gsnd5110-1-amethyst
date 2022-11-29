@@ -61,7 +61,10 @@ public class ScreenFader : MonoBehaviour
             _canvasGroup.interactable = true;
 
             // Raise midway event
-            _rasiedMidFade.Raise();
+            if (_rasiedMidFade != null)
+            {
+                _rasiedMidFade.Raise();
+            }
 
         }
 

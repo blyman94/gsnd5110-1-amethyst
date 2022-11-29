@@ -15,9 +15,16 @@ MonoBehaviour:
   Title: Raccoon Infestation Handled
   Body: The nefarious raccoons have been rounded up, relocated, and treated for disease.
     No reports of disease from these critters!
+  _postDecision: 2
   WhenToPost: 2
   PreviousStory: {fileID: 11400000, guid: 85cdf172da26f1d419b59f5a92235a97, type: 2}
   PostedExternallyResult: {fileID: 0}
+  PostedExternallyComments:
+  - Feels like this should be something Benaxia releases...
+  - Did you round them up yourself?
+  PostedExternallyFollowerDelta: -1
   PostedInternallyResult: {fileID: 0}
+  PostedInternallyComments:
+  - YAY THANK YOU FOR BEING NICE TO THE LITTLE RACCOONS!
+  PostedInternallyFollowerDelta: 1
   NotPostedResult: {fileID: 0}
-  _postDecision: 2

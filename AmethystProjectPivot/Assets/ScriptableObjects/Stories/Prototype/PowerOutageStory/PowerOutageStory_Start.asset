@@ -16,9 +16,19 @@ MonoBehaviour:
   Body: Residents of Benaxia will be troubled to hear that their power will be cut
     for the next couple of days due to some routine maintaince. Rest assured, everything
     is OK!
+  _postDecision: 2
   WhenToPost: 0
   PreviousStory: {fileID: 0}
   PostedExternallyResult: {fileID: 11400000, guid: 79c4a7354833f644cad5a35ee2cf5dda, type: 2}
+  PostedExternallyComments:
+  - You're really gonna believe this crap from anon source?
+  - Everything is ok laughcryemoji.jpg
+  - I guess I am reading the Buttress of Windsor now...
+  PostedExternallyFollowerDelta: 2
   PostedInternallyResult: {fileID: 11400000, guid: 0facb0d7ce8c0b946bbc2aca0773e1b1, type: 2}
+  PostedInternallyComments:
+  - Thanks for the heads up, Benaxia!
+  - Really grateful we are aware.
+  - NO ONE thinks this power outage is weird?
+  PostedInternallyFollowerDelta: 2
   NotPostedResult: {fileID: 11400000, guid: 099ce360a507bfe419f8ef63cfb792f2, type: 2}
-  _postDecision: 2

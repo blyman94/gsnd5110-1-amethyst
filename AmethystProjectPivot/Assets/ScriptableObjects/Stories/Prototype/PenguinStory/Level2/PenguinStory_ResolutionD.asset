@@ -15,9 +15,15 @@ MonoBehaviour:
   Title: Local Zoo Shuts Down
   Body: After a prolonged period of profitless operation, a local zoo has closed
     its doors. Benaxia will no longer enjoy the variety of wildlife it had to offer.
+  _postDecision: 2
   WhenToPost: 2
   PreviousStory: {fileID: 11400000, guid: ee3d43ce85b7d9f4397b879ed8fcb3cf, type: 2}
   PostedExternallyResult: {fileID: 0}
+  PostedExternallyComments:
+  - Ah, beans.
+  PostedExternallyFollowerDelta: 0
   PostedInternallyResult: {fileID: 0}
+  PostedInternallyComments:
+  - Ah, beans.
+  PostedInternallyFollowerDelta: 0
   NotPostedResult: {fileID: 0}
-  _postDecision: 2

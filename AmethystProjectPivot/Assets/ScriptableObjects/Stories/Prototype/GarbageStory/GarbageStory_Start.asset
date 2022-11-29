@@ -15,9 +15,18 @@ MonoBehaviour:
   Title: Garbage Collection Delayed One Week
   Body: Residents of Benaxia will be sad to hear their trash will not be taken away
     for a week. Reduce, reuse, recycle!
+  _postDecision: 0
   WhenToPost: 0
   PreviousStory: {fileID: 0}
   PostedExternallyResult: {fileID: 11400000, guid: 48e7c64a90517924c83370303f440e96, type: 2}
+  PostedExternallyComments:
+  - Thanks, but shouldn't Benaxia be telling us this?
+  - I think this account is a public works employee!!
+  - I am not going to rely on some random account for this kind of information.
+  PostedExternallyFollowerDelta: -2
   PostedInternallyResult: {fileID: 11400000, guid: 48e7c64a90517924c83370303f440e96, type: 2}
+  PostedInternallyComments:
+  - Thanks for the heads up!
+  - How much of an issue can one week of trash be? I'm not changing any habits.
+  PostedInternallyFollowerDelta: 5
   NotPostedResult: {fileID: 11400000, guid: 85cdf172da26f1d419b59f5a92235a97, type: 2}
-  _postDecision: 2

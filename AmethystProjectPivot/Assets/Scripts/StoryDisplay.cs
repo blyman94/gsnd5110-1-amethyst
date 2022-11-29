@@ -17,6 +17,11 @@ public class StoryDisplay : MonoBehaviour
     /// Text object to display the story's title.
     /// </summary>
     [SerializeField] private TextMeshProUGUI _storyTitleText;
+    
+    /// <summary>
+    /// Text object to display the account's name.
+    /// </summary>
+    [SerializeField] private TextMeshProUGUI _accountNameText;
 
     /// <summary>
     /// The global active story.
@@ -84,6 +89,27 @@ public class StoryDisplay : MonoBehaviour
     {
         if (_storyToDisplay != null)
         {
+            if (_accountNameText != null)
+            {
+                switch (_storyToDisplay.PostDecision)
+                {
+                    case (PostDecision.External):
+                        _accountNameText.text = "AnonymousMallard";
+                        break;
+                    case (PostDecision.Internal):
+                        _accountNameText.text = "MJC@Benaxia.gov";
+                        break;
+                    case (PostDecision.DoNot):
+                        _accountNameText.text = "AnonymousMallard";
+                        break;
+                    case (PostDecision.NullStory):
+                        _accountNameText.text = " ";
+                        break;
+                    default:
+                        _accountNameText.text = "AnonymousMallard";
+                        break;
+                }
+            }
             _storyTitleText.text = _storyToDisplay.Title;
 
             switch (_storyToDisplay.PostDecision)

@@ -15,9 +15,19 @@ MonoBehaviour:
   Title: Power Still Out, But Residents Remain Calm
   Body: The power outage remains in effect until further notice, but at least the
     citizens were warned and are coping with the inconvenience.
+  _postDecision: 2
   WhenToPost: 1
   PreviousStory: {fileID: 11400000, guid: 8baeb23e0e7d3a945b733523b04fa047, type: 2}
   PostedExternallyResult: {fileID: 11400000, guid: ecd2aafcf9c589c4bb69743908f7b339, type: 2}
+  PostedExternallyComments:
+  - Feels like the govt should be reporting this?
+  - Are you from Benaxia?
+  - How much longer?
+  PostedExternallyFollowerDelta: 3
   PostedInternallyResult: {fileID: 11400000, guid: ecd2aafcf9c589c4bb69743908f7b339, type: 2}
+  PostedInternallyComments:
+  - How much longer?
+  - Oh lovely. Further Notice.
+  - Hurry up Benaxia, I miss playing Banjo-Kazooie
+  PostedInternallyFollowerDelta: -1
   NotPostedResult: {fileID: 11400000, guid: ecd2aafcf9c589c4bb69743908f7b339, type: 2}
-  _postDecision: 2

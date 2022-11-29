@@ -15,9 +15,15 @@ MonoBehaviour:
   Title: Charity Saves Local Zoo
   Body: Public awareness leads charitable Benaxians to donate their money to save
     a local zoo. How beautiful!
+  _postDecision: 2
   WhenToPost: 2
   PreviousStory: {fileID: 11400000, guid: ee3d43ce85b7d9f4397b879ed8fcb3cf, type: 2}
   PostedExternallyResult: {fileID: 0}
+  PostedExternallyComments:
+  - Heartwarming. Glad it all worked out!
+  PostedExternallyFollowerDelta: 1
   PostedInternallyResult: {fileID: 0}
+  PostedInternallyComments:
+  - Heartwarming. Glad it all worked out!
+  PostedInternallyFollowerDelta: 0
   NotPostedResult: {fileID: 0}
-  _postDecision: 2
