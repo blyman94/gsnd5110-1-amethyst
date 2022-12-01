@@ -29,7 +29,12 @@ public class StoryLoader : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI _faderText;
     [SerializeField] private Button _restartButton;
+    [SerializeField] private TextMeshProUGUI _totalCommentsText;
+    [SerializeField] private TextMeshProUGUI _totalFollowersText;
+    [SerializeField] private IntVariable _totalCommentCount;
+    [SerializeField] private IntVariable _totalFollowerCount;
     [SerializeField] private ScreenFader _screenFader;
+    
 
     /// <summary>
     /// IntVariable representing how many iterations have passed.
@@ -149,6 +154,12 @@ public class StoryLoader : MonoBehaviour
         if (_futureStories.Count <= 0)
         {
             _faderText.text = "Game Over! \n All storylines have resolved.";
+            
+            _totalCommentsText.transform.parent.gameObject.SetActive(true);
+            _totalFollowersText.transform.parent.gameObject.SetActive(true);
+            _totalCommentsText.text = _totalCommentCount.Value.ToString();
+            _totalFollowersText.text = _totalFollowerCount.Value.ToString();
+            
             _restartButton.gameObject.SetActive(true);
             _screenFader.GetComponent<CanvasGroup>().alpha = 1;
             _screenFader.GetComponent<CanvasGroup>().blocksRaycasts = true;
