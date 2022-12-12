@@ -4,7 +4,7 @@ using UnityEngine;
 public class OscillateTextSize : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _textToResize;
-    [SerializeField] private float _baseTextSize = 24.0f;
+    [SerializeField] private float _baseTextSize = -1.0f;
     [SerializeField] private float _textSizeVariance = 2.0f;
     [SerializeField] private float _oscillationSpeed = 1.0f;
 
@@ -16,6 +16,10 @@ public class OscillateTextSize : MonoBehaviour
     #region MonoBehaviour Methods
     private void Awake()
     {
+        if (_baseTextSize == -1.0f)
+        {
+            _baseTextSize = _textToResize.fontSize;
+        }
         _minTextSize = _baseTextSize - _textSizeVariance;
         _maxTextSize = _baseTextSize + _textSizeVariance;
     }
