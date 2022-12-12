@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 53958370}
   - component: {fileID: 53958369}
   m_Layer: 5
-  m_Name: AnonymousGroupIcon
+  m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 118568054}
   - component: {fileID: 118568053}
   m_Layer: 5
-  m_Name: GovernmentGroupActiveStoryText
+  m_Name: ActiveDetailText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -637,7 +637,7 @@ GameObject:
   - component: {fileID: 281641390}
   - component: {fileID: 281641389}
   m_Layer: 5
-  m_Name: GovernmentGroupBackground
+  m_Name: MainBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -714,7 +714,7 @@ GameObject:
   - component: {fileID: 295585780}
   - component: {fileID: 295585779}
   m_Layer: 5
-  m_Name: GovernmentGroupPostButton
+  m_Name: PostButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -867,7 +867,7 @@ GameObject:
   - component: {fileID: 332017468}
   - component: {fileID: 332017467}
   m_Layer: 5
-  m_Name: AnonymousGroupPostButton
+  m_Name: PostButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1586,6 +1586,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 531784794}
+  - component: {fileID: 531784799}
+  - component: {fileID: 531784798}
+  - component: {fileID: 531784797}
   - component: {fileID: 531784796}
   - component: {fileID: 531784795}
   m_Layer: 5
@@ -1616,6 +1619,7 @@ RectTransform:
   - {fileID: 118568052}
   - {fileID: 295585778}
   - {fileID: 1032871410}
+  - {fileID: 603263331}
   m_Father: {fileID: 1391241983}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1644,6 +1648,53 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &531784797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531784793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 641bbf2083083bb4386abe079269bb76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _storyDisplayTransforms:
+  - {fileID: 1532446602}
+  - {fileID: 944869045}
+  - {fileID: 118568051}
+  - {fileID: 295585777}
+  - {fileID: 603263330}
+--- !u!114 &531784798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531784793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0881fcaeab1146e40a79186c9689837f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _storyData: {fileID: 0}
+  _storyTitleText: {fileID: 944869047}
+  _storyDetailsText: {fileID: 118568053}
+--- !u!114 &531784799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531784793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dc7bea9b054142b49714009fdee95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _storyDataBinding: {fileID: 531784798}
+  _postDisplay: {fileID: 531784797}
 --- !u!1 &532590738
 GameObject:
   m_ObjectHideFlags: 0
@@ -1913,6 +1964,139 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561900528}
+  m_CullTransparentMesh: 1
+--- !u!1 &603263330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 603263331}
+  - component: {fileID: 603263334}
+  - component: {fileID: 603263333}
+  - component: {fileID: 603263332}
+  m_Layer: 5
+  m_Name: ClearStoryButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &603263331
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603263330}
+  m_LocalRotation: {x: -0, y: -0, z: 0.38268343, w: 0.92387956}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 531784794}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -23.2, y: 61.678}
+  m_SizeDelta: {x: 25, y: 25}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &603263332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603263330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 603263333}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 531784797}
+        m_TargetAssemblyTypeName: PostDisplay, Assembly-CSharp
+        m_MethodName: HideStoryDisplayTransforms
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &603263333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603263330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.76470596, g: 0.35686275, b: 0.35686275, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 462cf83d3dca33d4ab6a7c7ba38978dc, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &603263334
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603263330}
   m_CullTransparentMesh: 1
 --- !u!1 &619394800
 GameObject:
@@ -2749,6 +2933,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 757704798}
+  - component: {fileID: 757704803}
+  - component: {fileID: 757704802}
+  - component: {fileID: 757704801}
   - component: {fileID: 757704800}
   - component: {fileID: 757704799}
   m_Layer: 5
@@ -2779,6 +2966,7 @@ RectTransform:
   - {fileID: 1658286651}
   - {fileID: 332017466}
   - {fileID: 1634816142}
+  - {fileID: 1144770964}
   m_Father: {fileID: 1391241983}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2807,6 +2995,53 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &757704801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757704797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 641bbf2083083bb4386abe079269bb76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _storyDisplayTransforms:
+  - {fileID: 1245946935}
+  - {fileID: 2083101113}
+  - {fileID: 1658286650}
+  - {fileID: 332017465}
+  - {fileID: 1144770963}
+--- !u!114 &757704802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757704797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0881fcaeab1146e40a79186c9689837f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _storyData: {fileID: 0}
+  _storyTitleText: {fileID: 2083101115}
+  _storyDetailsText: {fileID: 1658286652}
+--- !u!114 &757704803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757704797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399dc7bea9b054142b49714009fdee95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _storyDataBinding: {fileID: 757704802}
+  _postDisplay: {fileID: 757704801}
 --- !u!1 &770975331
 GameObject:
   m_ObjectHideFlags: 0
@@ -3410,7 +3645,7 @@ GameObject:
   - component: {fileID: 917056262}
   - component: {fileID: 917056261}
   m_Layer: 5
-  m_Name: GovernmentGroupIcon
+  m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3486,7 +3721,7 @@ GameObject:
   - component: {fileID: 944869048}
   - component: {fileID: 944869047}
   m_Layer: 5
-  m_Name: GovernmentGroupActiveTitleText
+  m_Name: ActiveTitleText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3621,12 +3856,12 @@ GameObject:
   - component: {fileID: 1032871412}
   - component: {fileID: 1032871411}
   m_Layer: 5
-  m_Name: GovernmentGroupPostedGraphicText
+  m_Name: PostedGraphicText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1032871410
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3822,6 +4057,139 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1052206945}
   m_CullTransparentMesh: 1
+--- !u!1 &1144770963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1144770964}
+  - component: {fileID: 1144770967}
+  - component: {fileID: 1144770966}
+  - component: {fileID: 1144770965}
+  m_Layer: 5
+  m_Name: ClearStoryButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1144770964
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144770963}
+  m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 757704798}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -24.8, y: 61.678}
+  m_SizeDelta: {x: 25, y: 25}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1144770965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144770963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1144770966}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 757704801}
+        m_TargetAssemblyTypeName: PostDisplay, Assembly-CSharp
+        m_MethodName: HideStoryDisplayTransforms
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1144770966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144770963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.76470596, g: 0.35686275, b: 0.35686275, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 462cf83d3dca33d4ab6a7c7ba38978dc, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1144770967
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144770963}
+  m_CullTransparentMesh: 1
 --- !u!1 &1153726865
 GameObject:
   m_ObjectHideFlags: 0
@@ -3914,7 +4282,7 @@ GameObject:
   - component: {fileID: 1170838565}
   - component: {fileID: 1170838564}
   m_Layer: 5
-  m_Name: AnonymousGroupBackground
+  m_Name: MainBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4068,7 +4436,7 @@ GameObject:
   - component: {fileID: 1204372646}
   - component: {fileID: 1204372645}
   m_Layer: 5
-  m_Name: AnonymousGroupBanner
+  m_Name: Banner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4549,7 +4917,7 @@ GameObject:
   - component: {fileID: 1245946938}
   - component: {fileID: 1245946937}
   m_Layer: 5
-  m_Name: AnonymousGroupActiveStoryDisplayBackground
+  m_Name: ActiveStoryDisplayBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4947,7 +5315,7 @@ GameObject:
   - component: {fileID: 1441481707}
   - component: {fileID: 1441481706}
   m_Layer: 5
-  m_Name: GovernmentGroupBanner
+  m_Name: Banner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5023,7 +5391,7 @@ GameObject:
   - component: {fileID: 1532446605}
   - component: {fileID: 1532446604}
   m_Layer: 5
-  m_Name: GovernmentGroupActiveStoryDisplayBackground
+  m_Name: ActiveStoryDisplayBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5255,12 +5623,12 @@ GameObject:
   - component: {fileID: 1634816144}
   - component: {fileID: 1634816143}
   m_Layer: 5
-  m_Name: AnonymousGroupPostedGraphicText
+  m_Name: PostedGraphicText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1634816142
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5525,7 +5893,7 @@ GameObject:
   - component: {fileID: 1658286653}
   - component: {fileID: 1658286652}
   m_Layer: 5
-  m_Name: AnonymousGroupActiveStoryText
+  m_Name: ActiveDetailText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6006,9 +6374,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1866948212}
   - component: {fileID: 1866948214}
+  - component: {fileID: 1866948215}
   - component: {fileID: 1866948213}
   m_Layer: 5
-  m_Name: GovernmentGroupPromptText
+  m_Name: PromptText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6131,6 +6500,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1866948211}
   m_CullTransparentMesh: 1
+--- !u!114 &1866948215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866948211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63c25c727c21a84783ee3e7678ed955, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textToResize: {fileID: 1866948213}
+  _baseTextSize: -1
+  _textSizeVariance: 1
+  _oscillationSpeed: 0.25
+  _isOscillating: 1
 --- !u!1 &1880815219
 GameObject:
   m_ObjectHideFlags: 0
@@ -6563,7 +6949,7 @@ GameObject:
   - component: {fileID: 2083101116}
   - component: {fileID: 2083101115}
   m_Layer: 5
-  m_Name: AnonymousGroupActiveTitleText
+  m_Name: ActiveTitleText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6830,10 +7216,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2125994803}
+  - component: {fileID: 2125994806}
   - component: {fileID: 2125994805}
   - component: {fileID: 2125994804}
   m_Layer: 5
-  m_Name: AnonymousGroupPromptText
+  m_Name: PromptText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6956,3 +7343,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2125994802}
   m_CullTransparentMesh: 1
+--- !u!114 &2125994806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125994802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63c25c727c21a84783ee3e7678ed955, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textToResize: {fileID: 2125994804}
+  _baseTextSize: -1
+  _textSizeVariance: 1
+  _oscillationSpeed: 0.25
+  _isOscillating: 1

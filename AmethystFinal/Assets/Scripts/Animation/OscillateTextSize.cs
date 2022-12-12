@@ -7,11 +7,10 @@ public class OscillateTextSize : MonoBehaviour
     [SerializeField] private float _baseTextSize = -1.0f;
     [SerializeField] private float _textSizeVariance = 2.0f;
     [SerializeField] private float _oscillationSpeed = 1.0f;
+    [SerializeField] private bool _isOscillating = false;
 
     private float _minTextSize;
     private float _maxTextSize;
-
-    private bool _isOscillating = false;
     
     #region MonoBehaviour Methods
     private void Awake()
