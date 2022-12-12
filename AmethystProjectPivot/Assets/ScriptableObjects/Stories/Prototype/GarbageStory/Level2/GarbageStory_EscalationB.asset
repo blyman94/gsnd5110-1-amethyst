@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32886cb93a870b9429a6698718ed0fd1, type: 3}
+  m_Name: GarbageStory_EscalationB
+  m_EditorClassIdentifier: 
+  Title: Novel Disease Detected in Benaxia
+  Body: A brand new disease that causes hallucinations and vomiting has been found
+    in the outskirts of Benaxia. Experts believe this new disease came from raccoons...
+    Take extreme health precautions!
+  _postDecision: 2
+  WhenToPost: 2
+  PreviousStory: {fileID: 11400000, guid: 85cdf172da26f1d419b59f5a92235a97, type: 2}
+  PostedExternallyResult: {fileID: 11400000, guid: 606b9e5c3817f6c4d9670b61d241cd09, type: 2}
+  PostedExternallyComments:
+  - Should we believe this nonsense coming from an anonymous account?
+  - This account is fear-mongering BS. I don't buy it.
+  - Yeah. Right.
+  PostedExternallyFollowerDelta: -3
+  PostedInternallyResult: {fileID: 11400000, guid: 660b140585249f84691595db701f0e07, type: 2}
+  PostedInternallyComments:
+  - Wow! Good thing we know. Masks and hand washing, everyone!
+  - Thank goodness the government is on top of this!
+  - The government is a bunch of fear-mongerers. I don't buy it.
+  PostedInternallyFollowerDelta: 4
+  NotPostedResult: {fileID: 11400000, guid: 606b9e5c3817f6c4d9670b61d241cd09, type: 2}

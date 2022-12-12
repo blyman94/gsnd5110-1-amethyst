@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32886cb93a870b9429a6698718ed0fd1, type: 3}
+  m_Name: PowerOutageStory_EscalationA
+  m_EditorClassIdentifier: 
+  Title: Foreign Officials Unsettled by Power Outage
+  Body: The world outside of Benaxia believes its government is using this power
+    outage to cover up something sinister.
+  _postDecision: 2
+  WhenToPost: 1
+  PreviousStory: {fileID: 11400000, guid: 8baeb23e0e7d3a945b733523b04fa047, type: 2}
+  PostedExternallyResult: {fileID: 11400000, guid: dc74bc6e99d5b5449b39080f1e42b22c, type: 2}
+  PostedExternallyComments:
+  - This is terrifying... staying tuned for more
+  - Consider me a follower, this is #$&@'d up.
+  - WHAT ARE THEY HIDING!
+  PostedExternallyFollowerDelta: 8
+  PostedInternallyResult: {fileID: 11400000, guid: dc74bc6e99d5b5449b39080f1e42b22c, type: 2}
+  PostedInternallyComments:
+  - Benaxia has nothing to hide here.
+  - 'Posting this on a govt account is bold. '
+  - Fight back, Benaxia!
+  PostedInternallyFollowerDelta: 2
+  NotPostedResult: {fileID: 11400000, guid: 052430adfcca1e648a11aa9350981acb, type: 2}

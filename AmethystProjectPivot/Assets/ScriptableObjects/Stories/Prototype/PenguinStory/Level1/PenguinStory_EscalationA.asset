@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32886cb93a870b9429a6698718ed0fd1, type: 3}
+  m_Name: PenguinStory_EscalationA
+  m_EditorClassIdentifier: 
+  Title: Local Zoo Under Investigation
+  Body: A foreign marine life center claims a local Benaxian zoo stole and bred their
+    penguins.
+  _postDecision: 2
+  WhenToPost: 1
+  PreviousStory: {fileID: 11400000, guid: d9345c8515e8d5d41b12ce87b02dc3e8, type: 2}
+  PostedExternallyResult: {fileID: 11400000, guid: e27806abe5dbb9445a01fe8196654d62, type: 2}
+  PostedExternallyComments:
+  - Juicy!
+  - Why are penguins so valuable?
+  - JUST LET THE PENGUINS BE PENGUINS!!!
+  PostedExternallyFollowerDelta: 4
+  PostedInternallyResult: {fileID: 11400000, guid: e27806abe5dbb9445a01fe8196654d62, type: 2}
+  PostedInternallyComments:
+  - Benaxia isn't afriad to hide this. They've done nothing wrong!
+  - Tell the foreigners our penguins are ours!
+  - JUST LET THE PENGUINS BE PENGUINS!!!
+  PostedInternallyFollowerDelta: 3
+  NotPostedResult: {fileID: 11400000, guid: e27806abe5dbb9445a01fe8196654d62, type: 2}

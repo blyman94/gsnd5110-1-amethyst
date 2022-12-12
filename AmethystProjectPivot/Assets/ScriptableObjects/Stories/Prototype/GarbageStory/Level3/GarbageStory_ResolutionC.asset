@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32886cb93a870b9429a6698718ed0fd1, type: 3}
+  m_Name: GarbageStory_ResolutionC
+  m_EditorClassIdentifier: 
+  Title: Benaxia Labeled "Global Health Risk"
+  Body: RAC-22 has caught the world's attention, and the tourism numbers are plummeting.
+    Thanks to awareness, the disease has been contained, but global opinion could
+    be the end of Benaxia's tourist industry for a few years.
+  _postDecision: 2
+  WhenToPost: 3
+  PreviousStory: {fileID: 11400000, guid: 5114483769e3de74dae1e069619a76a3, type: 2}
+  PostedExternallyResult: {fileID: 0}
+  PostedExternallyComments:
+  - Makes sense. My sister died of RAC-22 :(
+  - Is this account external from Benaxia?
+  - How does this foreign account know so much about our society?
+  PostedExternallyFollowerDelta: 3
+  PostedInternallyResult: {fileID: 0}
+  PostedInternallyComments:
+  - 'At least they are aware. '
+  - The cases will decrease and we will recover.
+  - This all could have been prevented, but at least we are recovering.
+  PostedInternallyFollowerDelta: 3
+  NotPostedResult: {fileID: 0}
