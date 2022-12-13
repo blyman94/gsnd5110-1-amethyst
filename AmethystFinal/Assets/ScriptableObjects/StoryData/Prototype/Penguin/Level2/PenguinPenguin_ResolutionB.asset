@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3cca8c297890e8047ab71fd900af0ae0, type: 3}
-  m_Name: TestStoryData
+  m_Name: PenguinPenguin_ResolutionB
   m_EditorClassIdentifier: 
-  Title: The Penguins!
-  Description: Gotta have those penguins
+  Title: Charity Saves Local Zoo
+  Description: Public awareness leads charitable Benaxians to donate their money
+    to save a local zoo. How beautiful!
+  AvailableStartingDay: 2
   AnonymousCommentsToDisplay:
-  - Anon 1
-  - Anon2
-  - Anon3
+  - Heartwarming. Glad it all worked out!
   GovernmentCommentsToDisplay:
-  - Gov1
-  - Gov2
-  - Gov3
+  - Heartwarming. Glad it all worked out!
   FollowerDelta: {x: 25, y: 35}
-  CommentDelta: {x: 4, y: 6}
+  CommentDelta: {x: 1, y: 1}
+  AnonymousResult: {fileID: 0}
+  GovernmentResult: {fileID: 0}
+  DoNotPostResult: {fileID: 0}

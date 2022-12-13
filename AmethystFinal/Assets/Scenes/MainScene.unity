@@ -137,6 +137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 28787196}
+  - component: {fileID: 28787200}
   - component: {fileID: 28787199}
   - component: {fileID: 28787198}
   - component: {fileID: 28787197}
@@ -262,6 +263,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &28787200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28787195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a87f7c426128342a74ee09dd1f4fe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _availableStoryDisplayPrefab: {fileID: 1239120012275565525, guid: 122b2754fe8316b4d99ac163e2cfb3ca, type: 3}
+  _activeStory: {fileID: 11400000, guid: ab092fd08f2af5f4d9d39724d1ca80b4, type: 2}
+  _postDecision: {fileID: 11400000, guid: 74dd8bdc0b926b64e9e4ba23d869a083, type: 2}
+  _startingStories:
+  - {fileID: 11400000, guid: a19d4e3f39505b340aceaa1c4a434d9c, type: 2}
+  - {fileID: 11400000, guid: c80a5f370c92d40469d6ef81212ccf5d, type: 2}
+  _availableStoryParent: {fileID: 28787196}
 --- !u!1 &53958367
 GameObject:
   m_ObjectHideFlags: 0
@@ -5758,6 +5778,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 74dd8bdc0b926b64e9e4ba23d869a083, type: 2}
+        m_TargetAssemblyTypeName: PostDecisionVariable, Assembly-CSharp
+        m_MethodName: set_IntValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 28787200}
+        m_TargetAssemblyTypeName: StoryLoader, Assembly-CSharp
+        m_MethodName: UpdateFutureStories
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &295585780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5975,6 +6019,30 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
         m_MethodName: set_interactable
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 74dd8bdc0b926b64e9e4ba23d869a083, type: 2}
+        m_TargetAssemblyTypeName: PostDecisionVariable, Assembly-CSharp
+        m_MethodName: set_IntValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 28787200}
+        m_TargetAssemblyTypeName: StoryLoader, Assembly-CSharp
+        m_MethodName: UpdateFutureStories
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6248,6 +6316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _activeStoryData: {fileID: 11400000, guid: ab092fd08f2af5f4d9d39724d1ca80b4, type: 2}
+  _postDecisionVariable: {fileID: 11400000, guid: 74dd8bdc0b926b64e9e4ba23d869a083, type: 2}
   _playerComments: {fileID: 11400000, guid: 60b62c329fd1ea64a8f6706042540277, type: 2}
   _playerFollowers: {fileID: 11400000, guid: 8edde59bce388fd429f2733752a67cda, type: 2}
 --- !u!1 &426778868
@@ -7834,7 +7903,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1239120012275565522, guid: 122b2754fe8316b4d99ac163e2cfb3ca, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1239120012275565522, guid: 122b2754fe8316b4d99ac163e2cfb3ca, type: 3}
       propertyPath: m_AnchorMin.x
@@ -7842,15 +7911,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1239120012275565522, guid: 122b2754fe8316b4d99ac163e2cfb3ca, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1239120012275565522, guid: 122b2754fe8316b4d99ac163e2cfb3ca, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1239120012275565522, guid: 122b2754fe8316b4d99ac163e2cfb3ca, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1239120012275565522, guid: 122b2754fe8316b4d99ac163e2cfb3ca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7882,11 +7951,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1239120012275565522, guid: 122b2754fe8316b4d99ac163e2cfb3ca, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 1239120012275565522, guid: 122b2754fe8316b4d99ac163e2cfb3ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -25
       objectReference: {fileID: 0}
     - target: {fileID: 1239120012275565522, guid: 122b2754fe8316b4d99ac163e2cfb3ca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7904,6 +7973,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: AvailableStoryDisplay
       objectReference: {fileID: 0}
+    - target: {fileID: 1239120012275565525, guid: 122b2754fe8316b4d99ac163e2cfb3ca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5760154157638870206, guid: 122b2754fe8316b4d99ac163e2cfb3ca, type: 3}
+      propertyPath: _storyData
+      value: 
+      objectReference: {fileID: 11400000, guid: c80a5f370c92d40469d6ef81212ccf5d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 122b2754fe8316b4d99ac163e2cfb3ca, type: 3}
 --- !u!1 &756926130
@@ -8323,7 +8400,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e1e9e2ce867b4d4a8d6deedc860ad89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentStory: {fileID: 11400000, guid: ab092fd08f2af5f4d9d39724d1ca80b4, type: 2}
+  _activeStory: {fileID: 11400000, guid: ab092fd08f2af5f4d9d39724d1ca80b4, type: 2}
+  _postDecisionVariable: {fileID: 11400000, guid: 74dd8bdc0b926b64e9e4ba23d869a083, type: 2}
   _animator: {fileID: 770975336}
   _isAnonymous: 1
   _OnSlideAnimationEndResponse:
@@ -8558,7 +8636,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e1e9e2ce867b4d4a8d6deedc860ad89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentStory: {fileID: 11400000, guid: ab092fd08f2af5f4d9d39724d1ca80b4, type: 2}
+  _activeStory: {fileID: 11400000, guid: ab092fd08f2af5f4d9d39724d1ca80b4, type: 2}
+  _postDecisionVariable: {fileID: 11400000, guid: 74dd8bdc0b926b64e9e4ba23d869a083, type: 2}
   _animator: {fileID: 801623893}
   _isAnonymous: 1
   _OnSlideAnimationEndResponse:
@@ -9617,7 +9696,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e1e9e2ce867b4d4a8d6deedc860ad89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentStory: {fileID: 11400000, guid: ab092fd08f2af5f4d9d39724d1ca80b4, type: 2}
+  _activeStory: {fileID: 11400000, guid: ab092fd08f2af5f4d9d39724d1ca80b4, type: 2}
+  _postDecisionVariable: {fileID: 11400000, guid: 74dd8bdc0b926b64e9e4ba23d869a083, type: 2}
   _animator: {fileID: 1052206950}
   _isAnonymous: 1
   _OnSlideAnimationEndResponse:
@@ -9874,6 +9954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _storyDataVariable: {fileID: 11400000, guid: ab092fd08f2af5f4d9d39724d1ca80b4, type: 2}
+  _postDecisionVariable: {fileID: 11400000, guid: 74dd8bdc0b926b64e9e4ba23d869a083, type: 2}
   _bindTextOnStart: 1
   _comment0Text: {fileID: 1644201589}
   _comment1Text: {fileID: 847022572}
@@ -10778,6 +10859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _storyDataVariable: {fileID: 11400000, guid: ab092fd08f2af5f4d9d39724d1ca80b4, type: 2}
+  _postDecisionVariable: {fileID: 11400000, guid: 74dd8bdc0b926b64e9e4ba23d869a083, type: 2}
   _bindTextOnStart: 1
   _comment0Text: {fileID: 1899602497}
   _comment1Text: {fileID: 913130154}
@@ -11155,7 +11237,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e1e9e2ce867b4d4a8d6deedc860ad89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentStory: {fileID: 11400000, guid: ab092fd08f2af5f4d9d39724d1ca80b4, type: 2}
+  _activeStory: {fileID: 11400000, guid: ab092fd08f2af5f4d9d39724d1ca80b4, type: 2}
+  _postDecisionVariable: {fileID: 11400000, guid: 74dd8bdc0b926b64e9e4ba23d869a083, type: 2}
   _animator: {fileID: 1592417780}
   _isAnonymous: 0
   _OnSlideAnimationEndResponse:
@@ -11912,7 +11995,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e1e9e2ce867b4d4a8d6deedc860ad89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentStory: {fileID: 11400000, guid: ab092fd08f2af5f4d9d39724d1ca80b4, type: 2}
+  _activeStory: {fileID: 11400000, guid: ab092fd08f2af5f4d9d39724d1ca80b4, type: 2}
+  _postDecisionVariable: {fileID: 11400000, guid: 74dd8bdc0b926b64e9e4ba23d869a083, type: 2}
   _animator: {fileID: 1737058705}
   _isAnonymous: 1
   _OnSlideAnimationEndResponse:
@@ -12936,7 +13020,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e1e9e2ce867b4d4a8d6deedc860ad89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentStory: {fileID: 11400000, guid: ab092fd08f2af5f4d9d39724d1ca80b4, type: 2}
+  _activeStory: {fileID: 11400000, guid: ab092fd08f2af5f4d9d39724d1ca80b4, type: 2}
+  _postDecisionVariable: {fileID: 11400000, guid: 74dd8bdc0b926b64e9e4ba23d869a083, type: 2}
   _animator: {fileID: 1958634472}
   _isAnonymous: 0
   _OnSlideAnimationEndResponse:
@@ -13130,7 +13215,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e1e9e2ce867b4d4a8d6deedc860ad89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentStory: {fileID: 11400000, guid: ab092fd08f2af5f4d9d39724d1ca80b4, type: 2}
+  _activeStory: {fileID: 11400000, guid: ab092fd08f2af5f4d9d39724d1ca80b4, type: 2}
+  _postDecisionVariable: {fileID: 11400000, guid: 74dd8bdc0b926b64e9e4ba23d869a083, type: 2}
   _animator: {fileID: 1982236409}
   _isAnonymous: 0
   _OnSlideAnimationEndResponse:
@@ -13301,7 +13387,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e1e9e2ce867b4d4a8d6deedc860ad89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentStory: {fileID: 11400000, guid: ab092fd08f2af5f4d9d39724d1ca80b4, type: 2}
+  _activeStory: {fileID: 11400000, guid: ab092fd08f2af5f4d9d39724d1ca80b4, type: 2}
+  _postDecisionVariable: {fileID: 11400000, guid: 74dd8bdc0b926b64e9e4ba23d869a083, type: 2}
   _animator: {fileID: 1990155855}
   _isAnonymous: 0
   _OnSlideAnimationEndResponse:

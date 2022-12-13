@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cca8c297890e8047ab71fd900af0ae0, type: 3}
+  m_Name: PenguinStart
+  m_EditorClassIdentifier: 
+  Title: Penguin Alert!
+  Description: Baby penguins born at local Benaxian zoo! They are so cute and I want
+    to pet one
+  AvailableStartingDay: 0
+  AnonymousCommentsToDisplay:
+  - OH EM GEE MEE TOO!
+  - heckin penguinos!
+  - maybe I will hit the zoo...
+  GovernmentCommentsToDisplay:
+  - Why does the govt care?
+  - OH EM GEE SOO CUTE!
+  - Doesn't seem very formal...
+  FollowerDelta: {x: 25, y: 35}
+  CommentDelta: {x: 4, y: 6}
+  AnonymousResult: {fileID: 11400000, guid: 17eb279744562a348bfd39f80e08748b, type: 2}
+  GovernmentResult: {fileID: 11400000, guid: 8ec6a583674dd3a46b6a10cc8d92f6fa, type: 2}
+  DoNotPostResult: {fileID: 11400000, guid: 334b78fdf5fd68541988da1287742a63, type: 2}

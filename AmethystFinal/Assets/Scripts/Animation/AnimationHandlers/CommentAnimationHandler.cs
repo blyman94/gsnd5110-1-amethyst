@@ -8,7 +8,8 @@ public class CommentAnimationHandler : MonoBehaviour
     public static int CurrentCommentCount = 0;
     public static bool ShowAnonymous = false;
     
-    [SerializeField] private StoryDataVariable _currentStory;
+    [SerializeField] private StoryDataVariable _activeStory;
+    [SerializeField] private PostDecisionVariable _postDecisionVariable;
     [SerializeField] private Animator _animator;
     [SerializeField] private bool _isAnonymous;
     [Header("Events")]
@@ -36,7 +37,17 @@ public class CommentAnimationHandler : MonoBehaviour
 
     public void OnSlideAnimationEnd()
     {
-        if (CurrentCommentCount + 1 < (Mathf.Min(_currentStory.Value.CommentDelta,4)))
+        var commentDelta = 0;
+        if (_postDecisionVariable.Value == PostDecision.Anonymous)
+        {
+            commentDelta = _activeStory.Value.CommentDelta.x;
+        }
+        else if (_postDecisionVariable.Value == PostDecision.Government)
+        {
+            commentDelta = _activeStory.Value.CommentDelta.y;
+        }
+        
+        if (CurrentCommentCount + 1 < (Mathf.Min(commentDelta,4)))
         {
             _OnSlideAnimationEndResponse?.Invoke();
             CurrentCommentCount++;

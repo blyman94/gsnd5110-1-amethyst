@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cca8c297890e8047ab71fd900af0ae0, type: 3}
+  m_Name: PenguinPenguin_ResolutionC
+  m_EditorClassIdentifier: 
+  Title: Local Zoo Forced to Close
+  Description: After a multinational investigation, the owners of a local Benaxian
+    zoo have been found guilty of penguin theft, and the zoo has closed as a result.
+  AvailableStartingDay: 2
+  AnonymousCommentsToDisplay:
+  - That make sense. Justice served.
+  - Won't ANYBODY THINK ABOUT THE PENGUINS!
+  GovernmentCommentsToDisplay:
+  - Glad Benaxia cooperated. Seems out of character...
+  - That's nuts fam!
+  FollowerDelta: {x: 25, y: 35}
+  CommentDelta: {x: 2, y: 2}
+  AnonymousResult: {fileID: 0}
+  GovernmentResult: {fileID: 0}
+  DoNotPostResult: {fileID: 0}
