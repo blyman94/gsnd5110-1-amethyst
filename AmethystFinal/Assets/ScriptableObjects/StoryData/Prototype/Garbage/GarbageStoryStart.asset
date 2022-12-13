@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: Garbage Delay
   Description: Residents of Benaxia will be sad to hear their trash will not be taken
     away for a week. Reduce, reuse, recycle!
-  AvailableStartingDay: 0
+  AvailableStartingDay: 1
   AnonymousCommentsToDisplay:
   - Benaxia should be telling us this
   - Are you a govt agent?

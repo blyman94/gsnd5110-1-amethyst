@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: Local Zoo Profits Plummet
   Description: Unfortunately, the cost of keeping baby penguins was not offset by
     an increase in zoo guests.
-  AvailableStartingDay: 1
+  AvailableStartingDay: 2
   AnonymousCommentsToDisplay:
   - Press X to pay respects...
   - Damn, I wish I had gone to the zoo...

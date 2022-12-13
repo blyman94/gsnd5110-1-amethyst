@@ -60,17 +60,17 @@ public class StoryDataVariableBinding : MonoBehaviour
     private void UpdateBindingUIAnonymous()
     {
         if (_comment0Text != null &&
-            _storyDataVariable.Value.AnonymousCommentsToDisplay[0] != null)
+            _storyDataVariable.Value.AnonymousCommentsToDisplay.Length >= 1)
         {
             _comment0Text.text = _storyDataVariable.Value.AnonymousCommentsToDisplay[0];
         }
         if (_comment1Text != null &&
-            _storyDataVariable.Value.AnonymousCommentsToDisplay[1] != null)
+            _storyDataVariable.Value.AnonymousCommentsToDisplay.Length >= 2)
         {
             _comment1Text.text = _storyDataVariable.Value.AnonymousCommentsToDisplay[1];
         }
         if (_comment2Text != null &&
-            _storyDataVariable.Value.AnonymousCommentsToDisplay[2] != null)
+            _storyDataVariable.Value.AnonymousCommentsToDisplay.Length >= 3)
         {
             _comment2Text.text = _storyDataVariable.Value.AnonymousCommentsToDisplay[2];
         }

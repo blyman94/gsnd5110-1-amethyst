@@ -16,7 +16,7 @@ MonoBehaviour:
   Description: Due to lack of public precaution, RAC-22 has infected most of Benaxia.
     With hospital beds filling quickly, it is uncertain whether Benaxia will survive
     this pandemic.
-  AvailableStartingDay: 3
+  AvailableStartingDay: 4
   AnonymousCommentsToDisplay:
   - There would probably be more comments if everyone wasn't dying.
   GovernmentCommentsToDisplay:

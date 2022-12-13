@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: Novel Disease Contained
   Description: RAC-22 disease has been identified and contained. The people of Benaxia
     can return to their daily lives without fear of contracting this terrible disease!
-  AvailableStartingDay: 3
+  AvailableStartingDay: 4
   AnonymousCommentsToDisplay:
   - Nice!
   - Nice!

@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: Charity Saves Local Zoo
   Description: Public awareness leads charitable Benaxians to donate their money
     to save a local zoo. How beautiful!
-  AvailableStartingDay: 2
+  AvailableStartingDay: 3
   AnonymousCommentsToDisplay:
   - Heartwarming. Glad it all worked out!
   GovernmentCommentsToDisplay:

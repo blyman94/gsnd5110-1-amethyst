@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: Penguin Alert!
   Description: Baby penguins born at local Benaxian zoo! They are so cute and I want
     to pet one
-  AvailableStartingDay: 0
+  AvailableStartingDay: 1
   AnonymousCommentsToDisplay:
   - OH EM GEE MEE TOO!
   - heckin penguinos!

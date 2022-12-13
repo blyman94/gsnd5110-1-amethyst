@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: Garbage Collection Restored
   Description: Residents of Benaxia will be happy to know their trash will be collected
     on schedule. Thanks for scaling back your waste this week!
-  AvailableStartingDay: 1
+  AvailableStartingDay: 2
   AnonymousCommentsToDisplay:
   - Govt shoulda handled this
   GovernmentCommentsToDisplay:

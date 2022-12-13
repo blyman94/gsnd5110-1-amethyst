@@ -15,7 +15,7 @@ MonoBehaviour:
   Title: Local Zoo Under Investigation
   Description: A foreign marine life center claims a local Benaxian zoo stole and
     bred their penguins.
-  AvailableStartingDay: 1
+  AvailableStartingDay: 2
   AnonymousCommentsToDisplay:
   - Juicy!
   - Why are penguins so valuable?
