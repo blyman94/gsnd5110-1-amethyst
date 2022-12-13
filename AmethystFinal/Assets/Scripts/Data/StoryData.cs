@@ -7,8 +7,9 @@ public class StoryData : ScriptableObject
     public string Title = "New Story Title";
     [TextArea(5, 5)] 
     public string Description = "New story details...";
-    
-    [Header("Comment Data")] 
-    public int TotalComments;
+
+    [Header("Metrics Data")] 
+    public int FollowerDelta = 25;
+    public int CommentDelta = 2;
     public string[] CommentsToDisplay;
 }

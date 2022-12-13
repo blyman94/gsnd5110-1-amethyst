@@ -9,14 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cca8c297890e8047ab71fd900af0ae0, type: 3}
-  m_Name: TestStoryData
+  m_Script: {fileID: 11500000, guid: 1d054dc750ba22b4fa094ce787d1645c, type: 3}
+  m_Name: PlayerComments
   m_EditorClassIdentifier: 
-  Title: The Penguins!
-  Description: Gotta have those penguins
-  FollowerDelta: 25
-  CommentDelta: 4
-  CommentsToDisplay:
-  - That's radical!
-  - Oh my!
-  - Wee!
+  _value: 36

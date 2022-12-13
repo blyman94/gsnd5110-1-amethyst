@@ -13,6 +13,16 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler,
     [SerializeField] private UnityEvent OnBeginDragResponse;
 
     private Vector3 _startPosition;
+    private Camera _mainCamera;
+    private Canvas _rootCanvas;
+    
+    #region MonoBehaviour Methods
+    private void Awake()
+    {
+        _mainCamera = Camera.main;
+        _rootCanvas = transform.root.GetComponent<Canvas>();
+    }
+    #endregion
     
     #region IBeginDragHandler, IDragHandler, IEndDragHandler Methods
     public void OnBeginDrag(PointerEventData eventData)
@@ -25,7 +35,15 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler,
 
     public void OnDrag(PointerEventData eventData)
     {
-        transform.position = eventData.position;
+        if (_rootCanvas.renderMode is RenderMode.ScreenSpaceCamera or RenderMode.WorldSpace)
+        {
+            var worldPoint = _mainCamera.ScreenToWorldPoint(eventData.position);
+            transform.position = new Vector2(worldPoint.x, worldPoint.y);
+        }
+        else
+        {
+            transform.position = eventData.position;
+        }
     }
 
     public void OnEndDrag(PointerEventData eventData)

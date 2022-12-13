@@ -36,7 +36,7 @@ public class CommentAnimationHandler : MonoBehaviour
 
     public void OnSlideAnimationEnd()
     {
-        if (CurrentCommentCount + 1 < (Mathf.Min(_currentStory.Value.TotalComments,4)))
+        if (CurrentCommentCount + 1 < (Mathf.Min(_currentStory.Value.CommentDelta,4)))
         {
             _OnSlideAnimationEndResponse?.Invoke();
             CurrentCommentCount++;

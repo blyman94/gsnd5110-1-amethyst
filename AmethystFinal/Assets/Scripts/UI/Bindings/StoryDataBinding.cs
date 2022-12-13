@@ -6,6 +6,7 @@ public class StoryDataBinding : MonoBehaviour
     [SerializeField] private StoryData _storyData;
     [SerializeField] private TextMeshProUGUI _storyTitleText;
     [SerializeField] private TextMeshProUGUI _storyDetailsText;
+    [SerializeField] private StoryDataVariable _activeStory;
 
     public StoryData StoryData
     {
@@ -19,12 +20,18 @@ public class StoryDataBinding : MonoBehaviour
             UpdateStoryDataDisplay();
         }
     }
+    
     #region MonoBehaviour Methods
     private void Start()
     {
         UpdateStoryDataDisplay();
     }
     #endregion
+
+    public void UpdateActiveStory()
+    {
+        _activeStory.Value = _storyData;
+    }
 
     private void UpdateStoryDataDisplay()
     {
