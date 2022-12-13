@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d054dc750ba22b4fa094ce787d1645c, type: 3}
   m_Name: PlayerFollowers
   m_EditorClassIdentifier: 
-  _value: 275
+  _value: 50

@@ -6397,7 +6397,7 @@ GameObject:
   - component: {fileID: 475561788}
   - component: {fileID: 475561787}
   m_Layer: 5
-  m_Name: CommentorCommentText
+  m_Name: Comment2Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6943,7 +6943,7 @@ GameObject:
   - component: {fileID: 561900531}
   - component: {fileID: 561900530}
   m_Layer: 5
-  m_Name: CommentorCommentText
+  m_Name: Comment2Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8671,7 +8671,7 @@ GameObject:
   - component: {fileID: 847022573}
   - component: {fileID: 847022572}
   m_Layer: 5
-  m_Name: CommentorCommentText
+  m_Name: Comment1Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8941,7 +8941,7 @@ GameObject:
   - component: {fileID: 913130155}
   - component: {fileID: 913130154}
   m_Layer: 5
-  m_Name: CommentorCommentText
+  m_Name: Comment1Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9829,6 +9829,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1153726866}
+  - component: {fileID: 1153726867}
   m_Layer: 5
   m_Name: AnonymousComments
   m_TagString: Untagged
@@ -9860,6 +9861,23 @@ RectTransform:
   m_AnchoredPosition: {x: -313, y: 0.09576416}
   m_SizeDelta: {x: 300, y: 237.8065}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1153726867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153726865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4269f95703103d42bf3169c07f25f98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _storyDataVariable: {fileID: 11400000, guid: ab092fd08f2af5f4d9d39724d1ca80b4, type: 2}
+  _bindTextOnStart: 1
+  _comment0Text: {fileID: 1644201589}
+  _comment1Text: {fileID: 847022572}
+  _comment2Text: {fileID: 561900530}
 --- !u!1 &1170838562
 GameObject:
   m_ObjectHideFlags: 0
@@ -10715,6 +10733,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1384852833}
+  - component: {fileID: 1384852834}
   m_Layer: 5
   m_Name: GovernmentComments
   m_TagString: Untagged
@@ -10746,6 +10765,23 @@ RectTransform:
   m_AnchoredPosition: {x: 313, y: -0.09576416}
   m_SizeDelta: {x: 300, y: 237.8065}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1384852834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384852832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4269f95703103d42bf3169c07f25f98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _storyDataVariable: {fileID: 11400000, guid: ab092fd08f2af5f4d9d39724d1ca80b4, type: 2}
+  _bindTextOnStart: 1
+  _comment0Text: {fileID: 1899602497}
+  _comment1Text: {fileID: 913130154}
+  _comment2Text: {fileID: 475561787}
 --- !u!1 &1391241979
 GameObject:
   m_ObjectHideFlags: 0
@@ -11492,7 +11528,7 @@ GameObject:
   - component: {fileID: 1644201590}
   - component: {fileID: 1644201589}
   m_Layer: 5
-  m_Name: CommentorCommentText
+  m_Name: Comment0Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12433,7 +12469,7 @@ GameObject:
   - component: {fileID: 1899602498}
   - component: {fileID: 1899602497}
   m_Layer: 5
-  m_Name: CommentorCommentText
+  m_Name: Comment0Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
