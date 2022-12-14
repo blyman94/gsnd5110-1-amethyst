@@ -264,7 +264,7 @@ MonoBehaviour:
   _postDecision: {fileID: 11400000, guid: 74dd8bdc0b926b64e9e4ba23d869a083, type: 2}
   _dayCounter: {fileID: 11400000, guid: 910a3d11953546442b7ba47b0cf2b83a, type: 2}
   _startingStories:
-  - {fileID: 11400000, guid: 8ec6a583674dd3a46b6a10cc8d92f6fa, type: 2}
+  - {fileID: 11400000, guid: 6329bfc216cd47a4496b1cdc5709cc25, type: 2}
   _availableStoryParent: {fileID: 938653662}
   _newStoriesResponse:
     m_PersistentCalls:
@@ -6318,7 +6318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rectToScroll: {fileID: 195042511}
   _scrollDirection: 0
-  _autoScrollSpeed: 0.25
+  _autoScrollSpeed: 0.05
   _onScrollEndEvent:
     m_PersistentCalls:
       m_Calls:
@@ -25010,6 +25010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _resolutionSummaries: {fileID: 11400000, guid: e0c1dcb9ca5998b479944a8eb49c74d5, type: 2}
   _resolutionTextPrefab: {fileID: 8029606556178276664, guid: a0574a7bb35309742b2414d19b39447b, type: 3}
+  _ledRevolutionTextPrefab: {fileID: 8029606556178276664, guid: 68c3fe59ab1fd46459dff32c684e559f, type: 3}
   _resolutionTextParent: {fileID: 1428348853}
 --- !u!1 &1441481704
 GameObject:

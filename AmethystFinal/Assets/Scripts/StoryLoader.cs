@@ -48,9 +48,12 @@ public class StoryLoader : MonoBehaviour
             }
             else
             {
-                var stringsUpdate = _resolutionStrings.Value;
-                stringsUpdate.Add(storyData.ResolutionSummary);
-                _resolutionStrings.Value = stringsUpdate;
+                if (storyData.ResolutionSummary != "")
+                {
+                    var stringsUpdate = _resolutionStrings.Value;
+                    stringsUpdate.Add(storyData.ResolutionSummary);
+                    _resolutionStrings.Value = stringsUpdate;
+                }
             }
         }
 
@@ -122,7 +125,7 @@ public class StoryLoader : MonoBehaviour
                 break;
         }
 
-        if (isResolution)
+        if (isResolution && _activeStory.Value.ResolutionSummary != "")
         {
             var stringsUpdate = _resolutionStrings.Value;
             stringsUpdate.Add(_activeStory.Value.ResolutionSummary);

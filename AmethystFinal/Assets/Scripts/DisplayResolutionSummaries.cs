@@ -7,6 +7,7 @@ public class DisplayResolutionSummaries : MonoBehaviour
 {
     [SerializeField] private ListOfStringsVariable _resolutionSummaries;
     [SerializeField] private GameObject _resolutionTextPrefab;
+    [SerializeField] private GameObject _ledRevolutionTextPrefab;
     [SerializeField] private Transform _resolutionTextParent;
     
     #region MonoBehaviour Methods
@@ -39,5 +40,7 @@ public class DisplayResolutionSummaries : MonoBehaviour
             resolutionObject.GetComponent<TextMeshProUGUI>().text =
                 resolutionString;
         }
+        
+        Instantiate(_ledRevolutionTextPrefab, _resolutionTextParent);
     }
 }

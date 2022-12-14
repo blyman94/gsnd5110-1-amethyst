@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cca8c297890e8047ab71fd900af0ae0, type: 3}
+  m_Name: 10_Revolution
+  m_EditorClassIdentifier: 
+  Title: Revolution
+  Description: New story details...
+  AvailableStartingDay: 1
+  SpinStory: 1
+  AnonymousTitle: Benaxian revolution
+  AnonymousDescription: Despite government promise of reform, protestors say that
+    the movement is a revolution, and that these reforms are not enough
+  GovernmentTitle: SL declares reform
+  GovernmentDescription: 'The Supreme Leader announced sweeping police reforms and
+    investigations in response to ongoing pressures for protests. '
+  AnonymousCommentsToDisplay:
+  - Rebuild! Revolt!
+  - I stand with maria
+  - '"Reforming" corruption doesn''t fix anything'
+  GovernmentCommentsToDisplay:
+  - You shouldn't bow to these snowflakes
+  - Don't let them win
+  - Why aren't they happy now?
+  FollowerDelta: {x: 25, y: 35}
+  CommentDelta: {x: 4, y: 6}
+  AnonymousResult: {fileID: 0}
+  GovernmentResult: {fileID: 0}
+  DoNotPostResult: {fileID: 0}
+  ResolutionSummary: 
