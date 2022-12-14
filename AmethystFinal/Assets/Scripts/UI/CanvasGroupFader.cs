@@ -4,6 +4,7 @@ using UnityEngine.Events;
 public class CanvasGroupFader : MonoBehaviour
 {
     [SerializeField] private CanvasGroup _canvasGroup;
+    [SerializeField] private bool startShowing;
     
     [Header("Shown State Parameters")]
     [SerializeField] private float _shownAlpha = 1.0f;
@@ -20,6 +21,22 @@ public class CanvasGroupFader : MonoBehaviour
     private bool _fadingOut;
 
     #region MonoBehaviour Methods
+
+    private void Start()
+    {
+        if (startShowing)
+        {
+            _canvasGroup.alpha = _shownAlpha;
+            _canvasGroup.blocksRaycasts = _shownBlocksRaycasts;
+            _canvasGroup.interactable = _shownInteractable;
+        }
+        else
+        {
+            _canvasGroup.alpha = 0.0f;
+            _canvasGroup.blocksRaycasts = false;
+            _canvasGroup.interactable = false;
+        }
+    }
     private void Update()
     {
         if (_fadingIn)
@@ -62,6 +79,22 @@ public class CanvasGroupFader : MonoBehaviour
         _canvasGroup.alpha = _shownAlpha;
         _fadeTime = fadeTime;
         _elapsedTime = 0.0f;
+    }
+
+    public void FadeInIfNeeded(float fadeTime)
+    {
+        if (!(_canvasGroup.alpha == 1))
+        {
+            FadeIn(fadeTime);
+        }
+    }
+    
+    public void FadeOutIfNeeded(float fadeTime)
+    {
+        if (!(_canvasGroup.alpha == 0))
+        {
+            FadeOut(fadeTime);
+        }
     }
     
     public void FadeIn(float fadeTime)
