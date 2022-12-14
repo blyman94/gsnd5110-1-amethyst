@@ -1,4 +1,5 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class StoryDataBinding : MonoBehaviour
@@ -7,6 +8,8 @@ public class StoryDataBinding : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _storyTitleText;
     [SerializeField] private TextMeshProUGUI _storyDetailsText;
     [SerializeField] private StoryDataVariable _activeStory;
+    [SerializeField] private bool isAnonymousDisplay = false;
+    [SerializeField] private bool showSpin = false;
 
     public StoryData StoryData
     {
@@ -35,22 +38,40 @@ public class StoryDataBinding : MonoBehaviour
 
     private void UpdateStoryDataDisplay()
     {
+        string titleText = "";
+        string detailsText = "";
+        
         if (_storyData != null)
         {
-            if (_storyTitleText != null)
+            if (_storyData.SpinStory && showSpin)
             {
-                _storyTitleText.text = _storyData.Title;
+                if (isAnonymousDisplay)
+                {
+                    titleText = _storyData.AnonymousTitle;
+                    detailsText = _storyData.AnonymousDescription;
+                }
+                else
+                {
+                    titleText = _storyData.GovernmentTitle;
+                    detailsText = _storyData.GovernmentDescription;
+                }
             }
-
-            if (_storyDetailsText != null)
+            else
             {
-                _storyDetailsText.text = _storyData.Description;
+                titleText = _storyData.Title;
+                detailsText = _storyData.Description;
             }
         }
-        else
+        
+        if (_storyTitleText != null)
         {
-            _storyTitleText.text = "";
-            _storyDetailsText.text = "";
+            _storyTitleText.text = titleText;
+                
+        }
+
+        if (_storyDetailsText != null)
+        {
+            _storyDetailsText.text = detailsText;
         }
     }
 }

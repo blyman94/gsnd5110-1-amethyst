@@ -7,7 +7,16 @@ public class StoryData : ScriptableObject
     public string Title = "New Story Title";
     [TextArea(5, 5)] 
     public string Description = "New story details...";
-    public int AvailableStartingDay = 0;
+    public int AvailableStartingDay = 1;
+
+    [Header("Story Spin Data")] 
+    public bool SpinStory = false;
+    public string AnonymousTitle;
+    [TextArea(5,5)]
+    public string AnonymousDescription;
+    public string GovernmentTitle;
+    [TextArea(5,5)]
+    public string GovernmentDescription;
     
     [Header("Comments")]
     public string[] AnonymousCommentsToDisplay;
