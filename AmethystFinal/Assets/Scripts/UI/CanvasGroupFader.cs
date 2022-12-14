@@ -26,9 +26,7 @@ public class CanvasGroupFader : MonoBehaviour
     {
         if (startShowing)
         {
-            _canvasGroup.alpha = _shownAlpha;
-            _canvasGroup.blocksRaycasts = _shownBlocksRaycasts;
-            _canvasGroup.interactable = _shownInteractable;
+            ShowGroup();
         }
         else
         {
@@ -48,9 +46,7 @@ public class CanvasGroupFader : MonoBehaviour
             {
                 _fadeInCompleteEvent?.Invoke();
                 _fadingIn = false;
-                _canvasGroup.alpha = _shownAlpha;
-                _canvasGroup.blocksRaycasts = _shownBlocksRaycasts;
-                _canvasGroup.interactable = _shownInteractable;
+                ShowGroup();
             }
         }
         else if (_fadingOut)
@@ -67,6 +63,20 @@ public class CanvasGroupFader : MonoBehaviour
         }
     }
     #endregion
+
+    public void ShowGroup()
+    {
+        _canvasGroup.alpha = _shownAlpha;
+        _canvasGroup.blocksRaycasts = _shownBlocksRaycasts;
+        _canvasGroup.interactable = _shownInteractable;
+    }
+
+    public void HideGroup()
+    {
+        _canvasGroup.alpha = 0.0f;
+        _canvasGroup.blocksRaycasts = false;
+        _canvasGroup.interactable = false;
+    }
     
     public void FadeOut(float fadeTime)
     {
