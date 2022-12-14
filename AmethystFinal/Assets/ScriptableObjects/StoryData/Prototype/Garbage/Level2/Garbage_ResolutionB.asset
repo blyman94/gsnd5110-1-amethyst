@@ -16,6 +16,11 @@ MonoBehaviour:
   Description: The nefarious raccoons have been rounded up, relocated, and treated
     for disease. No reports of disease from these critters!
   AvailableStartingDay: 3
+  SpinStory: 0
+  AnonymousTitle: 
+  AnonymousDescription: 
+  GovernmentTitle: 
+  GovernmentDescription: 
   AnonymousCommentsToDisplay:
   - Benaxia doesn't care to post?
   - Did you round them up yourself?
@@ -26,3 +31,4 @@ MonoBehaviour:
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}
   DoNotPostResult: {fileID: 0}
+  ResolutionSummary: Handle a racoon infestation.

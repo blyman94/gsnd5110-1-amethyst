@@ -16,6 +16,11 @@ MonoBehaviour:
   Description: RAC-22 disease has been identified and contained. The people of Benaxia
     can return to their daily lives without fear of contracting this terrible disease!
   AvailableStartingDay: 4
+  SpinStory: 0
+  AnonymousTitle: 
+  AnonymousDescription: 
+  GovernmentTitle: 
+  GovernmentDescription: 
   AnonymousCommentsToDisplay:
   - Nice!
   - Nice!
@@ -29,3 +34,4 @@ MonoBehaviour:
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}
   DoNotPostResult: {fileID: 0}
+  ResolutionSummary: Contain a novel virus (RAC-22).

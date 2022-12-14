@@ -10,10 +10,12 @@ public class TitleSequenceStarter : MonoBehaviour
     [SerializeField] private TitleTextAnimationHandler _subTitleAnimationHandler;
     [SerializeField] private AnimationType _titleAnimationType;
     [SerializeField] private AnimationType _subTitleAnimationType;
+    [SerializeField] private AnimationSpacing _startSpacing;
+    [SerializeField] private float _startDelayTime = 2.0f;
 
     private void Start()
     {
-        PlayTitleAnimation();
+        _startSpacing.Timer = _startDelayTime;
     }
 
     public void PlayTitleAnimation()

@@ -17,6 +17,11 @@ MonoBehaviour:
     closed its doors. Benaxia will no longer enjoy the variety of wildlife it had
     to offer.
   AvailableStartingDay: 3
+  SpinStory: 0
+  AnonymousTitle: 
+  AnonymousDescription: 
+  GovernmentTitle: 
+  GovernmentDescription: 
   AnonymousCommentsToDisplay:
   - Ah, beans.
   GovernmentCommentsToDisplay:
@@ -26,3 +31,4 @@ MonoBehaviour:
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}
   DoNotPostResult: {fileID: 0}
+  ResolutionSummary: Shut down a local zoo.

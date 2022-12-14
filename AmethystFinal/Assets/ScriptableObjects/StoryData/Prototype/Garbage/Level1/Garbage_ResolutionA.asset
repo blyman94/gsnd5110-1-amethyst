@@ -16,6 +16,11 @@ MonoBehaviour:
   Description: Residents of Benaxia will be happy to know their trash will be collected
     on schedule. Thanks for scaling back your waste this week!
   AvailableStartingDay: 2
+  SpinStory: 0
+  AnonymousTitle: 
+  AnonymousDescription: 
+  GovernmentTitle: 
+  GovernmentDescription: 
   AnonymousCommentsToDisplay:
   - Govt shoulda handled this
   GovernmentCommentsToDisplay:
@@ -27,3 +32,4 @@ MonoBehaviour:
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}
   DoNotPostResult: {fileID: 0}
+  ResolutionSummary: Prevent garbage collection issues.

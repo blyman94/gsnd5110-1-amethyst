@@ -30,5 +30,7 @@ public class StoryData : ScriptableObject
     public StoryData AnonymousResult;
     public StoryData GovernmentResult;
     public StoryData DoNotPostResult;
+    [TextArea(5,5)]
+    public string ResolutionSummary;
 
 }

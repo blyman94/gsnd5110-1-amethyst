@@ -6,6 +6,8 @@ public class IntVariableBinding : MonoBehaviour
     [SerializeField] private IntVariable _intVariable;
     [SerializeField] private TextMeshProUGUI _boundText;
     [SerializeField] private bool _bindTextOnStart;
+    [SerializeField] private bool _changeTextColor = false;
+    [SerializeField] private Color _textColor = Color.white;
 
     public IntVariable IntVariable
     {
@@ -41,5 +43,9 @@ public class IntVariableBinding : MonoBehaviour
     private void UpdateBindingUI()
     {
         _boundText.text = _intVariable.Value.ToString();
+        if (_changeTextColor)
+        {
+            _boundText.color = _textColor;
+        }
     }
 }

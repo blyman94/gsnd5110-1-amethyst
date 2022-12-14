@@ -17,6 +17,11 @@ MonoBehaviour:
     has been contained, but could be the end of Benaxia's tourist industry for a
     few years.
   AvailableStartingDay: 4
+  SpinStory: 0
+  AnonymousTitle: 
+  AnonymousDescription: 
+  GovernmentTitle: 
+  GovernmentDescription: 
   AnonymousCommentsToDisplay:
   - Makes sense. My sister died of RAC-22 :(
   - Is this account external from Benaxia?
@@ -29,3 +34,4 @@ MonoBehaviour:
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}
   DoNotPostResult: {fileID: 0}
+  ResolutionSummary: Get Benaxia labeled a global health risk.

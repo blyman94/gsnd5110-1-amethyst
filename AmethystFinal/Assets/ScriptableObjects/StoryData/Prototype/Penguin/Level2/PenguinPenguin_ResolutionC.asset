@@ -16,6 +16,11 @@ MonoBehaviour:
   Description: After a multinational investigation, the owners of a local Benaxian
     zoo have been found guilty of penguin theft, and the zoo has closed as a result.
   AvailableStartingDay: 3
+  SpinStory: 0
+  AnonymousTitle: 
+  AnonymousDescription: 
+  GovernmentTitle: 
+  GovernmentDescription: 
   AnonymousCommentsToDisplay:
   - That make sense. Justice served.
   - Won't ANYBODY THINK ABOUT THE PENGUINS!
@@ -27,3 +32,4 @@ MonoBehaviour:
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}
   DoNotPostResult: {fileID: 0}
+  ResolutionSummary: Shut down a zoo on charges of penguin theft.

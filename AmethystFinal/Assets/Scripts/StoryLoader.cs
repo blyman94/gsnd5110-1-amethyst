@@ -13,6 +13,7 @@ public class StoryLoader : MonoBehaviour
     [SerializeField] private Transform _availableStoryParent;
     [SerializeField] private UnityEvent _newStoriesResponse;
     [SerializeField] private UnityEvent _noNewStoriesResponse;
+    [SerializeField] private ListOfStringsVariable _resolutionStrings;
 
     private List<StoryData> _currentStories;
     private List<StoryData> _futureStories;
@@ -29,6 +30,7 @@ public class StoryLoader : MonoBehaviour
 
     private void Start()
     {
+        _resolutionStrings.Value.Clear();
         _currentStories = _startingStories.ToList();
         _dayCounter.Value = 1;
         DisplayCurrentStories();
@@ -43,6 +45,12 @@ public class StoryLoader : MonoBehaviour
             if (storyData.DoNotPostResult != null)
             {
                 _futureStories.Add(storyData.DoNotPostResult);
+            }
+            else
+            {
+                var stringsUpdate = _resolutionStrings.Value;
+                stringsUpdate.Add(storyData.ResolutionSummary);
+                _resolutionStrings.Value = stringsUpdate;
             }
         }
 
@@ -84,30 +92,41 @@ public class StoryLoader : MonoBehaviour
 
     public void UpdateFutureStories()
     {
+        bool isResolution = true;
         switch (_postDecision.Value)
         {
             case PostDecision.Anonymous:
                 if (_activeStory.Value.AnonymousResult != null)
                 {
                     _futureStories.Add(_activeStory.Value.AnonymousResult);
+                    isResolution = false;
                 }
                 break;
             case PostDecision.Government:
                 if (_activeStory.Value.GovernmentResult != null)
                 {
                     _futureStories.Add(_activeStory.Value.GovernmentResult);
+                    isResolution = false;
                 }
                 break;
             case PostDecision.DoNot:
                 if (_activeStory.Value.DoNotPostResult != null)
                 {
                     _futureStories.Add(_activeStory.Value.DoNotPostResult);
+                    isResolution = false;
                 }
                 break;
             default:
                 Debug.Log("Unknown PostDecision passed to " +
                           "StoryLoader.UpdateFutureStories()");
                 break;
+        }
+
+        if (isResolution)
+        {
+            var stringsUpdate = _resolutionStrings.Value;
+            stringsUpdate.Add(_activeStory.Value.ResolutionSummary);
+            _resolutionStrings.Value = stringsUpdate;
         }
     }
 

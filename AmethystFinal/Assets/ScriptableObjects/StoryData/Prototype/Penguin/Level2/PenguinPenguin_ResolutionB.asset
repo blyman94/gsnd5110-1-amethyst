@@ -16,6 +16,11 @@ MonoBehaviour:
   Description: Public awareness leads charitable Benaxians to donate their money
     to save a local zoo. How beautiful!
   AvailableStartingDay: 3
+  SpinStory: 0
+  AnonymousTitle: 
+  AnonymousDescription: 
+  GovernmentTitle: 
+  GovernmentDescription: 
   AnonymousCommentsToDisplay:
   - Heartwarming. Glad it all worked out!
   GovernmentCommentsToDisplay:
@@ -25,3 +30,4 @@ MonoBehaviour:
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}
   DoNotPostResult: {fileID: 0}
+  ResolutionSummary: Save a local zoo from forclosure.

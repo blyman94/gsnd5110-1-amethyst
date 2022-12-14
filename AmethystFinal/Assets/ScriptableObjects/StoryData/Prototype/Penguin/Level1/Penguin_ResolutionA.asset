@@ -15,7 +15,12 @@ MonoBehaviour:
   Title: 'Local Zoo: Major Renovations'
   Description: The profits brought in by baby penguin-crazed visitors drove a local
     Benaxian zoo to double in size!
-  AvailableStartingDay: 2
+  AvailableStartingDay: 1
+  SpinStory: 0
+  AnonymousTitle: 
+  AnonymousDescription: 
+  GovernmentTitle: 
+  GovernmentDescription: 
   AnonymousCommentsToDisplay:
   - MAGICAL WATER BIRBS
   - ^^^
@@ -28,3 +33,4 @@ MonoBehaviour:
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}
   DoNotPostResult: {fileID: 0}
+  ResolutionSummary: Double the size of a local zoo.

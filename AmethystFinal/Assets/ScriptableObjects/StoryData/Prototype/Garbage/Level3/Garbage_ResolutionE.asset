@@ -17,6 +17,11 @@ MonoBehaviour:
     With hospital beds filling quickly, it is uncertain whether Benaxia will survive
     this pandemic.
   AvailableStartingDay: 4
+  SpinStory: 0
+  AnonymousTitle: 
+  AnonymousDescription: 
+  GovernmentTitle: 
+  GovernmentDescription: 
   AnonymousCommentsToDisplay:
   - There would probably be more comments if everyone wasn't dying.
   GovernmentCommentsToDisplay:
@@ -26,3 +31,4 @@ MonoBehaviour:
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}
   DoNotPostResult: {fileID: 0}
+  ResolutionSummary: Cause a pandemic, killing thousands.
