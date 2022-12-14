@@ -1,13 +1,13 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1102 &-2588753899635231238
+--- !u!1102 &-7381968153888781638
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SlideInAndOut
+  m_Name: ShowAndSettle
   m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions: []
@@ -20,7 +20,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: a004c487bf675d241869bf01f7b12491, type: 2}
+  m_Motion: {fileID: 7400000, guid: 91f5ad013f382154e9ae4c840f5e1dcc, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -32,13 +32,13 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DayCounterDisplay
+  m_Name: TitleIcon
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
-    m_StateMachine: {fileID: 2313562770198389473}
+    m_StateMachine: {fileID: 1679001412519925145}
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
@@ -48,7 +48,7 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1107 &2313562770198389473
+--- !u!1107 &1679001412519925145
 AnimatorStateMachine:
   serializedVersion: 6
   m_ObjectHideFlags: 1
@@ -58,11 +58,11 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: -2588753899635231238}
-    m_Position: {x: 200, y: 0, z: 0}
+    m_State: {fileID: -7381968153888781638}
+    m_Position: {x: 300, y: 0, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 5412207903507460874}
-    m_Position: {x: 235, y: 65, z: 0}
+    m_State: {fileID: 8533144931861523677}
+    m_Position: {x: 335, y: 65, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -72,8 +72,8 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 5412207903507460874}
---- !u!1102 &5412207903507460874
+  m_DefaultState: {fileID: 8533144931861523677}
+--- !u!1102 &8533144931861523677
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
@@ -93,7 +93,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: c90060ad3bf16fc4faf2ac9e0c4e71b2, type: 2}
+  m_Motion: {fileID: 7400000, guid: 815ea2fbfeaf45944a0c78232f38eb40, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
