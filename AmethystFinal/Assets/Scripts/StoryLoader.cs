@@ -83,17 +83,19 @@ public class StoryLoader : MonoBehaviour
             }
         }
 
-        if (_dayCounter.Value < 11)
+        if (_dayCounter.Value <= 11)
         {
-            Debug.Log(_dayCounter.Value);
             // Move future stories to current stories
-            _currentStories = new List<StoryData>(_futureStories);
+            _currentStories = 
+                new List<StoryData>(_futureStories.Where(x => 
+                    x.AvailableStartingDay == _dayCounter.Value));
             
             // Add day specific stories
-            _currentStories.AddRange(_storiesLOL[_dayCounter.Value]);
+            _currentStories.AddRange(_storiesLOL[_dayCounter.Value - 1]);
             
             // Clear future stories
-            _futureStories.Clear();
+            _futureStories = _futureStories.Where(x => 
+                x.AvailableStartingDay != _dayCounter.Value).ToList();
             
             _newStoriesResponse?.Invoke();
         }
