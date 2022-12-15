@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cca8c297890e8047ab71fd900af0ae0, type: 3}
+  m_Name: 05_UniversityEscalation
+  m_EditorClassIdentifier: 
+  Title: University Protests Escalate
+  Description: New story details...
+  AvailableStartingDay: 6
+  SpinStory: 1
+  AnonymousTitle: Student's burn oppresive symbols
+  AnonymousDescription: Students and women burnt scarves in universities in several
+    cities. Police entered and arrested many protestors
+  GovernmentTitle: Rebels set fire to academic buildings
+  GovernmentDescription: Classes at Benaxia University were disrupted by anarchists
+    yesterday burning buildings. The situation was brought under control by Police
+  AnonymousCommentsToDisplay:
+  - cover up
+  - I stand with Maria
+  - We've been doing our best for the country, when will they do the best for us?
+  GovernmentCommentsToDisplay:
+  - They should focus on studies
+  - I stand with Maria
+  FollowerDelta: {x: 25, y: 35}
+  CommentDelta: {x: 4, y: 6}
+  AnonymousResult: {fileID: 11400000, guid: 27e0a4335b97021409ed1a10ecb7c33c, type: 2}
+  GovernmentResult: {fileID: 11400000, guid: 27e0a4335b97021409ed1a10ecb7c33c, type: 2}
+  DoNotPostResult: {fileID: 11400000, guid: 27e0a4335b97021409ed1a10ecb7c33c, type: 2}
+  ResolutionSummary: 

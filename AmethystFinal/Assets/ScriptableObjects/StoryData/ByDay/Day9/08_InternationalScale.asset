@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cca8c297890e8047ab71fd900af0ae0, type: 3}
+  m_Name: 08_InternationalScale
+  m_EditorClassIdentifier: 
+  Title: Foreigners
+  Description: New story details...
+  AvailableStartingDay: 9
+  SpinStory: 1
+  AnonymousTitle: Angels protect protestors
+  AnonymousDescription: Arrests and fatalities have risen in Benaxia protests, but
+    now protestors have a means to protect themselves from foreign allies.
+  GovernmentTitle: Potential for War
+  GovernmentDescription: Foreign governments have been arming anarchists in Benaxia
+    in clear violation of international treaties. This is an act of war
+  AnonymousCommentsToDisplay:
+  - Watching from Lanceria. WE support you
+  - I stand with Benaxia
+  - I hope everyone stays safe
+  GovernmentCommentsToDisplay:
+  - Elfenheid supports the benaxia protestors
+  - Is it an act of war when you attack Elfenheid?
+  - Glory to Benaxia
+  FollowerDelta: {x: 25, y: 35}
+  CommentDelta: {x: 4, y: 6}
+  AnonymousResult: {fileID: 11400000, guid: 46e45564b298e0c4bb29bd556b98db52, type: 2}
+  GovernmentResult: {fileID: 11400000, guid: 46e45564b298e0c4bb29bd556b98db52, type: 2}
+  DoNotPostResult: {fileID: 11400000, guid: 46e45564b298e0c4bb29bd556b98db52, type: 2}
+  ResolutionSummary: 

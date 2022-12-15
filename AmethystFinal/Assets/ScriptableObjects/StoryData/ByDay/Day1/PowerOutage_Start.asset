@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cca8c297890e8047ab71fd900af0ae0, type: 3}
+  m_Name: PowerOutage_Start
+  m_EditorClassIdentifier: 
+  Title: Planned Power Outage
+  Description: Residents of Benaxia will be troubled to hear that their power will
+    be cut for the next couple of days due to some routine maintaince. Rest assured,
+    everything is OK!
+  AvailableStartingDay: 1
+  SpinStory: 0
+  AnonymousTitle: 
+  AnonymousDescription: 
+  GovernmentTitle: 
+  GovernmentDescription: 
+  AnonymousCommentsToDisplay:
+  - You're really gonna believe this crap from anon source?
+  - Everything is ok laughcryemoji.jpg
+  - I guess I am reading the Buttress of Windsor now...
+  GovernmentCommentsToDisplay:
+  - Thanks for the heads up, Benaxia!
+  - Really grateful we are aware.
+  - NO ONE thinks this power outage is weird?
+  FollowerDelta: {x: 25, y: 35}
+  CommentDelta: {x: 4, y: 6}
+  AnonymousResult: {fileID: 11400000, guid: 4bb2e69ea1337fe46b4ec554ffa4348a, type: 2}
+  GovernmentResult: {fileID: 11400000, guid: e343b0340f275a64dad321acff4ac585, type: 2}
+  DoNotPostResult: {fileID: 11400000, guid: 7e972f6924cf2684e92c58ba98aec0db, type: 2}
+  ResolutionSummary: 

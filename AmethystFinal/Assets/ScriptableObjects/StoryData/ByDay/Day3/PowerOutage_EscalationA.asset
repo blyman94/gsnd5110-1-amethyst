@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cca8c297890e8047ab71fd900af0ae0, type: 3}
+  m_Name: PowerOutage_EscalationA
+  m_EditorClassIdentifier: 
+  Title: Power Outage Skepticism
+  Description: The world outside of Benaxia believes its government is using this
+    power outage to cover up something sinister.
+  AvailableStartingDay: 3
+  SpinStory: 0
+  AnonymousTitle: 
+  AnonymousDescription: 
+  GovernmentTitle: 
+  GovernmentDescription: 
+  AnonymousCommentsToDisplay:
+  - This is terrifying... staying tuned for more
+  - Consider me a follower, this is #$&@'d up.
+  - WHAT ARE THEY HIDING!
+  GovernmentCommentsToDisplay:
+  - Benaxia has nothing to hide here.
+  - 'Posting this on a govt account is bold. '
+  - Fight back, Benaxia!
+  FollowerDelta: {x: 25, y: 35}
+  CommentDelta: {x: 4, y: 6}
+  AnonymousResult: {fileID: 11400000, guid: cfb3a7a560f355a43bdd4b33ce35f5fd, type: 2}
+  GovernmentResult: {fileID: 11400000, guid: 6b0a0a1636282074cb20257abaa81de7, type: 2}
+  DoNotPostResult: {fileID: 11400000, guid: b56762c129efafc46a8280ccdd8d718d, type: 2}
+  ResolutionSummary: 

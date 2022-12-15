@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cca8c297890e8047ab71fd900af0ae0, type: 3}
+  m_Name: Garbage_ResolutionA
+  m_EditorClassIdentifier: 
+  Title: Garbage Collection Restored
+  Description: Residents of Benaxia will be happy to know their trash will be collected
+    on schedule. Thanks for scaling back your waste this week!
+  AvailableStartingDay: 3
+  SpinStory: 0
+  AnonymousTitle: 
+  AnonymousDescription: 
+  GovernmentTitle: 
+  GovernmentDescription: 
+  AnonymousCommentsToDisplay:
+  - Govt shoulda handled this
+  GovernmentCommentsToDisplay:
+  - Good work, Benaxia!
+  - I composted all my apple cores!
+  - Did I miss Something! Ah beans.
+  FollowerDelta: {x: 25, y: 35}
+  CommentDelta: {x: 1, y: 6}
+  AnonymousResult: {fileID: 0}
+  GovernmentResult: {fileID: 0}
+  DoNotPostResult: {fileID: 0}
+  ResolutionSummary: Prevent garbage collection issues.

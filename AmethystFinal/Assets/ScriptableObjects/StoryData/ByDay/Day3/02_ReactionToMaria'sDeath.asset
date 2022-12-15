@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cca8c297890e8047ab71fd900af0ae0, type: 3}
+  m_Name: 02_ReactionToMaria'sDeath
+  m_EditorClassIdentifier: 
+  Title: Reaction to Maria's death
+  Description: New story details...
+  AvailableStartingDay: 3
+  SpinStory: 1
+  AnonymousTitle: Peaceful Protestors Attacked
+  AnonymousDescription: Protestors in cities across Benaxia were shot with tear gas
+    and beaten in rallies after the death of Maria
+  GovernmentTitle: Anarchists Subdued
+  GovernmentDescription: A few anarchists were arrested after destroying property
+    in response to the death of Maria.
+  AnonymousCommentsToDisplay:
+  - No one deserves that
+  - How are we sure that she really was beaten?
+  - Those girls should find themselves husbands
+  GovernmentCommentsToDisplay:
+  - They should be grateful they are able to do this.
+  - how are we sure she had a heart condition
+  - Check out my Cheeky Challenge!
+  FollowerDelta: {x: 25, y: 35}
+  CommentDelta: {x: 4, y: 6}
+  AnonymousResult: {fileID: 11400000, guid: bc3ffb8b64db86744951573da5bc096b, type: 2}
+  GovernmentResult: {fileID: 11400000, guid: bc3ffb8b64db86744951573da5bc096b, type: 2}
+  DoNotPostResult: {fileID: 11400000, guid: bc3ffb8b64db86744951573da5bc096b, type: 2}
+  ResolutionSummary: 

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cca8c297890e8047ab71fd900af0ae0, type: 3}
+  m_Name: UIGunCrisis
+  m_EditorClassIdentifier: 
+  Title: UI Gun Crisis
+  Description: United Islands has the highest active shooter rate in the world
+  AvailableStartingDay: 10
+  SpinStory: 0
+  AnonymousTitle: 
+  AnonymousDescription: 
+  GovernmentTitle: 
+  GovernmentDescription: 
+  AnonymousCommentsToDisplay:
+  - and they accuse of violence
+  GovernmentCommentsToDisplay:
+  - This is disgraceful
+  FollowerDelta: {x: 25, y: 35}
+  CommentDelta: {x: 4, y: 6}
+  AnonymousResult: {fileID: 0}
+  GovernmentResult: {fileID: 0}
+  DoNotPostResult: {fileID: 0}
+  ResolutionSummary: 
