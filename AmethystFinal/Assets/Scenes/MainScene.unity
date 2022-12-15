@@ -8489,7 +8489,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 306.82, y: 314.16}
+  m_SizeDelta: {x: 306.82, y: 304}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &339966062
 MonoBehaviour:
@@ -8514,7 +8514,7 @@ MonoBehaviour:
   m_text: "You are the social media coordinator for the glorious <b><color=#5359AA>Government
     of Benaxia</color></b>. \n\nYou have knowledge of all that is going on in the
     state! \n\nYour job is to determine how citizens of Benaxia are informed about
-    current events, and what information is witheld from the public."
+    current events, and which information is witheld from the public."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9c2d82d31dc15ef428d8b59bfa557a22, type: 2}
   m_sharedMaterial: {fileID: 4572406177859514258, guid: 9c2d82d31dc15ef428d8b59bfa557a22, type: 2}
@@ -8553,7 +8553,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -5
   m_lineSpacingMax: 0
   m_paragraphSpacing: -30
   m_charWidthMaxAdj: 0
@@ -15292,7 +15292,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: One More Thing...
+  m_text: One Last Thing...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9c2d82d31dc15ef428d8b59bfa557a22, type: 2}
   m_sharedMaterial: {fileID: 4572406177859514258, guid: 9c2d82d31dc15ef428d8b59bfa557a22, type: 2}
@@ -15405,7 +15405,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 306.82, y: 314.16}
+  m_SizeDelta: {x: 306.82, y: 304}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &535323406
 MonoBehaviour:
@@ -15470,7 +15470,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -5
   m_lineSpacingMax: 0
   m_paragraphSpacing: -30
   m_charWidthMaxAdj: 0
@@ -21653,7 +21653,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 943702007}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -28475,7 +28475,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 306.82, y: 314.16}
+  m_SizeDelta: {x: 306.82, y: 304}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1509716985
 MonoBehaviour:
@@ -28539,7 +28539,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -5
   m_lineSpacingMax: 0
   m_paragraphSpacing: -30
   m_charWidthMaxAdj: 0
