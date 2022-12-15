@@ -15429,9 +15429,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "To do this, you must choose to post news stories as a <b><color=#5359AA>government
     source,</color> <color=#D1A960>anonymously</color></b>, or not at all. \n\nBe
-    careful! Who says what matters, and not everyone trusts the government. Your
-    decisions will change the fate of Benaxia forever!\n\nOh, and try not to get
-    <color=#C35B5B>fired</color>."
+    careful! <i>Who</i> is speaking matters. Not everyone trusts the government.
+    Your decisions will change the fate of Benaxia forever!\n\nOh, and try not to
+    get <color=#C35B5B>fired</color>."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9c2d82d31dc15ef428d8b59bfa557a22, type: 2}
   m_sharedMaterial: {fileID: 4572406177859514258, guid: 9c2d82d31dc15ef428d8b59bfa557a22, type: 2}
@@ -28497,10 +28497,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "It's all about the followers. \n\nThe more followers you have, the more
-    influence you have. Plain and simple.\n\nYour followers on both accounts are
-    on display.\n\nFlex you social media skills and rack up as many followers as
-    possible!"
+  m_text: 'It''s all about followers and comments. The more you have, the more influence
+    you have. Plain and simple.
+
+
+    Your combined follower and comment counts are
+    on display.
+
+
+    Flex you social media skills and rack up as much influence
+    as possible!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9c2d82d31dc15ef428d8b59bfa557a22, type: 2}
   m_sharedMaterial: {fileID: 4572406177859514258, guid: 9c2d82d31dc15ef428d8b59bfa557a22, type: 2}
