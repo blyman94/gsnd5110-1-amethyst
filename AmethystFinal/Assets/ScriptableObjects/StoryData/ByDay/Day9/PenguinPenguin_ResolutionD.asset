@@ -16,6 +16,7 @@ MonoBehaviour:
   Description: After a prolonged period of profitless operation, a local zoo has
     closed its doors. Benaxia will no longer enjoy the variety of wildlife it had
     to offer.
+  IsMainStory: 0
   AvailableStartingDay: 9
   SpinStory: 0
   AnonymousTitle: 
@@ -26,7 +27,7 @@ MonoBehaviour:
   - Ah, beans.
   GovernmentCommentsToDisplay:
   - Ah, beans.
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 2, y: 3}
   CommentDelta: {x: 1, y: 1}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

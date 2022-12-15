@@ -15,7 +15,8 @@ MonoBehaviour:
   Title: Power Restored On Time
   Description: Citizens of Benaxia will be happy to hear that their power is back
     online!
-  AvailableStartingDay: 4
+  IsMainStory: 0
+  AvailableStartingDay: 5
   SpinStory: 0
   AnonymousTitle: 
   AnonymousDescription: 
@@ -27,7 +28,7 @@ MonoBehaviour:
   GovernmentCommentsToDisplay:
   - Yay! Back to binge watching!
   - Thanks for being so clear with us.
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 5, y: 9}
   CommentDelta: {x: 2, y: 2}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

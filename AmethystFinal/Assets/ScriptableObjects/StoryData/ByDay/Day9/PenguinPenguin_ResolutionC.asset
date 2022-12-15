@@ -15,6 +15,7 @@ MonoBehaviour:
   Title: Local Zoo Forced to Close
   Description: After a multinational investigation, the owners of a local Benaxian
     zoo have been found guilty of penguin theft, and the zoo has closed as a result.
+  IsMainStory: 0
   AvailableStartingDay: 9
   SpinStory: 0
   AnonymousTitle: 
@@ -27,7 +28,7 @@ MonoBehaviour:
   GovernmentCommentsToDisplay:
   - Glad Benaxia cooperated. Seems out of character...
   - That's nuts fam!
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 17, y: 18}
   CommentDelta: {x: 2, y: 2}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

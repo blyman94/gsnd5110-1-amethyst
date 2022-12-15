@@ -15,6 +15,7 @@ MonoBehaviour:
   Title: Downtown Riots
   Description: 'Unsettled by the surprise power outage, citizens of Benaxia have
     begun rioting in downtown stealing food and other necessities. '
+  IsMainStory: 0
   AvailableStartingDay: 2
   SpinStory: 0
   AnonymousTitle: 
@@ -26,7 +27,7 @@ MonoBehaviour:
   - This is terrible! How did Benaxia handle this so poorly?
   GovernmentCommentsToDisplay:
   - Riots? Are you doing anything about them?
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 3, y: 5}
   CommentDelta: {x: 2, y: 1}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

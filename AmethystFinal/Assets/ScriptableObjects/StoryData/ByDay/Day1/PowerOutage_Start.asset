@@ -16,6 +16,7 @@ MonoBehaviour:
   Description: Residents of Benaxia will be troubled to hear that their power will
     be cut for the next couple of days due to some routine maintaince. Rest assured,
     everything is OK!
+  IsMainStory: 0
   AvailableStartingDay: 1
   SpinStory: 0
   AnonymousTitle: 
@@ -30,7 +31,7 @@ MonoBehaviour:
   - Thanks for the heads up, Benaxia!
   - Really grateful we are aware.
   - NO ONE thinks this power outage is weird?
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 4, y: 16}
   CommentDelta: {x: 3, y: 3}
   AnonymousResult: {fileID: 11400000, guid: 4bb2e69ea1337fe46b4ec554ffa4348a, type: 2}
   GovernmentResult: {fileID: 11400000, guid: e343b0340f275a64dad321acff4ac585, type: 2}

@@ -15,6 +15,7 @@ MonoBehaviour:
   Title: Chemical Spill
   Description: Chemical spill in Etrenad River affects thousands, no charges filed
     against the company at fault
+  IsMainStory: 0
   AvailableStartingDay: 9
   SpinStory: 0
   AnonymousTitle: 
@@ -25,7 +26,7 @@ MonoBehaviour:
   - capitalism is the cause of all suffering
   GovernmentCommentsToDisplay:
   - capitalism is the cause of all suffering
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 5, y: 5}
   CommentDelta: {x: 1, y: 1}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

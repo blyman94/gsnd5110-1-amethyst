@@ -15,6 +15,7 @@ MonoBehaviour:
   Title: Still No Power
   Description: The power outage remains in effect until further notice, but at least
     the citizens were warned and are coping with the inconvenience.
+  IsMainStory: 0
   AvailableStartingDay: 2
   SpinStory: 0
   AnonymousTitle: 
@@ -29,7 +30,7 @@ MonoBehaviour:
   - How much longer?
   - Oh lovely. Further Notice.
   - Hurry up Benaxia, I miss playing Banjo-Kazooie
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 5, y: 21}
   CommentDelta: {x: 3, y: 3}
   AnonymousResult: {fileID: 11400000, guid: 6b0a0a1636282074cb20257abaa81de7, type: 2}
   GovernmentResult: {fileID: 11400000, guid: 6b0a0a1636282074cb20257abaa81de7, type: 2}

@@ -15,6 +15,7 @@ MonoBehaviour:
   Title: The Crimson Fields
   Description: 10 years after the Crimson Fields, victims memorialize the devastating
     battle
+  IsMainStory: 0
   AvailableStartingDay: 4
   SpinStory: 0
   AnonymousTitle: 
@@ -25,7 +26,7 @@ MonoBehaviour:
   - this is just memorializing abuse
   GovernmentCommentsToDisplay:
   - the worst fight in our history
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 2, y: 9}
   CommentDelta: {x: 1, y: 1}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

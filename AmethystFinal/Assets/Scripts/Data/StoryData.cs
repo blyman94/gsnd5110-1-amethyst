@@ -7,6 +7,7 @@ public class StoryData : ScriptableObject
     public string Title = "New Story Title";
     [TextArea(5, 5)] 
     public string Description = "New story details...";
+    public bool IsMainStory = false;
     public int AvailableStartingDay = 1;
 
     [Header("Story Spin Data")] 

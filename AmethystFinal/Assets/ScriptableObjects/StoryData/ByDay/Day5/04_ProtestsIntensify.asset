@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: Protests Intensify
   Description: New story details...
+  IsMainStory: 1
   AvailableStartingDay: 5
   SpinStory: 1
   AnonymousTitle: Widespread protests demand justice
@@ -30,7 +31,7 @@ MonoBehaviour:
   - these people are pathetic
   - Cover up and go home
   - just get yourselves husbands
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 20, y: 20}
   CommentDelta: {x: 3, y: 3}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

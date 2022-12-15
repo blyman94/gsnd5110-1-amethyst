@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: Revolution
   Description: New story details...
+  IsMainStory: 1
   AvailableStartingDay: 11
   SpinStory: 1
   AnonymousTitle: Benaxian revolution
@@ -30,7 +31,7 @@ MonoBehaviour:
   - You shouldn't bow to these snowflakes
   - Don't let them win
   - Why aren't they happy now?
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 40, y: 40}
   CommentDelta: {x: 3, y: 3}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

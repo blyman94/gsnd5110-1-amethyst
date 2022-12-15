@@ -16,6 +16,7 @@ MonoBehaviour:
   Description: Due to lack of public precaution, RAC-22 has infected most of Benaxia.
     With hospital beds filling quickly, it is uncertain whether Benaxia will survive
     this pandemic.
+  IsMainStory: 0
   AvailableStartingDay: 9
   SpinStory: 0
   AnonymousTitle: 
@@ -26,7 +27,7 @@ MonoBehaviour:
   - There would probably be more comments if everyone wasn't dying.
   GovernmentCommentsToDisplay:
   - There would probably be more comments if everyone wasn't dying.
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 0, y: 0}
   CommentDelta: {x: 1, y: 1}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

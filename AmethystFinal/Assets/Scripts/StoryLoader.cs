@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -9,6 +10,8 @@ public class StoryLoader : MonoBehaviour
     [SerializeField] private StoryDataVariable _activeStory;
     [SerializeField] private PostDecisionVariable _postDecision;
     [SerializeField] private IntVariable _dayCounter;
+    [SerializeField] private Color _mainStoryColor = Color.white;
+    [SerializeField] private Color _otherStoryColor = Color.white;
     
     [SerializeField] private Transform _availableStoryParent;
     [SerializeField] private UnityEvent _newStoriesResponse;
@@ -113,12 +116,33 @@ public class StoryLoader : MonoBehaviour
 
     public void DisplayCurrentStories()
     {
+        // Randomize story position
+        for (int i = 0; i < _currentStories.Count; i++) 
+        {
+            var temp = _currentStories[i];
+            int randomIndex = Random.Range(i, _currentStories.Count);
+            _currentStories[i] = _currentStories[randomIndex];
+            _currentStories[randomIndex] = temp;
+        }
+        
         foreach (StoryData storyData in _currentStories)
         {
             GameObject displayObject = Instantiate(_availableStoryDisplayPrefab,
                 _availableStoryParent);
             displayObject.GetComponent<StoryDataBinding>().StoryData =
                 storyData;
+
+            var storyText =
+                displayObject.GetComponentInChildren<TextMeshProUGUI>();
+
+            if (storyData.IsMainStory)
+            {
+                storyText.color = _mainStoryColor;
+            }
+            else
+            {
+                storyText.color = _otherStoryColor;
+            }
         }
     }
 

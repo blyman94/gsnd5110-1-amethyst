@@ -16,6 +16,7 @@ MonoBehaviour:
   Description: Benaxia is a global health risk. RAC-22 tanks tourism numbers. Disease
     has been contained, but could be the end of Benaxia's tourist industry for a
     few years.
+  IsMainStory: 0
   AvailableStartingDay: 8
   SpinStory: 0
   AnonymousTitle: 
@@ -29,7 +30,7 @@ MonoBehaviour:
   - 'At least they are aware. '
   - The cases will decrease and we will recover.
   - This all could have been prevented
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 1, y: 2}
   CommentDelta: {x: 2, y: 3}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

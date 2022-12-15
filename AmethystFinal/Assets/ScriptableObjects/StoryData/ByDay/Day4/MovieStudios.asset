@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: Movie Studio Shooting
   Description: New story details...
+  IsMainStory: 0
   AvailableStartingDay: 4
   SpinStory: 1
   AnonymousTitle: Bankrolling Benaxia
@@ -25,7 +26,7 @@ MonoBehaviour:
   - I won't go to this movie even if it is my favorite hero
   GovernmentCommentsToDisplay:
   - Finally someone sees the beauty of Benaxia!
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 2, y: 3}
   CommentDelta: {x: 1, y: 1}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

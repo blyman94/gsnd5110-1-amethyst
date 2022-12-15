@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: Twigram
   Description: New story details...
+  IsMainStory: 1
   AvailableStartingDay: 10
   SpinStory: 1
   AnonymousTitle: Social media helps protestors
@@ -30,7 +31,7 @@ MonoBehaviour:
   - Don't use twigram, use truth social instead
   - This platform is going over to liberals
   - the platform should kick them off
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 30, y: 30}
   CommentDelta: {x: 3, y: 3}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

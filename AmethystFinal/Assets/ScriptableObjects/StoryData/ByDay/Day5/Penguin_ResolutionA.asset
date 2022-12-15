@@ -15,6 +15,7 @@ MonoBehaviour:
   Title: 'Local Zoo: Major Renovations'
   Description: The profits brought in by baby penguin-crazed visitors drove a local
     Benaxian zoo to double in size!
+  IsMainStory: 0
   AvailableStartingDay: 5
   SpinStory: 0
   AnonymousTitle: 
@@ -28,7 +29,7 @@ MonoBehaviour:
   GovernmentCommentsToDisplay:
   - Did Benaxia have something to do with this?
   - That's impossible... Penguins can't generate that much profit.
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 17, y: 4}
   CommentDelta: {x: 3, y: 2}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

@@ -15,6 +15,7 @@ MonoBehaviour:
   Title: Local Zoo Under Investigation
   Description: A foreign marine life center claims a local Benaxian zoo stole and
     bred their penguins.
+  IsMainStory: 0
   AvailableStartingDay: 3
   SpinStory: 0
   AnonymousTitle: 
@@ -29,7 +30,7 @@ MonoBehaviour:
   - Benaxia isn't afriad to hide this. They've done nothing wrong!
   - Tell the foreigners our penguins are ours!
   - JUST LET THE PENGUINS BE PENGUINS!!!
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 13, y: 12}
   CommentDelta: {x: 3, y: 3}
   AnonymousResult: {fileID: 11400000, guid: 6329bfc216cd47a4496b1cdc5709cc25, type: 2}
   GovernmentResult: {fileID: 11400000, guid: 6329bfc216cd47a4496b1cdc5709cc25, type: 2}

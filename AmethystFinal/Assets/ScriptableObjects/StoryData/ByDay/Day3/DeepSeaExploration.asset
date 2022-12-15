@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: Deep Sea Exploration
   Description: Benaxia launches a deep-sea vessel to explore the ocean's depths
+  IsMainStory: 0
   AvailableStartingDay: 3
   SpinStory: 0
   AnonymousTitle: 
@@ -28,7 +29,7 @@ MonoBehaviour:
   - Cool
   - I'm scared of the deep sea :0
   - I hope we see sharks
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 2, y: 9}
   CommentDelta: {x: 3, y: 3}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

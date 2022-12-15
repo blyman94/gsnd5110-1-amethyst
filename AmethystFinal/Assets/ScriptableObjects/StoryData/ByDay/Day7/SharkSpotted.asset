@@ -15,6 +15,7 @@ MonoBehaviour:
   Title: Shark Spotted
   Description: Shark was spotted in Benaxia's waters. Officials wonder what drove
     the shark so close to shore
+  IsMainStory: 0
   AvailableStartingDay: 7
   SpinStory: 0
   AnonymousTitle: 
@@ -25,7 +26,7 @@ MonoBehaviour:
   - cool!
   GovernmentCommentsToDisplay:
   - coll!
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 2, y: 3}
   CommentDelta: {x: 1, y: 1}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

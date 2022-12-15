@@ -16,6 +16,7 @@ MonoBehaviour:
   Description: One Benaxian citizen, ignorant of the worldwide controversy regarding
     the strange power outage, attacks a foreign investigator causing further tension
     with that country.
+  IsMainStory: 0
   AvailableStartingDay: 6
   SpinStory: 0
   AnonymousTitle: 
@@ -28,7 +29,7 @@ MonoBehaviour:
   GovernmentCommentsToDisplay:
   - Yeah. This is a massive failure by Benaxia
   - YOU NEED TO REPORT THIS $#!T EARLIER
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 18, y: 2}
   CommentDelta: {x: 2, y: 2}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

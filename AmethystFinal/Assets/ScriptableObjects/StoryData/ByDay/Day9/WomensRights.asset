@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: Women's Rights
   Description: New story details...
+  IsMainStory: 0
   AvailableStartingDay: 9
   SpinStory: 1
   AnonymousTitle: Benaxia Fails Women
@@ -26,7 +27,7 @@ MonoBehaviour:
   - what is that really going to do?
   GovernmentCommentsToDisplay:
   - Can't they leave us alone?
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 16, y: 4}
   CommentDelta: {x: 1, y: 1}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

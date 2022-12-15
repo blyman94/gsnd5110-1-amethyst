@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: World Cup Win
   Description: New story details...
+  IsMainStory: 0
   AvailableStartingDay: 6
   SpinStory: 1
   AnonymousTitle: Elfenheid Wins!
@@ -26,7 +27,7 @@ MonoBehaviour:
   GovernmentCommentsToDisplay:
   - Yes! Go Benaxia
   - ... did they?
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 5, y: 5}
   CommentDelta: {x: 2, y: 2}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

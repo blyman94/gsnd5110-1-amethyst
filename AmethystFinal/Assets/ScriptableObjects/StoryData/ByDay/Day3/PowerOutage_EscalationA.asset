@@ -15,6 +15,7 @@ MonoBehaviour:
   Title: Power Outage Skepticism
   Description: The world outside of Benaxia believes its government is using this
     power outage to cover up something sinister.
+  IsMainStory: 0
   AvailableStartingDay: 3
   SpinStory: 0
   AnonymousTitle: 
@@ -29,7 +30,7 @@ MonoBehaviour:
   - Benaxia has nothing to hide here.
   - 'Posting this on a govt account is bold. '
   - Fight back, Benaxia!
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 14, y: 16}
   CommentDelta: {x: 3, y: 3}
   AnonymousResult: {fileID: 11400000, guid: cfb3a7a560f355a43bdd4b33ce35f5fd, type: 2}
   GovernmentResult: {fileID: 11400000, guid: 6b0a0a1636282074cb20257abaa81de7, type: 2}

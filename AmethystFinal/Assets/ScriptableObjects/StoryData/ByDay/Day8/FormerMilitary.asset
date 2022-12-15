@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: Former Cpl. Outcry
   Description: New story details...
+  IsMainStory: 0
   AvailableStartingDay: 8
   SpinStory: 1
   AnonymousTitle: Hero Calls out Benaxia
@@ -25,7 +26,7 @@ MonoBehaviour:
   - not surprised
   GovernmentCommentsToDisplay:
   - These are lies. He should be arrested
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 12, y: 12}
   CommentDelta: {x: 1, y: 1}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

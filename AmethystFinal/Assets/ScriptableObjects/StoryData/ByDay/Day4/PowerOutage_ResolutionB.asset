@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: Power Restored Quickly
   Description: The power is back on much quicker than originally estimated!
+  IsMainStory: 0
   AvailableStartingDay: 4
   SpinStory: 0
   AnonymousTitle: 
@@ -27,7 +28,7 @@ MonoBehaviour:
   GovernmentCommentsToDisplay:
   - Way to go, Benaxia!
   - Quick and efficient!
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 16, y: 12}
   CommentDelta: {x: 3, y: 2}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

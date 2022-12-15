@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: Reaction to Maria's death
   Description: New story details...
+  IsMainStory: 1
   AvailableStartingDay: 3
   SpinStory: 1
   AnonymousTitle: Peaceful Protestors Attacked
@@ -30,7 +31,7 @@ MonoBehaviour:
   - They should be grateful they are able to do this.
   - how are we sure she had a heart condition
   - Check out my Cheeky Challenge!
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 15, y: 15}
   CommentDelta: {x: 3, y: 3}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

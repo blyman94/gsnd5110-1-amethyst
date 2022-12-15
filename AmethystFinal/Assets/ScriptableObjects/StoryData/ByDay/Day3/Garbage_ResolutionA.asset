@@ -15,6 +15,7 @@ MonoBehaviour:
   Title: Garbage Collection Restored
   Description: Residents of Benaxia will be happy to know their trash will be collected
     on schedule. Thanks for scaling back your waste this week!
+  IsMainStory: 0
   AvailableStartingDay: 3
   SpinStory: 0
   AnonymousTitle: 
@@ -27,7 +28,7 @@ MonoBehaviour:
   - Good work, Benaxia!
   - I composted all my apple cores!
   - Did I miss Something! Ah beans.
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 2, y: 20}
   CommentDelta: {x: 1, y: 3}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

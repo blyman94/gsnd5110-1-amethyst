@@ -15,6 +15,7 @@ MonoBehaviour:
   Title: Local Zoo Profits Plummet
   Description: Unfortunately, the cost of keeping baby penguins was not offset by
     an increase in zoo guests.
+  IsMainStory: 0
   AvailableStartingDay: 5
   SpinStory: 0
   AnonymousTitle: 
@@ -29,7 +30,7 @@ MonoBehaviour:
   - Sad. Too bad the govt didn't want to help out
   - It's good the govt didn't interfere with private business
   - Aw man, I didn't get a chance to see them :(
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 10, y: 5}
   CommentDelta: {x: 3, y: 3}
   AnonymousResult: {fileID: 11400000, guid: 6e29ef152f2ce784e99e4f1405845810, type: 2}
   GovernmentResult: {fileID: 11400000, guid: 6e29ef152f2ce784e99e4f1405845810, type: 2}

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: University Protests Escalate
   Description: New story details...
+  IsMainStory: 1
   AvailableStartingDay: 6
   SpinStory: 1
   AnonymousTitle: Student's burn oppresive symbols
@@ -29,7 +30,7 @@ MonoBehaviour:
   GovernmentCommentsToDisplay:
   - They should focus on studies
   - I stand with Maria
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 25, y: 25}
   CommentDelta: {x: 3, y: 2}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

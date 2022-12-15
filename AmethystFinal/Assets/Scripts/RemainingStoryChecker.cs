@@ -22,7 +22,14 @@ public class RemainingStoryChecker : MonoBehaviour
 
     public void ResetRemainingStoryCount()
     {
-        _remainingStoryCount.Value = _storiesPerDay;
+        if (_dayCount.Value is 7 or 10 or 11)
+        {
+            _remainingStoryCount.Value = 1;
+        }
+        else
+        {
+            _remainingStoryCount.Value = _storiesPerDay;
+        }
     }
 
     public void CheckRemainingStories()

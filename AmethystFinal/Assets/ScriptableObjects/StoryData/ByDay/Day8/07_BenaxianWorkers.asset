@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: Benaxian Workers
   Description: New story details...
+  IsMainStory: 1
   AvailableStartingDay: 8
   SpinStory: 1
   AnonymousTitle: Police attack protesting workers
@@ -30,7 +31,7 @@ MonoBehaviour:
   - Back the blue
   - Benaxia Blue for life
   - Benaxia Blue we support you
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 25, y: 25}
   CommentDelta: {x: 3, y: 3}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

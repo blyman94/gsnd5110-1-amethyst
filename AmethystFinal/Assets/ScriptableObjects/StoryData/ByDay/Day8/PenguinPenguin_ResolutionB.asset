@@ -15,6 +15,7 @@ MonoBehaviour:
   Title: Charity Saves Local Zoo
   Description: Public awareness leads charitable Benaxians to donate their money
     to save a local zoo. How beautiful!
+  IsMainStory: 0
   AvailableStartingDay: 8
   SpinStory: 0
   AnonymousTitle: 
@@ -25,7 +26,7 @@ MonoBehaviour:
   - Heartwarming. Glad it all worked out!
   GovernmentCommentsToDisplay:
   - Heartwarming. Glad it all worked out!
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 15, y: 15}
   CommentDelta: {x: 1, y: 1}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

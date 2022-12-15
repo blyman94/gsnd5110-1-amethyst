@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: UI Gun Crisis
   Description: United Islands has the highest active shooter rate in the world
+  IsMainStory: 0
   AvailableStartingDay: 10
   SpinStory: 0
   AnonymousTitle: 
@@ -24,7 +25,7 @@ MonoBehaviour:
   - and they accuse of violence
   GovernmentCommentsToDisplay:
   - This is disgraceful
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 3, y: 2}
   CommentDelta: {x: 1, y: 1}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

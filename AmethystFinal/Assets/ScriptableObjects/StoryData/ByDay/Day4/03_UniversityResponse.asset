@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: Universities Respond
   Description: New story details...
+  IsMainStory: 1
   AvailableStartingDay: 4
   SpinStory: 1
   AnonymousTitle: University students support Maria
@@ -30,7 +31,7 @@ MonoBehaviour:
   - Be grateful you were even allowed to walkout
   - none of these kids have the balls to die
   - Students die but they refuse humiliation
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 20, y: 20}
   CommentDelta: {x: 3, y: 3}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

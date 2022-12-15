@@ -15,6 +15,7 @@ MonoBehaviour:
   Title: Garbage Delay
   Description: Residents of Benaxia will be sad to hear their trash will not be taken
     away for a day. Reduce, reuse, recycle!
+  IsMainStory: 0
   AvailableStartingDay: 1
   SpinStory: 0
   AnonymousTitle: 
@@ -28,7 +29,7 @@ MonoBehaviour:
   GovernmentCommentsToDisplay:
   - Thanks for the heads up!
   - ' I''m not changing any habits.'
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 3, y: 5}
   CommentDelta: {x: 3, y: 2}
   AnonymousResult: {fileID: 11400000, guid: 934d9683d2691bd41b6400256ebb7b4c, type: 2}
   GovernmentResult: {fileID: 11400000, guid: 394aad26453fdb949af34db597477cf7, type: 2}

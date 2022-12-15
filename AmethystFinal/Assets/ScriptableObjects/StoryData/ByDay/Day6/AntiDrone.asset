@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: Anti-drone defense system
   Description: New story details...
+  IsMainStory: 0
   AvailableStartingDay: 6
-  SpinStory: 0
+  SpinStory: 1
   AnonymousTitle: Drone attacks continue
   AnonymousDescription: Benaxia can repel an attack from Elfenheid, but Elfenheid
     suffers 28th straight day of Benaxia drone attacks
@@ -25,7 +26,7 @@ MonoBehaviour:
   - Elfenheid citizens are suffering
   GovernmentCommentsToDisplay:
   - Glory to Benaxia
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 11, y: 1}
   CommentDelta: {x: 1, y: 1}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

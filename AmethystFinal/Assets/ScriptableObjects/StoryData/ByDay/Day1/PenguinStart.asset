@@ -15,6 +15,7 @@ MonoBehaviour:
   Title: Penguin Alert!
   Description: Baby penguins born at local Benaxian zoo! They are so cute and I want
     to pet one
+  IsMainStory: 0
   AvailableStartingDay: 1
   SpinStory: 0
   AnonymousTitle: 
@@ -29,7 +30,7 @@ MonoBehaviour:
   - Why does the govt care?
   - OH EM GEE SOO CUTE!
   - Doesn't seem very formal...
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 13, y: 2}
   CommentDelta: {x: 3, y: 3}
   AnonymousResult: {fileID: 11400000, guid: 17eb279744562a348bfd39f80e08748b, type: 2}
   GovernmentResult: {fileID: 11400000, guid: 8ec6a583674dd3a46b6a10cc8d92f6fa, type: 2}

@@ -15,6 +15,7 @@ MonoBehaviour:
   Title: Raccoons!
   Description: A family of raccoons have taken up residence on the outskirts of Benaxia.
     Take caution, as these critters typically carry deadly diseases.
+  IsMainStory: 0
   AvailableStartingDay: 3
   SpinStory: 0
   AnonymousTitle: 
@@ -29,7 +30,7 @@ MonoBehaviour:
   - Were there garbage collection issues???
   - Let us know about GC next time pls.
   - '@#($#)%!'
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 13, y: 2}
   CommentDelta: {x: 3, y: 3}
   AnonymousResult: {fileID: 11400000, guid: 3aad5f67cdc4f804aaef2a3599b47072, type: 2}
   GovernmentResult: {fileID: 11400000, guid: 3aad5f67cdc4f804aaef2a3599b47072, type: 2}

@@ -15,6 +15,7 @@ MonoBehaviour:
   Title: Raccoons Handled
   Description: The nefarious raccoons have been rounded up, relocated, and treated
     for disease. No reports of disease from these critters!
+  IsMainStory: 0
   AvailableStartingDay: 4
   SpinStory: 0
   AnonymousTitle: 
@@ -26,7 +27,7 @@ MonoBehaviour:
   - Did you round them up yourself?
   GovernmentCommentsToDisplay:
   - YAY HAPPY RACOONS
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 4, y: 18}
   CommentDelta: {x: 2, y: 1}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

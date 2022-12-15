@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: Foreigners
   Description: New story details...
+  IsMainStory: 1
   AvailableStartingDay: 9
   SpinStory: 1
   AnonymousTitle: Angels protect protestors
@@ -30,7 +31,7 @@ MonoBehaviour:
   - Elfenheid supports the benaxia protestors
   - Is it an act of war when you attack Elfenheid?
   - Glory to Benaxia
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 30, y: 30}
   CommentDelta: {x: 3, y: 3}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

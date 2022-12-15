@@ -14,11 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: The Death of Maria
   Description: New story details...
+  IsMainStory: 1
   AvailableStartingDay: 2
   SpinStory: 1
   AnonymousTitle: Police Beat Girl to Death
   AnonymousDescription: Police beat a girl to death while she was visiting the Benaxia
-    capital wither her family.
+    capital with her family.
   GovernmentTitle: Girl Dies of Heart Disease
   GovernmentDescription: Our thoughts and prayers go to the family of Maria, who
     collapsed and died on the way to the hospital after a heart attack
@@ -29,7 +30,7 @@ MonoBehaviour:
   - Poor girl
   - I hope her family is ok
   - At least the police were there to help
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 10, y: 10}
   CommentDelta: {x: 2, y: 3}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: Cheeky Challenge
   Description: The cheeky challenge is sweeping the world--will you join in?
+  IsMainStory: 0
   AvailableStartingDay: 2
   SpinStory: 0
   AnonymousTitle: 
@@ -26,7 +27,7 @@ MonoBehaviour:
   GovernmentCommentsToDisplay:
   - whtf is this?
   - i keep seeing bots spam this
-  FollowerDelta: {x: 25, y: 35}
+  FollowerDelta: {x: 0, y: 0}
   CommentDelta: {x: 2, y: 2}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}
