@@ -32,7 +32,7 @@ MonoBehaviour:
   - just get yourselves husbands
   FollowerDelta: {x: 25, y: 35}
   CommentDelta: {x: 4, y: 6}
-  AnonymousResult: {fileID: 11400000, guid: e8b69165348b8ae498d050624be2f8bd, type: 2}
-  GovernmentResult: {fileID: 11400000, guid: e8b69165348b8ae498d050624be2f8bd, type: 2}
-  DoNotPostResult: {fileID: 11400000, guid: e8b69165348b8ae498d050624be2f8bd, type: 2}
+  AnonymousResult: {fileID: 0}
+  GovernmentResult: {fileID: 0}
+  DoNotPostResult: {fileID: 0}
   ResolutionSummary: 

@@ -32,7 +32,7 @@ MonoBehaviour:
   - Glory to Benaxia
   FollowerDelta: {x: 25, y: 35}
   CommentDelta: {x: 4, y: 6}
-  AnonymousResult: {fileID: 11400000, guid: 46e45564b298e0c4bb29bd556b98db52, type: 2}
-  GovernmentResult: {fileID: 11400000, guid: 46e45564b298e0c4bb29bd556b98db52, type: 2}
-  DoNotPostResult: {fileID: 11400000, guid: 46e45564b298e0c4bb29bd556b98db52, type: 2}
+  AnonymousResult: {fileID: 0}
+  GovernmentResult: {fileID: 0}
+  DoNotPostResult: {fileID: 0}
   ResolutionSummary: 

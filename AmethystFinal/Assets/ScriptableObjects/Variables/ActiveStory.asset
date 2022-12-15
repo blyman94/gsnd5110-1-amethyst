@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07e963d4feb199a43b8ce0df938b9511, type: 3}
   m_Name: ActiveStory
   m_EditorClassIdentifier: 
-  _value: {fileID: 11400000, guid: cc951cf4531ab6543a77444b40858459, type: 2}
+  _value: {fileID: 11400000, guid: a19d4e3f39505b340aceaa1c4a434d9c, type: 2}

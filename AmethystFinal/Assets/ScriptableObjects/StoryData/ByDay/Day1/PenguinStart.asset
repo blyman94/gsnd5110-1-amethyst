@@ -16,6 +16,11 @@ MonoBehaviour:
   Description: Baby penguins born at local Benaxian zoo! They are so cute and I want
     to pet one
   AvailableStartingDay: 1
+  SpinStory: 0
+  AnonymousTitle: 
+  AnonymousDescription: 
+  GovernmentTitle: 
+  GovernmentDescription: 
   AnonymousCommentsToDisplay:
   - OH EM GEE MEE TOO!
   - heckin penguinos!
@@ -25,7 +30,8 @@ MonoBehaviour:
   - OH EM GEE SOO CUTE!
   - Doesn't seem very formal...
   FollowerDelta: {x: 25, y: 35}
-  CommentDelta: {x: 4, y: 6}
+  CommentDelta: {x: 3, y: 3}
   AnonymousResult: {fileID: 11400000, guid: 17eb279744562a348bfd39f80e08748b, type: 2}
   GovernmentResult: {fileID: 11400000, guid: 8ec6a583674dd3a46b6a10cc8d92f6fa, type: 2}
   DoNotPostResult: {fileID: 11400000, guid: 334b78fdf5fd68541988da1287742a63, type: 2}
+  ResolutionSummary: 

@@ -32,7 +32,7 @@ MonoBehaviour:
   - the platform should kick them off
   FollowerDelta: {x: 25, y: 35}
   CommentDelta: {x: 4, y: 6}
-  AnonymousResult: {fileID: 11400000, guid: 2f2c3fe2fc3a0624aadd2062353f1b8d, type: 2}
-  GovernmentResult: {fileID: 11400000, guid: 2f2c3fe2fc3a0624aadd2062353f1b8d, type: 2}
-  DoNotPostResult: {fileID: 11400000, guid: 2f2c3fe2fc3a0624aadd2062353f1b8d, type: 2}
+  AnonymousResult: {fileID: 0}
+  GovernmentResult: {fileID: 0}
+  DoNotPostResult: {fileID: 0}
   ResolutionSummary: 

@@ -9,12 +9,25 @@ public class StoryLoader : MonoBehaviour
     [SerializeField] private StoryDataVariable _activeStory;
     [SerializeField] private PostDecisionVariable _postDecision;
     [SerializeField] private IntVariable _dayCounter;
-    [SerializeField] private StoryData[] _startingStories;
+    
     [SerializeField] private Transform _availableStoryParent;
     [SerializeField] private UnityEvent _newStoriesResponse;
     [SerializeField] private UnityEvent _noNewStoriesResponse;
     [SerializeField] private ListOfStringsVariable _resolutionStrings;
+    
+    [SerializeField] private StoryData[] _startingStories;
+    [SerializeField] private StoryData[] _day2Stories;
+    [SerializeField] private StoryData[] _day3Stories;
+    [SerializeField] private StoryData[] _day4Stories;
+    [SerializeField] private StoryData[] _day5Stories;
+    [SerializeField] private StoryData[] _day6Stories;
+    [SerializeField] private StoryData[] _day7Stories;
+    [SerializeField] private StoryData[] _day8Stories;
+    [SerializeField] private StoryData[] _day9Stories;
+    [SerializeField] private StoryData[] _day10Stories;
+    [SerializeField] private StoryData[] _day11Stories;
 
+    private List<List<StoryData>> _storiesLOL;
     private List<StoryData> _currentStories;
     private List<StoryData> _futureStories;
     private List<StoryData> _pastStories;
@@ -23,6 +36,19 @@ public class StoryLoader : MonoBehaviour
     #region MonoBehaviour Methods
     private void Awake()
     {
+        _storiesLOL = new List<List<StoryData>>();
+        _storiesLOL.Add(_startingStories.ToList());
+        _storiesLOL.Add(_day2Stories.ToList());
+        _storiesLOL.Add(_day3Stories.ToList());
+        _storiesLOL.Add(_day4Stories.ToList());
+        _storiesLOL.Add(_day5Stories.ToList());
+        _storiesLOL.Add(_day6Stories.ToList());
+        _storiesLOL.Add(_day7Stories.ToList());
+        _storiesLOL.Add(_day8Stories.ToList());
+        _storiesLOL.Add(_day9Stories.ToList());
+        _storiesLOL.Add(_day10Stories.ToList());
+        _storiesLOL.Add(_day11Stories.ToList());
+        
         _futureStories = new List<StoryData>();
         _currentStories = new List<StoryData>();
         _pastStories = new List<StoryData>();
@@ -57,11 +83,15 @@ public class StoryLoader : MonoBehaviour
             }
         }
 
-        if (_futureStories.Count > 0)
+        if (_dayCounter.Value < 11)
         {
+            Debug.Log(_dayCounter.Value);
             // Move future stories to current stories
             _currentStories = new List<StoryData>(_futureStories);
-        
+            
+            // Add day specific stories
+            _currentStories.AddRange(_storiesLOL[_dayCounter.Value]);
+            
             // Clear future stories
             _futureStories.Clear();
             
@@ -83,13 +113,10 @@ public class StoryLoader : MonoBehaviour
     {
         foreach (StoryData storyData in _currentStories)
         {
-            if (storyData.AvailableStartingDay == _dayCounter.Value)
-            {
-                GameObject displayObject = Instantiate(_availableStoryDisplayPrefab,
-                    _availableStoryParent);
-                displayObject.GetComponent<StoryDataBinding>().StoryData =
-                    storyData;
-            }
+            GameObject displayObject = Instantiate(_availableStoryDisplayPrefab,
+                _availableStoryParent);
+            displayObject.GetComponent<StoryDataBinding>().StoryData =
+                storyData;
         }
     }
 

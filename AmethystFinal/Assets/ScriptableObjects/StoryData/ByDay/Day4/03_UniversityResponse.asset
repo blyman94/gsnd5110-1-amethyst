@@ -32,7 +32,7 @@ MonoBehaviour:
   - Students die but they refuse humiliation
   FollowerDelta: {x: 25, y: 35}
   CommentDelta: {x: 4, y: 6}
-  AnonymousResult: {fileID: 11400000, guid: 55549dcc63abb7a4794503a33df589be, type: 2}
-  GovernmentResult: {fileID: 11400000, guid: 55549dcc63abb7a4794503a33df589be, type: 2}
-  DoNotPostResult: {fileID: 11400000, guid: 55549dcc63abb7a4794503a33df589be, type: 2}
+  AnonymousResult: {fileID: 0}
+  GovernmentResult: {fileID: 0}
+  DoNotPostResult: {fileID: 0}
   ResolutionSummary: 

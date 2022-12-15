@@ -29,7 +29,7 @@ MonoBehaviour:
   - Thanks for the heads up!
   - ' I''m not changing any habits.'
   FollowerDelta: {x: 25, y: 35}
-  CommentDelta: {x: 2, y: 2}
+  CommentDelta: {x: 3, y: 2}
   AnonymousResult: {fileID: 11400000, guid: 934d9683d2691bd41b6400256ebb7b4c, type: 2}
   GovernmentResult: {fileID: 11400000, guid: 394aad26453fdb949af34db597477cf7, type: 2}
   DoNotPostResult: {fileID: 11400000, guid: 934d9683d2691bd41b6400256ebb7b4c, type: 2}

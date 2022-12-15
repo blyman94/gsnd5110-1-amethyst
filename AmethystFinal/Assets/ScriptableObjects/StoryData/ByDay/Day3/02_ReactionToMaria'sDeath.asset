@@ -32,7 +32,7 @@ MonoBehaviour:
   - Check out my Cheeky Challenge!
   FollowerDelta: {x: 25, y: 35}
   CommentDelta: {x: 4, y: 6}
-  AnonymousResult: {fileID: 11400000, guid: bc3ffb8b64db86744951573da5bc096b, type: 2}
-  GovernmentResult: {fileID: 11400000, guid: bc3ffb8b64db86744951573da5bc096b, type: 2}
-  DoNotPostResult: {fileID: 11400000, guid: bc3ffb8b64db86744951573da5bc096b, type: 2}
+  AnonymousResult: {fileID: 0}
+  GovernmentResult: {fileID: 0}
+  DoNotPostResult: {fileID: 0}
   ResolutionSummary: 
