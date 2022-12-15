@@ -79,6 +79,9 @@ MonoBehaviour:
   _storyData: {fileID: 11400000, guid: cc951cf4531ab6543a77444b40858459, type: 2}
   _storyTitleText: {fileID: 1239120013854039678}
   _storyDetailsText: {fileID: 0}
+  _activeStory: {fileID: 0}
+  isAnonymousDisplay: 0
+  showSpin: 0
 --- !u!114 &2322493064436457964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,6 +199,18 @@ MonoBehaviour:
         - m_Target: {fileID: 1336935406197746022}
           m_TargetAssemblyTypeName: OscillateTextSize, Assembly-CSharp
           m_MethodName: StartOscillation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 11400000, guid: fc1aa97a1dccbda43a9a594848139165, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Assembly-CSharp
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -328,6 +343,7 @@ MonoBehaviour:
   _baseTextSize: -1
   _textSizeVariance: 1
   _oscillationSpeed: 1
+  _isOscillating: 0
 --- !u!114 &1239120013854039678
 MonoBehaviour:
   m_ObjectHideFlags: 0

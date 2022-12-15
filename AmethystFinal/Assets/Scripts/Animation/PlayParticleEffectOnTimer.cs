@@ -5,6 +5,7 @@ public class PlayParticleEffectOnTimer : MonoBehaviour
 {
     [SerializeField] private ParticleSystem[] _particleSystemsToPlay;
     [SerializeField] private UnityEvent _onParticleStopEvent;
+    [SerializeField] private UnityEvent _onParticleStartEvent;
 
     private float _effectTimer = 0.0f;
     
@@ -30,7 +31,7 @@ public class PlayParticleEffectOnTimer : MonoBehaviour
         {
             particleSystem.Play();
         }
-
+        _onParticleStartEvent?.Invoke();
         _effectTimer = playTime;
     }
 }
