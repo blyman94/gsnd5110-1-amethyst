@@ -2,11 +2,16 @@ using UnityEngine;
 
 public class CursorManager : MonoBehaviour
 {
-    public Texture2D cursorTexture;
-    public CursorMode cursorMode = CursorMode.Auto;
-    public Vector2 hotSpot = Vector2.zero;
+    [SerializeField] private Camera _mainCamera;
+    [SerializeField] private Transform _cursorTransform;
+
     private void Start()
     {
-        Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
+        Cursor.visible = false;
+    }
+    private void Update()
+    {
+        var mousePos = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        _cursorTransform.position = new Vector3(mousePos.x, mousePos.y, 0.0f);
     }
 }
