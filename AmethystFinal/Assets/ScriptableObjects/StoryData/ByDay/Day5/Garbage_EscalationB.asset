@@ -31,7 +31,7 @@ MonoBehaviour:
   - Thank goodness the govt is here
   - Lovely. At least we know
   FollowerDelta: {x: 25, y: 35}
-  CommentDelta: {x: 4, y: 6}
+  CommentDelta: {x: 3, y: 3}
   AnonymousResult: {fileID: 11400000, guid: 0bb826ce80c31b14ca4d58936429b492, type: 2}
   GovernmentResult: {fileID: 11400000, guid: 8845324bbcec11143a5b63c0eb10c2dc, type: 2}
   DoNotPostResult: {fileID: 11400000, guid: 0bb826ce80c31b14ca4d58936429b492, type: 2}

@@ -30,7 +30,7 @@ MonoBehaviour:
   - Let us know about GC next time pls.
   - '@#($#)%!'
   FollowerDelta: {x: 25, y: 35}
-  CommentDelta: {x: 4, y: 6}
+  CommentDelta: {x: 3, y: 3}
   AnonymousResult: {fileID: 11400000, guid: 3aad5f67cdc4f804aaef2a3599b47072, type: 2}
   GovernmentResult: {fileID: 11400000, guid: 3aad5f67cdc4f804aaef2a3599b47072, type: 2}
   DoNotPostResult: {fileID: 11400000, guid: 115baebc133244449bb8765c6a4096e9, type: 2}

@@ -27,7 +27,7 @@ MonoBehaviour:
   GovernmentCommentsToDisplay:
   - Can't they leave us alone?
   FollowerDelta: {x: 25, y: 35}
-  CommentDelta: {x: 4, y: 6}
+  CommentDelta: {x: 1, y: 1}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}
   DoNotPostResult: {fileID: 0}

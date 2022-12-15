@@ -30,7 +30,7 @@ MonoBehaviour:
   - Tell the foreigners our penguins are ours!
   - JUST LET THE PENGUINS BE PENGUINS!!!
   FollowerDelta: {x: 25, y: 35}
-  CommentDelta: {x: 4, y: 6}
+  CommentDelta: {x: 3, y: 3}
   AnonymousResult: {fileID: 11400000, guid: 6329bfc216cd47a4496b1cdc5709cc25, type: 2}
   GovernmentResult: {fileID: 11400000, guid: 6329bfc216cd47a4496b1cdc5709cc25, type: 2}
   DoNotPostResult: {fileID: 11400000, guid: 6329bfc216cd47a4496b1cdc5709cc25, type: 2}

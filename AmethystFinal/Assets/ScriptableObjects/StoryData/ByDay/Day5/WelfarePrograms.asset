@@ -22,10 +22,12 @@ MonoBehaviour:
   GovernmentTitle: Supportive Welfare
   GovernmentDescription: Benaxia offers programs for homeless youth, allowing them
     to escape poverty.
-  AnonymousCommentsToDisplay: []
-  GovernmentCommentsToDisplay: []
+  AnonymousCommentsToDisplay:
+  - Well at least someone's getting relief.
+  GovernmentCommentsToDisplay:
+  - Benaxia for the homeless!
   FollowerDelta: {x: 25, y: 35}
-  CommentDelta: {x: 4, y: 6}
+  CommentDelta: {x: 1, y: 1}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}
   DoNotPostResult: {fileID: 0}

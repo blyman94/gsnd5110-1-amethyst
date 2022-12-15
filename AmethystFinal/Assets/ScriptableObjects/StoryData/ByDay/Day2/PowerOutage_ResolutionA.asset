@@ -27,7 +27,7 @@ MonoBehaviour:
   GovernmentCommentsToDisplay:
   - Riots? Are you doing anything about them?
   FollowerDelta: {x: 25, y: 35}
-  CommentDelta: {x: 4, y: 6}
+  CommentDelta: {x: 2, y: 1}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}
   DoNotPostResult: {fileID: 0}

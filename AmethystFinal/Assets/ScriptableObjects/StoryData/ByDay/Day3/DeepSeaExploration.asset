@@ -29,7 +29,7 @@ MonoBehaviour:
   - I'm scared of the deep sea :0
   - I hope we see sharks
   FollowerDelta: {x: 25, y: 35}
-  CommentDelta: {x: 4, y: 6}
+  CommentDelta: {x: 3, y: 3}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}
   DoNotPostResult: {fileID: 0}

@@ -28,7 +28,7 @@ MonoBehaviour:
   - I composted all my apple cores!
   - Did I miss Something! Ah beans.
   FollowerDelta: {x: 25, y: 35}
-  CommentDelta: {x: 1, y: 6}
+  CommentDelta: {x: 1, y: 3}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}
   DoNotPostResult: {fileID: 0}

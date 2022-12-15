@@ -30,7 +30,7 @@ MonoBehaviour:
   - The cases will decrease and we will recover.
   - This all could have been prevented
   FollowerDelta: {x: 25, y: 35}
-  CommentDelta: {x: 2, y: 5}
+  CommentDelta: {x: 2, y: 3}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}
   DoNotPostResult: {fileID: 0}

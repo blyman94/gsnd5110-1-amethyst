@@ -30,7 +30,7 @@ MonoBehaviour:
   - It's good the govt didn't interfere with private business
   - Aw man, I didn't get a chance to see them :(
   FollowerDelta: {x: 25, y: 35}
-  CommentDelta: {x: 4, y: 6}
+  CommentDelta: {x: 3, y: 3}
   AnonymousResult: {fileID: 11400000, guid: 6e29ef152f2ce784e99e4f1405845810, type: 2}
   GovernmentResult: {fileID: 11400000, guid: 6e29ef152f2ce784e99e4f1405845810, type: 2}
   DoNotPostResult: {fileID: 11400000, guid: 047375c56d5c9634a87d4b0f65116680, type: 2}

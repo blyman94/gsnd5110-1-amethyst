@@ -31,7 +31,7 @@ MonoBehaviour:
   - Benaxia Blue for life
   - Benaxia Blue we support you
   FollowerDelta: {x: 25, y: 35}
-  CommentDelta: {x: 4, y: 6}
+  CommentDelta: {x: 3, y: 3}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}
   DoNotPostResult: {fileID: 0}

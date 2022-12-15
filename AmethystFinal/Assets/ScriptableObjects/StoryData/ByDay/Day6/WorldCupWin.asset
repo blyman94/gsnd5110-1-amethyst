@@ -27,7 +27,7 @@ MonoBehaviour:
   - Yes! Go Benaxia
   - ... did they?
   FollowerDelta: {x: 25, y: 35}
-  CommentDelta: {x: 4, y: 6}
+  CommentDelta: {x: 2, y: 2}
   AnonymousResult: {fileID: 0}
   GovernmentResult: {fileID: 0}
   DoNotPostResult: {fileID: 0}
